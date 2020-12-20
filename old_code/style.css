@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+}
+
+* {
+  font-family: Helvetica, sans-serif, Arial;
+}
+.bg {
+  /* The image used */
+  background-image: url("./images/dark_BG.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  animation-delay: 0.3s;
+}
+
+#coming {
+  animation-delay: 0.8s;
+}
+
+#subscribe {
+  animation-delay: 1.6s;
+}
+
+#venue {
+  animation-delay: 2.2s;
+}
+
+#tedx {
+  animation-delay: 2.9s;
+}
+
+#event {
+  animation-delay: 3.5s;
+}
+
+#footer {
+  animation-delay: 4.2s;
+}

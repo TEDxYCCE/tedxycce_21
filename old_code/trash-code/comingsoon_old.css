@@ -1,0 +1,37 @@
+.name {
+    color: white;
+    font-family: "Helvetica Neue", sans-serif, Arial;
+    font-size: 50px;
+    text-align: center;
+}
+
+.msg {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 50px;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+.text {
+    text-align: center;
+    color: white;
+    /* font-size: 50px; */
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+.abt-ted {
+    justify-content: space-between;
+    font-size: medium;
+    text-align: justify;
+}
+
+.ted {
+    display: inline;
+    color: var(--ted-red);
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+}

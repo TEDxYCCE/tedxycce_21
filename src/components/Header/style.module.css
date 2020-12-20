@@ -1,0 +1,12 @@
+.container
+{
+ color: white;
+ background-color: white;
+     
+}
+.sticky
+{
+    display: block;
+    position: relative;
+    z-index: 99;
+}

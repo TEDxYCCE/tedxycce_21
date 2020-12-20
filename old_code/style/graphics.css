@@ -1,0 +1,120 @@
+:root {
+    --square-size: 100vh;
+    --hori-offset: 50vw;
+    --ted-red: #e62b1e;
+    --side-off: 90vw;
+    --strap-spec-1: 1mm solid var(--ted-red);
+    --strap-spec-2: 3mm solid var(--ted-red);
+    --strap-spec-3: 5mm solid var(--ted-red);
+    --strap-spec-4: 7mm solid var(--ted-red);
+}
+
+body {
+    background-color: black;
+}
+
+
+/* :root {
+    --square-size: 70vh;
+    --horiztl-offset: 50vw;
+    --ted-red: #e62b1e;
+    --strap-spec-1: 10mm solid var(--ted-red);
+    --strap-spec-2: 7mm solid var(--ted-red);
+    --strap-spec-3: 5mm solid var(--ted-red);
+    --strap-spec-4: 2mm solid var(--ted-red);
+    --side-off: 90vw;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.right {
+    border: 30px solid var(--ted-red);
+    transform: rotate(45deg);
+    height: var(--square-size);
+    width: var(--square-size);
+    position: absolute;
+    top: 50px;
+    bottom: auto;
+    left: 90vw;
+    z-index: -1;
+}
+
+.left {
+    border: var(--strap-spec);
+    transform: rotate(45deg);
+    height: var(--square-size);
+    width: var(--square-size);
+    position: absolute;
+    top: 50px;
+    bottom: auto;
+    right: 90vw; 
+
+
+}*/
+
+
+/* For mobile phones: */
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    body {
+        background-color: black;
+        overflow-x: hidden;
+    }
+    .right {
+        border: 30px solid var(--ted-red);
+        /* height: 100px; */
+        transform: rotate(45deg);
+        height: var(--square-size);
+        width: var(--square-size);
+        position: absolute;
+        top: 50px;
+        bottom: auto;
+        z-index: -1;
+        /* right: -50vw; */
+    }
+    .right-1 {
+        left: var(--side-off);
+    }
+    .left {
+        /* height: 100px; */
+        transform: rotate(45deg);
+        height: var(--square-size);
+        width: var(--square-size);
+        position: absolute;
+        top: 50px;
+        bottom: auto;
+        /* left: -50vw; */
+    }
+    .left-1 {
+        right: 90vw;
+        border: var(--strap-spec-1);
+    }
+    .left-2 {
+        right: 85vw;
+        border: var(--strap-spec-2);
+    }
+    .left-3 {
+        right: 80vw;
+        border: var(--strap-spec-3);
+    }
+    .left-4 {
+        right: 75vw;
+        border: var(--strap-spec-1);
+    }
+    .left-5 {
+        right: 70vw;
+        border: var(--strap-spec-1);
+    }
+}
+
+.x-graphic {
+    width: 100vw;
+    height: 70vh;
+    z-index: -1;
+    text-align: center;
+    vertical-align: middle;
+}

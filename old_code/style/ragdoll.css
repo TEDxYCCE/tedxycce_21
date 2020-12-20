@@ -1,0 +1,8 @@
+.ragdoll * {
+    box-sizing: border-box;
+}
+
+.ragdoll {
+    margin: 0;
+    padding: 0;
+}
