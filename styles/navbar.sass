@@ -1,0 +1,34 @@
+$nav-font-weight: 400
+$ted-red: #e62b1e
+
+.navbar-bg
+    background-color: black
+
+.logo
+    padding: 0px 0px
+
+.nav-item
+    margin-right: 2vw
+    font-weight: $nav-font-weight
+
+.nav-CTA
+    display: inline
+    color: $ted-red
+    font-size:
+    font-style: italic
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
+
+.nav-link:after
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 0; /* This will center the border. */
+    width: 1.5vw; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-top: 5px solid red; /* This creates the border. Replace black with whatever color you want. */
+.nav-link-active:after
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 0; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-top: 5px solid red; /* This creates the border. Replace black with whatever color you want. */

@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: none;
+          box-sizing: none;
+}
+
+body {
+  background-color: #000000;
+}
+
+.landing {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
