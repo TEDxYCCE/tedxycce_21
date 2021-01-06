@@ -10,8 +10,53 @@ body {
 }
 
 .landing {
-  background-color: #ffffff;
+  background-color: white;
   height: 100vh;
   width: 100%;
+}
+
+.red-text {
+  color: #e62b1e;
+}
+
+.landing-headline {
+  width: 50%;
+  font-size: 40px;
+  top: 500px;
+}
+
+.theme-graphic {
+  position: absolute;
+  margin: 5%;
+}
+
+.stairs-gif {
+  position: absolute;
+  width: 400px;
+  -webkit-transform: translate(-108%, 35%);
+          transform: translate(-108%, 35%);
+}
+
+.ted-image {
+  -webkit-box-shadow: 25px 30px 30px -6px #FF0000;
+          box-shadow: 25px 30px 30px -6px #FF0000;
+  width: 40vw;
+}
+
+.mail-section {
+  background: #E62B1E;
+}
+
+.mail-sec-waves {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E62B1E), color-stop(132.56%, #FAFAFA));
+  background: linear-gradient(180deg, #E62B1E 0%, #FAFAFA 132.56%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.footer {
+  /* Rectangle 60 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.67%, #FF0000), color-stop(84.37%, #ffffff));
+  background: linear-gradient(180deg, #FF0000 16.67%, #ffffff 84.37%);
 }
 /*# sourceMappingURL=styles.css.map */
