@@ -1,0 +1,79 @@
+$ted-red: #e62b1e
+
+.whats-tedx-ted
+    background-color: white
+    margin-top: 10vh
+
+    .heading
+        background-color: black
+        /* What is */
+        font-family: Helvetica
+        font-style: normal
+        font-weight: bold
+        font-size: 5em
+        display: flex
+        align-items: center
+        color: #FFFFFF
+        padding-left: 3vw
+    .red
+        font-family: Helvetica
+        font-style: normal
+        font-weight: bold
+        font-size: 5rem
+        color: $ted-red
+        -webkit-text-stroke-width: 3px
+        -webkit-text-stroke-color: $ted-red
+
+.tedx-image
+    width: 40vw
+    box-shadow: 25px 30px 30px -6px rgba(255, 0, 0, 0.8)
+
+.ted-image
+    width: 40vw
+    box-shadow: 25px 30px 30px -6px rgba(255, 0, 0, 0.8)
+
+@media screen and ( max-width: 768px )
+    .tedx-image
+        width: 90vw
+        margin: 3vh 0px 3vh 0px
+    .ted-image
+        width: 90vw
+        margin: 0vh 0px 6vh 0px
+
+    .whats-tedx-ted
+        margin-top: 5vh
+        .heading
+            font-size: 3em
+        .red
+            margin-left: 0.2em
+            font-size: 3rem
+            letter-spacing: 5px
+
+@media screen and ( min-width: 1200px )
+    .tedx-image
+        width: 50vw
+        margin: 0vh 0px 3vh 0px
+    .ted-image
+        width: 50vw
+        margin: 0vh 0px 6vh 0px
+
+    .whats-tedx-ted
+        margin-top: 5vh
+        .heading
+            font-size: 5em
+        .red
+            margin-left: 0.2em
+            font-size: 6rem
+            letter-spacing: 0px
+        .ted-para
+            font-family: Helvetica
+            font-style: normal
+            font-size: 1.3em
+        .ted-para2
+            font-family: Helvetica
+            font-style: normal
+            font-size: 1.3em
+        .tedx-para
+            font-family: Helvetica
+            font-style: normal
+            font-size: 1.2em
