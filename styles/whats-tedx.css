@@ -30,6 +30,32 @@
   -webkit-text-stroke-color: #e62b1e;
 }
 
+.whats-tedx-ted .red-ted {
+  color: #e62b1e;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e62b1e;
+}
+
+.whats-tedx-ted .red-text {
+  color: #e62b1e;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.whats-tedx-ted .red-card-licensed {
+  background: #e62b1e;
+  -webkit-box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.57);
+          box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.57);
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 4vh;
+}
+
 .tedx-image {
   width: 40vw;
   -webkit-box-shadow: 25px 30px 30px -6px rgba(255, 0, 0, 0.8);
@@ -40,6 +66,7 @@
   width: 40vw;
   -webkit-box-shadow: 25px 30px 30px -6px rgba(255, 0, 0, 0.8);
           box-shadow: 25px 30px 30px -6px rgba(255, 0, 0, 0.8);
+  margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -101,7 +128,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1600px) {
   .tedx-image {
     width: 25vw;
     margin: 0vh 0px 3vh 0px;
