@@ -1,0 +1,23 @@
+/* image 4 */
+.tedx-image {
+  width: 40vw;
+  -webkit-box-shadow: 25px 30px 30px -6px rgba(255, 0, 0, 0.8);
+          box-shadow: 25px 30px 30px -6px rgba(255, 0, 0, 0.8);
+}
+
+.tedx-head-light {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 82.5px;
+  line-height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  border: 3px solid #000000;
+}
+/*# sourceMappingURL=tedx.css.map */
