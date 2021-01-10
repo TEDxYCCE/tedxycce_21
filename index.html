@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEDxYCCE</title>
+    <title>
+      TEDxYCCE | Official TEDx Event hosted by Team TEDxYCCE at YCCE College,
+      Wanadongri, Hingna, Nagpur
+    </title>
 
     <meta
       name="title"
@@ -40,11 +43,36 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <!-- yellowtail font -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- google analytics -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HEZHC0MSXM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HEZHC0MSXM");
+    </script>
 
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/mail-sec.css" />
     <link rel="stylesheet" href="./styles/landing.css" />
     <link rel="stylesheet" href="./styles/whats-tedx.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -75,11 +103,13 @@
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">Our Theme</a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Sponsorship</a>
+            <a class="nav-link" href="./Sponsorship_Proposal_TEDxYCCE.pdf"
+              >Sponsorship</a
+            >
           </li>
           <li class="nav-item">
             <!-- <a
@@ -89,17 +119,17 @@
               aria-disabled="true"
               >Disabled</a
             > -->
-            <a href="#" class="nav-link">About</a>
+            <!-- <a href="#" class="nav-link">About</a> -->
           </li>
           <li class="nav-item">
             <a href="#footer" class="nav-link">Contact Us</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="btn btn-light" type="button">
               <h5 class="nav-CTA">Book Tickets</h5>
               <img src="./assets/arrow.svg" alt="" srcset="" class="pb-1"
             /></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -143,6 +173,73 @@
       <img class="mail-graphic" src="./assets/mail.svg" alt="Vector graphic with an envelop and hearts"></img>
     </div> -->
 
+    <div class="cover text-center align-middle">
+      <h1 class="text-white"><a href="#" class="text-white">TEDxYCCE</a></h1>
+      <h1 class="red-text">Connecting the levels inbetween</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-1"></div>
+          <div class="col">
+            <img
+              class="img-responsive coming-img col"
+              src="./img/coming.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-md-2 col-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="shade-change">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-xl-6 col-md-6 col-12 mb-4 map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.4356442935323!2d78.9785723!3d21.0951911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4952117eaac51%3A0x6d8277793eb63d6a!2sYeshwantrao%20Chavan%20College%20of%20Engineering%20(YCCE)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1604229697975!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              allowfullscreen="true"
+              aria-hidden="false"
+              tabindex="0"
+              title="YCCE"
+            ></iframe>
+          </div>
+          <div class="col-xl-6 col-md-6 col-12">
+            <div
+              class="venue-text text-left text-bold text-white text-wrap pl-4"
+            >
+              <h2>
+                <a
+                  href="https://g.page/ycce-engineering-college-nagpur?share"
+                  class="red-text"
+                >
+                  <u>Venue:</u>
+                </a>
+              </h2>
+              <h3>
+                <hr />
+                Yeshwantrao Chavan College of Engineering, Hingna Road,
+                Wanadongri, Nagpur, Maharashtra. 441110
+                <br />
+                <hr />
+                Ph. : +91-7104-242919, 242623
+                <br />
+                Email :
+                <a
+                  class="red-text"
+                  href="mailto:tedxycce@gmail.com"
+                  target="_blank"
+                  >tedxycce@gmail.com</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div class="divider">&nbsp;</div>
     <!-- what is tedx section -->
     <div class="whats-tedx-ted">
       <div class="heading">What is <span class="red">TEDx</span>?</div>
@@ -229,22 +326,76 @@
     </div>
 
     <!-- connect with us section -->
-    <footer class="footer" id="footer">
-      <img
-        src="./assets/connect-graphic.svg"
-        class="footer-graphic"
-        alt="graphic with lots of social activity going on"
-      />
-      <div class="heading">Want to talk with us?</div>
-      <div class="mail-btn">Drop us a mail</div>
-      <div class="or">OR</div>
-      <div class="heading2">Connect with us on:</div>
-      <div class="facebook-link"></div>
-      <div class="twitter-link"></div>
-      <div class="insta-link"></div>
-      <div class="linkedin-link"></div>
-      <div class="copyright">Copyright &copy; 2020 TEDxYCCE</div>
+    <footer class="footer container-fluid pb-4" id="footer">
+      <div class="container">
+        <div class="row">
+          <img
+            src="./assets/connect-graphic.svg"
+            class="footer-graphic col col-xs-12 col-lg-6"
+            alt="graphic with lots of social activity going on"
+          />
+          <div class="col col-xs-12 col-lg-6">
+            <div class="content-wrapper text-center">
+              <br /><br />
+              <div class="heading">Want to talk with us?</div>
+              <br />
+              <!-- mail -->
+              <a class="btn mail-btn" href="mailto:tedxycce@gmail.com">
+                Drop us a mail
+              </a>
+              <br /><br />
+              <!-- or -->
+              <div class="or">OR</div>
+              <br />
+              <!-- social touch -->
+              <div class="heading2">Connect with us on:</div>
+              <div class="links">
+                <br />
+                <!-- facebook -->
+                <a
+                  href="https://www.facebook.com/tedxycceofficial"
+                  class="facebook-link"
+                >
+                  <i class="fab fa-facebook-square fa-3x"></i>
+                  <span class="social-text">/tedxycceofficial</span>
+                </a>
+                <br />
+                <!-- twitter -->
+                <a href="https://twitter.com/tedxycce" class="twitter-link">
+                  <i class="fab fa-twitter fa-3x"></i>
+                  <span class="social-text">/tedxycce</span>
+                </a>
+                <br />
+                <!-- instagram -->
+                <a
+                  href="https://www.instagram.com/tedxycce/"
+                  class="insta-link"
+                >
+                  <img
+                    src="./img/insta.png"
+                    alt="instagram-logo"
+                    class="insta-logo"
+                    srcset=""
+                    aria-hidden="true"
+                  />
+                  <span class="social-text">/tedxycce</span>
+                </a>
+                <br />
+                <!-- LinkedIn  -->
+                <a
+                  href="https://www.linkedin.com/company/tedxycce/"
+                  class="linkedin-link"
+                >
+                  <i class="fab fa-linkedin fa-3x"></i>
+                  <span class="social-text">/tedxycce</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+    <div class="copyright text-center">Copyright &copy; 2020 TEDxYCCE</div>
 
     <script src="./js/app.js"></script>
     <!-- jquery slim -->
@@ -259,5 +410,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <!-- font awesome js -->
+    <script defer src="fontawesome/js/all.js"></script>
   </body>
 </html>

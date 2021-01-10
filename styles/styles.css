@@ -20,9 +20,29 @@ body {
   color: #e62b1e;
 }
 
-.footer {
-  /* Rectangle 60 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.67%, #FF0000), color-stop(84.37%, #ffffff));
-  background: linear-gradient(180deg, #FF0000 16.67%, #ffffff 84.37%);
+#coming {
+  font-family: Yellowtail, Helvetica, sans-serif, Arial;
+}
+
+a:hover {
+  color: white;
+}
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.map {
+  width: 30vh;
+}
+
+.venue-text {
+  border-left: 10px white solid;
+}
+
+.shade-change {
+  background: black;
 }
 /*# sourceMappingURL=styles.css.map */
