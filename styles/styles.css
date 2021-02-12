@@ -6,6 +6,10 @@
   font-family: Helvetica;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
 }
@@ -44,5 +48,9 @@ a:hover {
 
 .shade-change {
   background: black;
+}
+
+#countdown {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
