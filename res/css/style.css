@@ -59,14 +59,14 @@
 /* Home BG Static (default) */
 
 #home {
-  background: url("../images/bg-home-1.jpg");
+  background: url("@anmol");
 }
 
 
 /* Home BG Parallax */
 
 #home-bg-parallax > .bg-parallax {
-  background: url("../images/bg-parallax.jpg");
+  background: url("@anmol");
 }
 
 
@@ -125,7 +125,7 @@
 }
 .countdown .clock-item {
   color: #ffffff;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Helvetica", sans-serif;
   border-radius: 2px;
   display: inline-block;
   height: 100%;
@@ -593,14 +593,14 @@
   padding-right: 2%;
 }
 .countdown-timer .value {
-  font-family: Roboto, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 800;
   color: white;
   align-self: center;
 }
 .countdown-timer .label {
-  font-family: Catamaran, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.75);
