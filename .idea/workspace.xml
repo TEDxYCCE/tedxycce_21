@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1ae15237-e5a4-43d0-b466-41adb0107d68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our-team/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-team/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sponsors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sponsors/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613315594635</updated>
-      <workItem from="1613315595724" duration="16913000" />
+      <workItem from="1613315595724" duration="17312000" />
     </task>
     <servers />
   </component>
@@ -76,10 +76,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="698" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613316281971">
+    <state x="698" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613334849294">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="698" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613316281971" />
+    <state x="698" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613334849294" />
     <state x="748" y="282" key="FileChooserDialogImpl" timestamp="1613320374739">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
