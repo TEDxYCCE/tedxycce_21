@@ -7,7 +7,7 @@
 - [ ] Contact: Nav Logo fix
 - [ ] Contact: Footer Logo fix
 - [ ] Contact: nav Comment our team link
-- [ ] Registration: Change text for registrations to
+- [ ] Registration: Comment text for registrations and write 'Registrations Starting Soon'
 - [ ] All Pages
 
 ## Do Next
