@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACV,UAAU,EAHJ,OAAO;CAGU;;AAC3B,AAAA,eAAe,CAAC;EACZ,UAAU,EAAE,oDAAoD;EAChE,SAAS,EAAE,cAAc;CAAG",
+    "sources": [
+        "mail-sec.sass"
+    ],
+    "names": [],
+    "file": "mail-sec.css"
+}

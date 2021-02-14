@@ -1,0 +1,82 @@
+.navbar-bg {
+  background-color: black;
+}
+
+.logo {
+  padding: 0px 0px;
+}
+
+.nav-item {
+  margin-right: 2vw;
+  font-weight: 400;
+}
+
+.nav-CTA {
+  display: inline;
+  color: #e62b1e;
+  font-size: 1.2em;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 0;
+  /* This will center the border. */
+  width: 2.5vw;
+  /* Change this to whatever width you want. */
+  padding-top: 0px;
+  /* This creates some space between the element and the border. */
+  border-top: 5px solid red;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+.nav-link-active:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 0;
+  /* This will center the border. */
+  width: 100%;
+  /* Change this to whatever width you want. */
+  padding-top: 0px;
+  /* This creates some space between the element and the border. */
+  border-top: 5px solid red;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+@media screen and (max-width: 992px) {
+  .nav-link:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 0;
+    /* This will center the border. */
+    width: 5vw;
+    /* Change this to whatever width you want. */
+    padding-top: 0px;
+    /* This creates some space between the element and the border. */
+    border-top: 5px solid red;
+    /* This creates the border. Replace black with whatever color you want. */
+  }
+  .nav-link-active:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 0;
+    /* This will center the border. */
+    width: 10vw;
+    /* Change this to whatever width you want. */
+    padding-top: 0px;
+    /* This creates some space between the element and the border. */
+    border-top: 5px solid red;
+    /* This creates the border. Replace black with whatever color you want. */
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
