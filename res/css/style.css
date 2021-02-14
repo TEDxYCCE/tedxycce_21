@@ -624,3 +624,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 706px) {
+  .fix-mobile {
+    margin-top: 20vw;
+  }
+}
