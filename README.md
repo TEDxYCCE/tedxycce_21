@@ -1,4 +1,4 @@
-![TEDxYCCE logo](img/TXYLogo_light.png)
+![TEDxYCCE logo](res/images/logos/TXYLogo_light.png)
 
 [![Website tedxycce.com](https://img.shields.io/website-up-down-green-red/http/tedxycce.com.svg)](http://tedxycce.com/)
 
