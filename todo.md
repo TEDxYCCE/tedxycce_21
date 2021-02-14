@@ -1,14 +1,14 @@
 # To-Do in the repo
 
-- [ ] Speakers: nav logo fix
-- [ ] Speakers: nav sponsor link fix
-- [ ] Speakers: footer social links fix
-- [ ] Speakers: footer Logo path fix
+- [x] Speakers: nav logo fix
+- [x] Speakers: nav sponsor link fix
+- [x] Speakers: footer social links fix
+- [x] Speakers: footer Logo path fix
 - [ ] Contact: Nav Logo fix
 - [ ] Contact: Footer Logo fix
 - [ ] Contact: nav Comment our team link
 - [ ] Registration: Comment text for registrations and write 'Registrations Starting Soon'
-- [ ] All Pages
+- [ ] All Pages: fix img ---to--- res/images path
 
 ## Do Next
 
@@ -17,6 +17,8 @@
 - [ ] Speakers: add Time in 'data and Time' section
 - [ ] Contact: integrate Netlify Forms
 - [ ] Contact: add countdown bg image
+- [ ] Contact: add carousal bg image
+- [ ] all pages: nav: sponsors --> Sponsor Us
 
 ## If Time Allows
 
