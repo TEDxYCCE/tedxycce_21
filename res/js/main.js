@@ -215,7 +215,7 @@
 
       // Build scenes
       new ScrollMagic.Scene({triggerElement: "#home-bg-parallax"})
-          .setTween("#home-bg-parallax > .bg-parallax", {y: "80%", ease: Linear.easeNone})
+          .setTween("#home-bg-parallax > .bg-parallax", {y: "120%", ease: Linear.easeNone})
           .addTo(controller);
     }
 
