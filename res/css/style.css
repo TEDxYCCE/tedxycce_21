@@ -21,30 +21,30 @@
 /* Home BG Parallax */
 
 #home-bg-parallax > .bg-parallax {
-  background: url("../../Campus_Photos/Entrance _ YCCE garden/IMG20201005102623.jpg");
+  background: url("../images/campus_photos/entrance_garden/IMG20201005102623.jpg");
 }
 
 /* Home BG Slideshow */
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
-  background: url("../../Campus_Photos/Admin Premises/IMG20201005103843.jpg");
+  background: url("../images/campus_photos/admin_premises/IMG20201005103843.jpg");
 }
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
-  background: url("../../Campus_Photos/Civil _ Mech/IMG20201005103924.jpg");
+  background: url("../images/campus_photos/civil_mech/IMG20201005103924.jpg");
 }
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
-  background: url("../../Campus_Photos/IT garden/IMG20201005111807.jpg");
+  background: url("../images/campus_photos/IT_garden/IMG20201005111807.jpg");
 }
 
 /* Home BG Slider */
 
 #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
-  background: url("../../Campus_Photos/Admin Premises/IMG20201005103843.jpg");
+  background: url("../images/campus_photos/admin_premises/IMG20201005103843.jpg");
 }
 #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(2) {
-  background: url("../../Campus_Photos/Civil _ Mech/IMG20201005103924.jpg");
+  background: url("../images/campus_photos/civil_mech/IMG20201005103924.jpg");
 }
 #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(3) {
-  background: url("../../Campus_Photos/IT garden/IMG20201005111807.jpg");
+  background: url("../images/campus_photos/IT_garden/IMG20201005111807.jpg");
 }
 #home-bg-slideshow .display-table-cell,
 #home-bg-slider .display-table-cell {
@@ -109,13 +109,13 @@
   height: 192px;
 }
 #intro .features-box:nth-child(1) .bg-cover {
-  background-image: url("../../Campus_Photos/Admin Premises/IMG20201005103843.jpg");
+  background-image: url("../images/campus_photos/admin_premises/IMG20201005103843.jpg");
 }
 #intro .features-box:nth-child(2) .bg-cover {
-  background-image: url("../../Campus_Photos/Civil _ Mech/IMG20201005103924.jpg");
+  background-image: url("../images/campus_photos/civil_mech/IMG20201005103924.jpg");
 }
 #intro .features-box:nth-child(3) .bg-cover {
-  background-image: url("../../Campus_Photos/IT garden/IMG20201005111807.jpg");
+  background-image: url("../images/campus_photos/IT_garden/IMG20201005111807.jpg");
 }
 
 /*
@@ -142,8 +142,8 @@
 */
 
 #venue {
-  background-image: url("../../Campus_Photos/Auditorium/IMG20201005110457.jpg");
-  background-position: inherit !important;
+  background-image: url("../images/campus_photos/auditorium/8828599054_ceea55c0d9_o.jpg");
+  background-position: center !important;
 }
 
 /*
