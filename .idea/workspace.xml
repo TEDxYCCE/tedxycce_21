@@ -21,7 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1ae15237-e5a4-43d0-b466-41adb0107d68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/images/campus_photos/IT_garden/IMG20201005111807.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/images/campus_photos/IT_garden/IMG20201005111807.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/images/campus_photos/admin_premises/IMG20201005103843.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/images/campus_photos/admin_premises/IMG20201005103843.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/images/campus_photos/auditorium/8828599054_ceea55c0d9_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/images/campus_photos/auditorium/8828599054_ceea55c0d9_o.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/images/campus_photos/civil_mech/IMG20201005103924.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/images/campus_photos/civil_mech/IMG20201005103924.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/images/campus_photos/entrance_garden/IMG20201005102623.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/images/campus_photos/entrance_garden/IMG20201005102623.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/images/gifs/under-the-stairs.gif" beforeDir="false" afterPath="$PROJECT_DIR$/res/images/gifs/under-the-stairs.gif" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +78,8 @@
       <workItem from="1613559682041" duration="1257000" />
       <workItem from="1613563415475" duration="2254000" />
       <workItem from="1613629102617" duration="2223000" />
-      <workItem from="1613633810705" duration="32000" />
+      <workItem from="1613633810705" duration="174000" />
+      <workItem from="1613921841991" duration="980000" />
     </task>
     <servers />
   </component>
