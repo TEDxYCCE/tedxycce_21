@@ -609,6 +609,7 @@
   left: 0;
   height: 100%;
   margin: auto;
+  object-fit: cover;
 }
 
 /*
