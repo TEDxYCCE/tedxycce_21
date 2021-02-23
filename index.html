@@ -1,416 +1,975 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      TEDxYCCE | Official TEDx Event hosted by Team TEDxYCCE at YCCE College,
-      Wanadongri, Hingna, Nagpur
-    </title>
+<!--
+ _____ ___________    __   _______  _____  _____
+|_   _|  ___|  _  \   \ \ / /  __ \/  __ \|  ___|
+  | | | |__ | | | |_  _\ V /| /  \/| /  \/| |__
+  | | |  __|| | | \ \/ /\ / | |    | |    |  __|
+  | | | |___| |/ / >  < | | | \__/\| \__/\| |___
+  \_/ \____/|___/ /_/\_\\_/  \____/ \____/\____/
+   -->
 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
     <meta
-      name="title"
-      content="TEDxYCCE | TEDx Event at Yeshwantrao Chavan College of Engineering | Theme: Under the Stairs"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Title, icon, description and keywords -->
+    <title>TEDxYCCE</title>
+    <link rel="shortcut icon" href="./res/images/favicon.ico" />
     <meta
       name="description"
-      content="TEDxYCCE Official Website | Yeshwantrao Chavan College of Engineering"
-    />
-    <meta
-      name="description"
-      content="Indepedently organized TEDx Event at YCCE, Wanadongri, Hingna"
-    />
-    <meta
-      name="description"
-      content="Theme of Event: Under the Stairs: Celebrating people that played role of the the hidden stairs behind our true success"
+      content="TEDxYCCE, x = independently organised TED event. Under The Stairs, This March, at YCCE, Nagpur."
     />
     <meta
       name="keywords"
-      content="TEDx TEDxYCCE TED 2020 january trending inspirational"
-    />
-    <meta name="author" content="Anmoldeep Singh Arora" />
-
-    <meta name="robots" content="index,follow" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="./img/favicon_ted.ico"
-    />
-    <!-- boostrap css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="./fontawesome/css/all.css" />
-    <!-- yellowtail font -->
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
-      rel="stylesheet"
+      content="TEDx, YCCE, Yeshwantrao Chavan College of Engineering, Hingna, Nagpur, event, talks"
     />
 
-    <!-- google analytics -->
+    <!-- Social media tags -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="TEDxYCCE" />
+    <meta
+      property="og:description"
+      content="Under The Stairs. This March, at Yeshwantrao Chavan College of Engineering."
+    />
+    <meta property="og:image" content="./img/TXYlogo.png" />
+    <meta property="og:url" content="https://tedxycce.com" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tedxycce" />
+    <meta
+      itemprop="description"
+      content="Under The Stairs. This March, at Yeshwantrao Chavan College of Engineering."
+    />
+    <meta itemprop="image" content="./img/TXYlogo.png" />
 
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-HEZHC0MSXM"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <!-- Browser themes -->
+    <meta name="theme-color" content="#000" />
 
-      gtag("config", "G-HEZHC0MSXM");
-    </script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="res/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/mail-sec.css" />
-    <link rel="stylesheet" href="./styles/landing.css" />
-    <link rel="stylesheet" href="./styles/whats-tedx.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="res/css/font-awesome.min.css" />
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="res/css/flickity.min.css" />
+    <link rel="stylesheet" href="res/css/magnific-popup.css" />
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="res/css/main.css" />
+    <link rel="stylesheet" href="res/css/style.css" />
+
+    <!-- Color skin -->
+    <link rel="stylesheet" href="res/css/color_red.css" />
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 8]>
+      <script src="res/js/modernizr.min.js"></script>
+    <![endif]-->
   </head>
-  <body>
-    <!-- website starts -->
-    <!-- navbar -->
-    <nav
-      class="navbar navbar-dark navbar-bg navbar-expand-lg sticky-top justify-content-between"
-    >
-      <!-- Navbar content -->
-      <a class="img-responsive logo" href="/">
-        <img src="./img/TXYlogo.png" alt="TEDxYCCE Logo" height="40vh" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link nav-link-active" href="#"
-              >Home <span class="sr-only">(current)</span></a
+
+  <body id="page-top">
+    <!-- Navigation Start -->
+    <nav id="navigation" class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header col-lg-3">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
             >
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Our Theme</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="./Sponsorship_Proposal_TEDxYCCE.pdf"
-              >Sponsorship</a
-            >
-          </li>
-          <li class="nav-item">
-            <!-- <a
-              class="nav-link disabled"
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a
+              class="navbar-brand font-family-alt letter-spacing-1 text-extra-large text-uppercase"
               href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            > -->
-            <!-- <a href="#" class="nav-link">About</a> -->
-          </li>
-          <li class="nav-item">
-            <a href="#footer" class="nav-link">Contact Us</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="btn btn-light" type="button">
-              <h5 class="nav-CTA">Book Tickets</h5>
-              <img src="./assets/arrow.svg" alt="" srcset="" class="pb-1"
-            /></a>
-          </li> -->
-        </ul>
-      </div>
-    </nav>
-    <!-- content -->
-    <!-- landing cover -->
-    <!-- <div class="landing">
-      <div class="theme-graphic">
-        <img
-          class="theme-img-bg"
-          src="./assets/theme-graphic.svg"
-          alt="Theme Graphic image for the theme under the stairs"
-        />
-        <img
-          class="stairs-gif"
-          src="./img/stairs3.gif"
-          alt="Moving Stairs gif"
-        />
-      </div>
-      <span class="landing-headline">
-        Celebrating those invisible <span class="red-text">stairs</span> that
-        helped us climbing towards our destiny, and becoming who we are today.
-      </span>
-    </div> -->
-
-    <!-- mail section -->
-    <!-- <div class="mail-section">
-      <img
-        src="./assets/waves.svg"
-        alt="wave lines TEDxYCCE"
-        class="mail-sec-waves"
-      />
-      <div class="heading">Stay Close and in the loop!</div>
-      <div class="sub-heading">Subscribe to stay updated</div>
-      <div class="maillist-form">
-        bubbly upper border <br />
-        form - label - input - email <br />
-        form - label - input - name <br />
-        form - input - button - text: Keep me informed! <br />
-        Tilted lower edge <br />
-      </div>
-      <img class="mail-graphic" src="./assets/mail.svg" alt="Vector graphic with an envelop and hearts"></img>
-    </div> -->
-
-    <div class="cover text-center align-middle">
-      <h1 class="text-white"><a href="#" class="text-white">TEDxYCCE</a></h1>
-      <h1 class="red-text">Connecting the levels inbetween</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 col-1"></div>
-          <div class="col">
-            <img
-              class="img-responsive coming-img col"
-              src="./img/coming.jpg"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="col-md-2 col-1"></div>
-        </div>
-      </div>
-    </div>
-    <div class="shade-change">
-      <div class="container">
-        <div class="row pt-4">
-          <div class="col-xl-6 col-md-6 col-12 mb-4 map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.4356442935323!2d78.9785723!3d21.0951911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4952117eaac51%3A0x6d8277793eb63d6a!2sYeshwantrao%20Chavan%20College%20of%20Engineering%20(YCCE)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1604229697975!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              allowfullscreen="true"
-              aria-hidden="false"
-              tabindex="0"
-              title="YCCE"
-            ></iframe>
-          </div>
-          <div class="col-xl-6 col-md-6 col-12">
-            <div
-              class="venue-text text-left text-bold text-white text-wrap pl-4"
             >
-              <h2>
+              <img
+                class="logo-navbar-dark"
+                src="res/images/logos/TXYlogo.png"
+                alt="TEDxYCCE"
+              />
+              <img
+                class="logo-navbar-white"
+                src="res/images/logos/TXYLogo_light.png"
+                alt="TEDxYCCE"
+              />
+            </a>
+          </div>
+          <!-- //.navbar-header -->
+
+          <div id="navbar" class="navbar-collapse collapse col-lg-9 pull-right">
+            <ul
+              class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700"
+            >
+              <li><a href="#page-top" class="page-scroll">About</a></li>
+              <li>
+                <a href="speakers/" class="line-height-unset">Speakers</a>
+              </li>
+              <!--              <li>-->
+              <!--                <a href="our-team/" class="line-height-unset">Our Team</a>-->
+              <!--              </li>-->
+              <!--              <li><a href="alumni/" class="line-height-unset">Alumni</a></li>-->
+              <li>
                 <a
-                  href="https://g.page/ycce-engineering-college-nagpur?share"
-                  class="red-text"
+                  href="Sponsorship_Proposal_TEDxYCCE.pdf"
+                  class="line-height-unset"
+                  >Sponsors</a
                 >
-                  <u>Venue:</u>
+              </li>
+              <li>
+                <a href="contact/" class="line-height-unset">Contact Us</a>
+              </li>
+              <li class="bg-base-color">
+                <a href="register/" class="line-height-unset width-100">
+                  Register
                 </a>
-              </h2>
-              <h3>
-                <hr />
-                Yeshwantrao Chavan College of Engineering, Hingna Road,
-                Wanadongri, Nagpur, Maharashtra. 441110
-                <br />
-                <hr />
-                Ph. : +91-7104-242919, 242623
-                <br />
-                Email :
-                <a
-                  class="red-text"
-                  href="mailto:tedxycce@gmail.com"
-                  target="_blank"
-                  >tedxycce@gmail.com</a
+              </li>
+            </ul>
+          </div>
+          <!-- //.navbar-collapse -->
+        </div>
+        <!-- //.row -->
+      </div>
+      <!-- //.container -->
+    </nav>
+    <!-- //Navigation End -->
+
+    <!-- Section - Home Start -->
+    <section
+      id="home-bg-slideshow"
+      class="bg-gray-dark-2 height-100 no-padding overflow-hidden width-100"
+    >
+      <!-- BG Slideshow -->
+      <!--      <div-->
+      <!--        class="bg-slideshow-wrapper flexslider height-100 no-border no-border-radius no-margin width-100"-->
+      <!--      >-->
+      <!--        <div class="slides height-100 width-100">-->
+      <!--          <div-->
+      <!--            class="bg-cover bg-overlay-black-7 display-block height-100 width-100"-->
+      <!--          >-->
+      <!--            <div-->
+      <!--              class="display-table height-100 position-absolute position-top position-left width-100"-->
+      <!--            >-->
+      <!--              <div class="display-table-cell vertical-align-middle">-->
+      <!--                <div class="container">-->
+      <!--                  <div class="row">-->
+      <!--                    <div class="col-md-10 col-md-offset-1 text-center">-->
+      <!--                      <h2-->
+      <!--                        class="font-family-alt font-weight-900 letter-spacing-2 text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5"-->
+      <!--                      >-->
+      <!--                        <span class="text-base-color">TED<sup>x</sup></span>YCCE-->
+      <!--                      </h2>-->
+      <!--                      <br />-->
+      <!--                      <h3-->
+      <!--                        class="font-weight-700 letter-spacing-2 text-white xs-title-large sm-title-extra-large title-extra-large-3"-->
+      <!--                      >-->
+      <!--                        Connecting the levels inbetween-->
+      <!--                      </h3>-->
+      <!--                      &lt;!&ndash; <br>-->
+      <!--                    <a href="/register/" class="btn btn-base-color sm-btn-medium btn-large">-->
+      <!--                      Register Now-->
+      <!--                    </a> &ndash;&gt;-->
+      <!--                    </div>-->
+      <!--                    &lt;!&ndash; //.col-md-10 &ndash;&gt;-->
+      <!--                  </div>-->
+      <!--                  &lt;!&ndash; //.row &ndash;&gt;-->
+      <!--                </div>-->
+      <!--                &lt;!&ndash; //.container &ndash;&gt;-->
+      <!--              </div>-->
+      <!--              &lt;!&ndash; //.display-table-cell &ndash;&gt;-->
+      <!--            </div>-->
+      <!--            &lt;!&ndash; //.display-table &ndash;&gt;-->
+      <!--          </div>-->
+      <!--          &lt;!&ndash; //.bg-cover &ndash;&gt;-->
+
+      <!--          <div-->
+      <!--            class="bg-cover bg-overlay-black-7 display-block height-100 width-100"-->
+      <!--          >-->
+      <!--            <div-->
+      <!--              class="display-table height-100 position-absolute position-top position-left width-100"-->
+      <!--            >-->
+      <!--              <div class="display-table-cell vertical-align-middle">-->
+      <!--                <div class="container">-->
+      <!--                  <div class="row">-->
+      <!--                    <div class="col-md-10 col-md-offset-1 text-center">-->
+      <!--                      <h2-->
+      <!--                        class="font-family-alt font-weight-900 letter-spacing-2 text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5"-->
+      <!--                      >-->
+      <!--                        <span class="text-base-color">TED<sup>x</sup></span>YCCE-->
+      <!--                      </h2>-->
+      <!--                      <br />-->
+      <!--                      <h3-->
+      <!--                        class="font-weight-700 letter-spacing-2 text-white xs-title-large sm-title-extra-large title-extra-large-3"-->
+      <!--                      >-->
+      <!--                        Connecting the levels inbetween-->
+      <!--                      </h3>-->
+      <!--                      &lt;!&ndash; <br>-->
+      <!--                    <a href="/register/" class="btn btn-base-color sm-btn-medium btn-large">-->
+      <!--                      Register Now-->
+      <!--                    </a> &ndash;&gt;-->
+      <!--                    </div>-->
+      <!--                    &lt;!&ndash; //.col-md-10 &ndash;&gt;-->
+      <!--                  </div>-->
+      <!--                  &lt;!&ndash; //.row &ndash;&gt;-->
+      <!--                </div>-->
+      <!--                &lt;!&ndash; //.container &ndash;&gt;-->
+      <!--              </div>-->
+      <!--              &lt;!&ndash; //.display-table-cell &ndash;&gt;-->
+      <!--            </div>-->
+      <!--            &lt;!&ndash; //.display-table &ndash;&gt;-->
+      <!--          </div>-->
+      <!--          &lt;!&ndash; //.bg-cover &ndash;&gt;-->
+
+      <!--          <div-->
+      <!--            class="bg-cover bg-overlay-black-7 display-block height-100 width-100"-->
+      <!--          >-->
+      <!--            <div-->
+      <!--              class="display-table height-100 position-absolute position-top position-left width-100"-->
+      <!--            >-->
+      <!--              <div class="display-table-cell vertical-align-middle">-->
+      <!--                <div class="container">-->
+      <!--                  <div class="row">-->
+      <!--                    <div class="col-md-10 col-md-offset-1 text-center">-->
+      <!--                      <h2-->
+      <!--                        class="font-family-alt font-weight-900 letter-spacing-2 text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5"-->
+      <!--                      >-->
+      <!--                        <span class="text-base-color">TED<sup>x</sup></span>YCCE-->
+      <!--                      </h2>-->
+      <!--                      <br />-->
+      <!--                      <h3-->
+      <!--                        class="font-weight-700 letter-spacing-2 text-white xs-title-large sm-title-extra-large title-extra-large-3"-->
+      <!--                      >-->
+      <!--                        Connecting the levels inbetween-->
+      <!--                      </h3>-->
+      <!--                      &lt;!&ndash; <br>-->
+      <!--                    <a href="/register/" class="btn btn-base-color sm-btn-medium btn-large">-->
+      <!--                      Register Now-->
+      <!--                    </a> &ndash;&gt;-->
+      <!--                    </div>-->
+      <!--                    &lt;!&ndash; //.col-md-10 &ndash;&gt;-->
+      <!--                  </div>-->
+      <!--                  &lt;!&ndash; //.row &ndash;&gt;-->
+      <!--                </div>-->
+      <!--                &lt;!&ndash; //.container &ndash;&gt;-->
+      <!--              </div>-->
+      <!--              &lt;!&ndash; //.display-table-cell &ndash;&gt;-->
+      <!--            </div>-->
+      <!--            &lt;!&ndash; //.display-table &ndash;&gt;-->
+      <!--          </div>-->
+      <!--          &lt;!&ndash; //.bg-cover &ndash;&gt;-->
+      <!--        </div>-->
+      <!--        &lt;!&ndash; //.slides &ndash;&gt;-->
+      <!--      </div>-->
+      <!-- //.bg-slideshow-wrapper -->
+
+      <div
+        class="bg-slideshow-wrapper flexslider height-100 no-border no-border-radius no-margin width-100"
+      >
+        <div class="slides height-100 width-100">
+          <div
+            class="bg-cover bg-overlay-black-7 display-block height-100 width-100"
+          >
+            <div
+              class="display-table height-100 position-absolute position-top position-left width-100"
+            >
+              <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-xs-8 col-sm-6 col-md-4 col-xs-offset-2 col-sm-offset-3 col-md-offset-1 text-center fix-mobile"
+                    >
+                      <img
+                        src="res/images/gifs/under-the-stairs.gif"
+                        alt=""
+                        width="360vw"
+                      />
+                    </div>
+                    <div
+                      class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-1 text-center"
+                      style="margin-top: 6.5vw"
+                    >
+                      <h2
+                        class="font-family-alt font-weight-900 letter-spacing-2 text-white text-left xs-title-large sm-title-large title-extra-large"
+                      >
+                        Celebrating those invisible
+                        <span class="text-base-color">stairs</span> that helped
+                        us climbing towards our destiny, and becoming who we are
+                        today.
+                      </h2>
+                      <br />
+                      <!-- <br>
+                    <a href="/register/" class="btn btn-base-color sm-btn-medium btn-large">
+                      Register Now
+                    </a> -->
+                    </div>
+                    <!-- //.col-md-10 -->
+                  </div>
+                  <!-- //.row -->
+                </div>
+                <!-- //.container -->
+              </div>
+              <!-- //.display-table-cell -->
+            </div>
+            <!-- //.display-table &ndash;&gt;-->
+          </div>
+          <!-- //.bg-cover &ndash;&gt;-->
+          <div
+            class="bg-cover bg-overlay-black-7 display-block height-100 width-100"
+          >
+            <div
+              class="display-table height-100 position-absolute position-top position-left width-100"
+            >
+              <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-xs-8 col-sm-6 col-md-4 col-xs-offset-2 col-sm-offset-3 col-md-offset-1 text-center fix-mobile"
+                    >
+                      <img
+                        src="res/images/gifs/under-the-stairs.gif"
+                        alt=""
+                        width="360vw"
+                      />
+                    </div>
+                    <div
+                      class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-1 text-center"
+                      style="margin-top: 6.5vw"
+                    >
+                      <h2
+                        class="font-family-alt font-weight-900 letter-spacing-2 text-white text-left xs-title-large sm-title-large title-extra-large"
+                      >
+                        Celebrating those invisible
+                        <span class="text-base-color">stairs</span> that helped
+                        us climbing towards our destiny, and becoming who we are
+                        today.
+                      </h2>
+                      <br />
+                      <!-- <br>
+                    <a href="/register/" class="btn btn-base-color sm-btn-medium btn-large">
+                      Register Now
+                    </a> -->
+                    </div>
+                    <!-- //.col-md-10 -->
+                  </div>
+                  <!-- //.row -->
+                </div>
+                <!-- //.container -->
+              </div>
+              <!-- //.display-table-cell -->
+            </div>
+            <!-- //.display-table &ndash;&gt;-->
+          </div>
+          <!-- //.bg-cover &ndash;&gt;-->
+          <div
+            class="bg-cover bg-overlay-black-7 display-block height-100 width-100"
+          >
+            <div
+              class="display-table height-100 position-absolute position-top position-left width-100"
+            >
+              <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-xs-8 col-sm-6 col-md-4 col-xs-offset-2 col-sm-offset-3 col-md-offset-1 text-center fix-mobile"
+                    >
+                      <img
+                        src="res/images/gifs/under-the-stairs.gif"
+                        alt=""
+                        width="360vw"
+                      />
+                    </div>
+                    <div
+                      class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-1 text-center"
+                      style="margin-top: 6.5vw"
+                    >
+                      <h2
+                        class="font-family-alt font-weight-900 letter-spacing-2 text-white text-left xs-title-large sm-title-large title-extra-large"
+                      >
+                        Celebrating those invisible
+                        <span class="text-base-color">stairs</span> that helped
+                        us climbing towards our destiny, and becoming who we are
+                        today.
+                      </h2>
+                      <br />
+                      <!-- <br>
+                    <a href="/register/" class="btn btn-base-color sm-btn-medium btn-large">
+                      Register Now
+                    </a> -->
+                    </div>
+                    <!-- //.col-md-10 -->
+                  </div>
+                  <!-- //.row -->
+                </div>
+                <!-- //.container -->
+              </div>
+              <!-- //.display-table-cell -->
+            </div>
+            <!-- //.display-table &ndash;&gt;-->
+          </div>
+          <!-- //.bg-cover &ndash;&gt;-->
+
+          <!--          BKP div-->
+          <!--          <div-->
+          <!--                  class="bg-cover bg-overlay-black-7 display-block height-100 width-100"-->
+          <!--          >-->
+          <!--            <div-->
+          <!--                    class="display-table height-100 position-absolute position-top position-left width-100"-->
+          <!--            >-->
+          <!--              <div class="display-table-cell vertical-align-middle">-->
+          <!--                <div class="container">-->
+          <!--                  <div class="row">-->
+          <!--                    <div class="col-md-4 col-md-offset-1 text-center fix-mobile">-->
+          <!--                      <img-->
+          <!--                              src="assets/theme-graphic.svg"-->
+          <!--                              alt=""-->
+          <!--                              width="360vw"-->
+          <!--                      />-->
+          <!--                      <img-->
+          <!--                              src="img/stairs3.gif"-->
+          <!--                              alt=""-->
+          <!--                              width="270vw"-->
+          <!--                              style="-->
+          <!--                          position: relative;-->
+          <!--                          margin-top: -27.8em;-->
+          <!--                          margin-left: 4em;-->
+          <!--                          height: 20em;-->
+          <!--                          transform: rotate(-2.3deg);-->
+          <!--                          width: 18.3em;-->
+          <!--                        "-->
+          <!--                      />-->
+          <!--                    </div>-->
+          <!--                    <div-->
+          <!--                            class="col-md-6 col-md-offset-1 text-center"-->
+          <!--                            style="margin-top: 6.5vw"-->
+          <!--                    >-->
+          <!--                      <h2-->
+          <!--                              class="font-family-alt font-weight-900 letter-spacing-2 text-white text-left xs-title-extra-large sm-title-extra-large title-extra-large"-->
+          <!--                      >-->
+          <!--                        Celebrating those invisible-->
+          <!--                        <span class="text-base-color">stairs</span> that helped-->
+          <!--                        us climbing towards our destiny, and becoming who we are-->
+          <!--                        today.-->
+          <!--                      </h2>-->
+          <!--                      <br />-->
+          <!--                      &lt;!&ndash; <br>-->
+          <!--                    <a href="/register/" class="btn btn-base-color sm-btn-medium btn-large">-->
+          <!--                      Register Now-->
+          <!--                    </a> &ndash;&gt;-->
+          <!--                    </div>-->
+          <!--                    &lt;!&ndash; //.col-md-10 &ndash;&gt;-->
+          <!--                  </div>-->
+          <!--                  &lt;!&ndash; //.row &ndash;&gt;-->
+          <!--                </div>-->
+          <!--                &lt;!&ndash; //.container &ndash;&gt;-->
+          <!--              </div>-->
+          <!--              &lt;!&ndash; //.display-table-cell &ndash;&gt;-->
+          <!--            </div>-->
+          <!--            &lt;!&ndash; //.display-table &ndash;&gt;&ndash;&gt;-->
+          <!--          </div>-->
+          <!--          &lt;!&ndash; //.bg-cover &ndash;&gt;&ndash;&gt;-->
+        </div>
+      </div>
+      <!-- //.bg-cover -->
+    </section>
+    <!-- //Section - Home End -->
+
+    <!-- Section - About Start -->
+    <section id="about" class="bg-white-3 pull-up">
+      <div class="container">
+        <div class="row text-justify">
+          <div class="col-sm-6 col-md-7 xs-margin-5 xs-no-margin-tb">
+            <h2
+              class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2"
+            >
+              About the event
+            </h2>
+            <span
+              class="bg-base-color margin-4 no-margin-bottom no-margin-rl separator-line-extra-thick-long"
+            ></span>
+            <div class="row">
+              <div class="col-md-12">
+                <p
+                  class="font-family-alt margin-5-5 no-margin-bottom no-margin-rl sm-text-large text-extra-large text-gray-dark-2"
                 >
+                  We all are aware of the need for stairs, may it be for
+                  climbing on the terrace or those invisible ones needed to
+                  climb to your destiny. Same comes when we imagine for a
+                  society of dreams. Each day, continuous efforts, trying to get
+                  one step ahead than we were on yesterday, to enjoy the
+                  prettiest view of accomplishment.
+                </p>
+
+                <p
+                  class="font-family-alt margin-5-5 no-margin-bottom no-margin-rl sm-text-large text-extra-large text-gray-dark-2"
+                >
+                  Every single step you take needs a lot of courage, unending
+                  efforts, awareness, innovation, management, knowing the proper
+                  direction to walk into an immense passion to achieve it. To
+                  unwrap the invisible foundation of the stairs and explore its
+                  incredible power, join us at
+                  <b
+                    ><span class="text-base-color">TED<sup>x</sup></span
+                    >YCCE 2021</b
+                  >
+                  with our broad theme <b>“Under the Stairs”</b> which is an
+                  idea to uncover the hidden treasure below the Stairs.
+                </p>
+              </div>
+              <!-- //.col-sm-6 -->
+            </div>
+            <!-- //.row -->
+          </div>
+          <!-- //.col-sm-6 -->
+
+          <div
+            class="col-sm-6 col-md-4 col-md-offset-1 xs-margin-5 xs-no-margin-bottom"
+          >
+            <div class="testimonial">
+              <div
+                class="bg-white border border-gray-light border-round padding-5 width-100"
+              >
+                <h4 class="font-weight-700 font-family-alt">About TEDx</h4>
+                <br />
+                <p class="no-margin text-gray-dark- text-large">
+                  In the spirit of ideas worth spreading, TEDx is a program for
+                  local, self-organized events that bring people together to
+                  share a TED-like experience. At a TEDx event, TEDTalks video
+                  and live speakers combine to spark deep discussion and
+                  connection. These local, self-organized events are branded
+                  with TEDx, where x = an independently organized TED event. The
+                  TED Conference provides general guidance for the TEDx program,
+                  but individual TEDx events are self-organized.
+                </p>
+              </div>
+              <!-- //.bg-white -->
+            </div>
+            <!-- //.testimonial -->
+          </div>
+          <!-- //.col-sm-6 -->
+        </div>
+      </div>
+      <!-- //.container -->
+    </section>
+    <!-- //Section - About End -->
+
+    <!-- Section - Venue Start -->
+    <section
+      id="venue"
+      class="bg-cover bg-overlay-black-4 display-table height-100 no-padding width-100"
+    >
+      <div class="display-table-cell vertical-align-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h3
+                class="display-block font-family-alt font-weight-900 letter-spacing-2 text-uppercase text-white xs-title-extra-large-4 title-extra-large-4"
+              >
+                Venue
               </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-    </div>
-    <div class="divider">&nbsp;</div>
-    <!-- what is tedx section -->
-    <div class="whats-tedx-ted">
-      <div class="heading">What is <span class="red">TEDx</span>?</div>
-      <div class="container">
-        <div class="row mt-5">
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5">
-            <div class="tedx-para">
-              In the spirit of ideas worth spreading, TED has created a program
-              called <span class="red-ted">TEDx</span>.
-              <span class="red-ted">TEDx</span> is a program of local,
-              self-organized events that bring people together to share a
-              <span class="red-ted">TED</span
-              ><span class="red-text">-like</span> experience. Our event is
-              called <span class="red-ted">TEDxYCCE</span>, where
-              <span class="red-text"
-                >x = independently organized
-                <span class="red-ted">TED</span> event</span
-              >. At our <span class="red-ted">TEDxYCCE</span> event,
-              <span class="red-ted">TED</span>
-              <span class="red-text">Talks</span> video and live speakers will
-              combine to spark deep discussion and connection in a small group.
-              The <span class="red-ted">TED</span> Conference provides general
-              guidance for the <span class="red-ted">TEDx</span> program, but
-              individual
-              <span class="red-ted">TEDx</span>
-              events, including ours, are self-organized. For information about
-              <span class="red-ted">TEDx</span>, visit:
-              <a href="http://www.ted.com/tedx" class="red-text"
-                >http://www.ted.com/tedx</a
+              <br />
+              <p
+                class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-white xs-title-small title-large text-uppercase font-weight-700"
               >
-            </div>
-
-            <br />
-            <!-- tedx licensed card -->
-            <div class="red-card-licensed">
-              This independent TEDx event is operated under license from TED.
-            </div>
-          </div>
-          <!-- tedx image  -->
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
-            <img
-              src="./img/tedx.jpg"
-              class="tedx-image"
-              alt="TEDx image red Crafted TEDx"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- whats ted section -->
-    <div class="whats-tedx-ted">
-      <div class="heading">What is <span class="red">TED</span>?</div>
-      <div class="container">
-        <div class="row mt-5 mb-5">
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
-            <img src="./img/ted-img.jpg" alt="TED Stage" class="ted-image" />
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5">
-            <div class="ted-para">
-              Started in California 26 years ago,
-              <span class="red-ted">TED</span> is a nonprofit devoted to
-              spreading ideas, usually in the form of short, powerful talks (18
-              minutes or less). <span class="red-ted">TED</span> began as a
-              conference where
-              <span class="red-text"
-                >Technology, Entertainment and Design converged,</span
-              >
-              and today covers almost all topics — from science to business to
-              global issues — in more than 100 languages.
-            </div>
-            <br />
-            <div class="ted-para2">
-              For information about <span class="red-ted">TED</span>, visit:
+                Shri Datta Meghe Auditorium,<br />
+                Yeshwantrao Chavan College of Engineering, Nagpur
+              </p>
+              <br />
               <a
-                href="http://www.ted.com/about/ourorganization"
-                class="red-text"
-                >http://www.ted.com/about/ourorganization</a
+                href="https://goo.gl/maps/mVnF99diWo4zZPWZ7"
+                target="_blank"
+                class="btn btn-outline-white sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl"
               >
+                View location on map
+              </a>
             </div>
+            <!-- //.col-md-8 -->
           </div>
+          <!-- //.row -->
         </div>
+        <!-- //.container -->
       </div>
-    </div>
+      <!-- //.display-table-cell -->
+    </section>
+    <!-- //Section - Venue End -->
 
-    <!-- connect with us section -->
-    <footer class="footer container-fluid pb-4" id="footer">
+    <!-- Section - Social start -->
+<!--    <section id="social" class="bg-gray-light-2 pull-up">-->
+<!--      <div class="container xs-margin-5 xs-no-margin-tb">-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-6">-->
+<!--            <h2-->
+<!--              class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2"-->
+<!--            >-->
+<!--              Connect with us-->
+<!--            </h2>-->
+<!--            <span-->
+<!--              class="bg-base-color margin-4 no-margin-bottom no-margin-rl separator-line-extra-thick-long"-->
+<!--            ></span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; //.row &ndash;&gt;-->
+<!--        <br /><br />-->
+<!--        <div class="row">-->
+<!--          &lt;!&ndash; Social Box &ndash;&gt;-->
+<!--          <div class="features-box col-sm-6 col-md-4">-->
+<!--            <div-->
+<!--              class="border border-gray-light border-round box-shadow-yes position-relative bg-white"-->
+<!--            >-->
+<!--              <div-->
+<!--                class="display-table height-100 no-padding-rl padding-7 width-100"-->
+<!--              >-->
+<!--                <div-->
+<!--                  class="display-table-cell no-padding-tb padding-8 vertical-align-middle"-->
+<!--                >-->
+<!--                  <span-->
+<!--                    class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center"-->
+<!--                  >-->
+<!--                    Facebook-->
+<!--                  </span>-->
+
+<!--                  &lt;!&ndash; Facebook plugin &ndash;&gt;-->
+<!--                  <div id="fb-root"></div>-->
+
+<!--                  &lt;!&ndash;                  <script>&ndash;&gt;-->
+<!--                  &lt;!&ndash;                    (function (d, s, id) {&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      var js,&ndash;&gt;-->
+<!--                  &lt;!&ndash;                        fjs = d.getElementsByTagName(s)[0];&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      if (d.getElementById(id)) return;&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      js = d.createElement(s);&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      js.id = id;&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      js.src =&ndash;&gt;-->
+<!--                  &lt;!&ndash;                        "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=203606196348015";&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      fjs.parentNode.insertBefore(js, fjs);&ndash;&gt;-->
+<!--                  &lt;!&ndash;                    })(document, "script", "facebook-jssdk");&ndash;&gt;-->
+<!--                  &lt;!&ndash;                  </script>&ndash;&gt;-->
+
+<!--                  <div-->
+<!--                    class="fb-page"-->
+<!--                    data-href="https://www.facebook.com/tedxycceofficial/"-->
+<!--                    data-tabs="timeline"-->
+<!--                    data-small-header="true"-->
+<!--                    data-adapt-container-width="true"-->
+<!--                    data-hide-cover="true"-->
+<!--                    data-show-facepile="false"-->
+<!--                  >-->
+<!--                    <blockquote-->
+<!--                      cite="https://www.facebook.com/tedxycceofficial/"-->
+<!--                      class="fb-xfbml-parse-ignore"-->
+<!--                    >-->
+<!--                      <a href="https://www.facebook.com/tedxycceofficial/"-->
+<!--                        >TEDxYCCE</a-->
+<!--                      >-->
+<!--                    </blockquote>-->
+<!--                  </div>-->
+<!--                  &lt;!&ndash; //Facebook plugin &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash; //.display-table-cell &ndash;&gt;-->
+<!--              </div>-->
+<!--              &lt;!&ndash; //.display-table &ndash;&gt;-->
+<!--            </div>-->
+<!--            &lt;!&ndash; //.border &ndash;&gt;-->
+<!--          </div>-->
+<!--          &lt;!&ndash; //Social Box &ndash;&gt;-->
+
+<!--          &lt;!&ndash; Social Box &ndash;&gt;-->
+<!--          <div-->
+<!--            class="features-box col-sm-6 col-md-4 xs-margin-4 xs-no-margin-rl xs-no-margin-bottom"-->
+<!--          >-->
+<!--            <div-->
+<!--              class="border border-gray-light border-round box-shadow-yes position-relative bg-white"-->
+<!--            >-->
+<!--              <div-->
+<!--                class="display-table height-100 no-padding-rl padding-7 width-100"-->
+<!--              >-->
+<!--                <div-->
+<!--                  class="display-table-cell no-padding-tb padding-8 vertical-align-middle"-->
+<!--                >-->
+<!--                  <span-->
+<!--                    class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center"-->
+<!--                  >-->
+<!--                    Twitter-->
+<!--                  </span>-->
+
+<!--                  &lt;!&ndash; Twitter timeline &ndash;&gt;-->
+<!--                  <a-->
+<!--                    class="twitter-timeline"-->
+<!--                    data-height="493"-->
+<!--                    data-chrome="noheader, nofooter"-->
+<!--                    data-dnt="true"-->
+<!--                    href="https://twitter.com/tedxycce"-->
+<!--                    >Tweets by TEDxYCCE</a-->
+<!--                  >-->
+<!--                  <script-->
+<!--                    async-->
+<!--                    src="https://platform.twitter.com/widgets.js"-->
+<!--                    charset="utf-8"-->
+<!--                  ></script>-->
+<!--                  &lt;!&ndash; //Twitter timeline &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash; //.display-table-cell &ndash;&gt;-->
+<!--              </div>-->
+<!--              &lt;!&ndash; //.display-table &ndash;&gt;-->
+<!--            </div>-->
+<!--            &lt;!&ndash; //.border &ndash;&gt;-->
+<!--          </div>-->
+<!--          &lt;!&ndash; //Social Box &ndash;&gt;-->
+
+<!--          &lt;!&ndash; Social Box &ndash;&gt;-->
+<!--          <div-->
+<!--            class="features-box col-sm-6 col-md-4 sm-margin-4 sm-no-margin-rl sm-no-margin-bottom"-->
+<!--          >-->
+<!--            <div-->
+<!--              class="border border-gray-light border-round box-shadow-yes position-relative bg-white"-->
+<!--            >-->
+<!--              <div-->
+<!--                class="display-table height-100 no-padding-rl padding-7 width-100"-->
+<!--              >-->
+<!--                <div-->
+<!--                  class="display-table-cell no-padding-tb padding-8 vertical-align-middle"-->
+<!--                >-->
+<!--                  <span-->
+<!--                    class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center"-->
+<!--                  >-->
+<!--                    Instagram-->
+<!--                  </span>-->
+
+<!--                  &lt;!&ndash; Instagram posts &ndash;&gt;-->
+<!--                  &lt;!&ndash;                  <script src="@anmol"></script>&ndash;&gt;-->
+<!--                  &lt;!&ndash;                  <div style="height: 500px; overflow-y: auto">&ndash;&gt;-->
+<!--                  &lt;!&ndash;                    <iframe&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      src="@anmol"&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      class="snapwidget-widget"&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      allowTransparency="true"&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      frameborder="0"&ndash;&gt;-->
+<!--                  &lt;!&ndash;                      style="border: none; width: 100%"&ndash;&gt;-->
+<!--                  &lt;!&ndash;                    ></iframe>&ndash;&gt;-->
+<!--                  &lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--                  &lt;!&ndash; //Instagram posts &ndash;&gt;-->
+<!--                  <blockquote-->
+<!--                    cite="https://www.instagram.com/tedxycce/"-->
+<!--                    class="fb-xfbml-parse-ignore"-->
+<!--                  >-->
+<!--                    <a href="https://www.instagram.com/tedxycce/">TEDxYCCE</a>-->
+<!--                  </blockquote>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; //.display-table-cell &ndash;&gt;-->
+<!--              </div>-->
+<!--              &lt;!&ndash; //.display-table &ndash;&gt;-->
+<!--            </div>-->
+<!--            &lt;!&ndash; //.border &ndash;&gt;-->
+<!--          </div>-->
+<!--          &lt;!&ndash; //Social Box &ndash;&gt;-->
+<!--        </div>-->
+<!--        &lt;!&ndash; //.row &ndash;&gt;-->
+<!--      </div>-->
+<!--      &lt;!&ndash; //.container &ndash;&gt;-->
+<!--    </section>-->
+    <!-- //Section - Social end -->
+
+    <!-- Section - Event banner start -->
+    <section id="event-banner" class="bg-white pull-up">
       <div class="container">
         <div class="row">
-          <img
-            src="./assets/connect-graphic.svg"
-            class="footer-graphic col col-xs-12 col-lg-6"
-            alt="graphic with lots of social activity going on"
-          />
-          <div class="col col-xs-12 col-lg-6">
-            <div class="content-wrapper text-center">
-              <br /><br />
-              <div class="heading">Want to talk with us?</div>
-              <br />
-              <!-- mail -->
-              <a class="btn mail-btn" href="mailto:tedxycce@gmail.com">
-                Drop us a mail
-              </a>
-              <br /><br />
-              <!-- or -->
-              <div class="or">OR</div>
-              <br />
-              <!-- social touch -->
-              <div class="heading2">Connect with us on:</div>
-              <div class="links">
-                <br />
-                <!-- facebook -->
-                <a
-                  href="https://www.facebook.com/tedxycceofficial"
-                  class="facebook-link"
-                >
-                  <i class="fab fa-facebook-square fa-3x"></i>
-                  <span class="social-text">/tedxycceofficial</span>
-                </a>
-                <br />
-                <!-- twitter -->
-                <a href="https://twitter.com/tedxycce" class="twitter-link">
-                  <i class="fab fa-twitter fa-3x"></i>
-                  <span class="social-text">/tedxycce</span>
-                </a>
-                <br />
-                <!-- instagram -->
-                <a
-                  href="https://www.instagram.com/tedxycce/"
-                  class="insta-link"
-                >
-                  <img
-                    src="./img/insta.png"
-                    alt="instagram-logo"
-                    class="insta-logo"
-                    srcset=""
-                    aria-hidden="true"
-                  />
-                  <span class="social-text">/tedxycce</span>
-                </a>
-                <br />
-                <!-- LinkedIn  -->
-                <a
-                  href="https://www.linkedin.com/company/tedxycce/"
-                  class="linkedin-link"
-                >
-                  <i class="fab fa-linkedin fa-3x"></i>
-                  <span class="social-text">/tedxycce</span>
-                </a>
+          <div class="col-sm-4 text-center">
+            <i
+              class="fa fa-clock-o display-block text-base-color title-extra-large-2"
+            ></i>
+            <span
+              class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+            >
+              Date &amp; Time
+            </span>
+            <p
+              class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2"
+            >
+              March 20, 2021<br />
+            </p>
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div
+            class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center"
+          >
+            <i
+              class="fa fa-map-marker display-block text-base-color title-extra-large-2"
+            ></i>
+            <span
+              class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+            >
+              Venue
+            </span>
+            <p
+              class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2"
+            >
+              Shri Datta Meghe Auditorium,<br />
+              Yeshwantrao Chavan College of Engineering, Nagpur
+            </p>
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div
+            id="banner-registration"
+            class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center"
+          >
+            <a
+              href="Sponsorship_Proposal_TEDxYCCE.pdf"
+              class="btn btn-outline-base-color sm-btn-medium btn-large no-margin-rl"
+            >
+              <span>Download<br />Sponsorship Document</span>
+            </a>
+          </div>
+          <!-- //.col-sm-4 -->
+        </div>
+        <!-- //.row -->
+      </div>
+    </section>
+    <!-- //Section - Event banner end -->
+
+    <!-- Section - Parallax banner start -->
+    <section
+      id="home-bg-parallax"
+      class="height-50 no-padding overflow-hidden width-100"
+    >
+      <!-- BG Parallax -->
+      <div class="bg-parallax bg-overlay-black-5 width-100"></div>
+
+      <div
+        class="display-table height-100 position-absolute position-top position-left width-100"
+      >
+        <div class="display-table-cell vertical-align-middle">
+          <div class="container">
+            <div class="row">
+              <div class="countdown-timer">
+                <div class="days">
+                  <span class="value">00</span>
+                  <span class="label">DAYS</span>
+                </div>
+                <div class="hours">
+                  <span class="value">00</span>
+                  <span class="label">HOURS</span>
+                </div>
+                <div class="minutes">
+                  <span class="value">00</span>
+                  <span class="label">MINS</span>
+                </div>
+                <div class="seconds">
+                  <span class="value">00</span>
+                  <span class="label">SEC</span>
+                </div>
               </div>
             </div>
+            <!-- //.row -->
           </div>
+          <!-- //.container -->
         </div>
+        <!-- //.display-table-cell -->
       </div>
-    </footer>
-    <div class="copyright text-center">Copyright &copy; 2020 TEDxYCCE</div>
+      <!-- //.display-table -->
+    </section>
+    <!-- //Section - Parallax banner end -->
 
-    <script src="./js/app.js"></script>
-    <!-- jquery slim -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-    <!-- font awesome js -->
-    <script defer src="fontawesome/js/all.js"></script>
+    <!-- Footer Start -->
+    <footer class="footer bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="footer-logo xs-text-center">
+              <img src="res/images/logos/TXYLogo_light.png" alt="" />
+            </div>
+            <!-- //.footer-logo -->
+            <p class="disclaimer xs-text-center">
+              This independent TEDx event is operated under license from TED.
+            </p>
+            <!-- //.disclaimer -->
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div class="col-sm-8">
+            <div class="footer-social text-right">
+              <ul
+                class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium"
+              >
+                <li>
+                  <a href="https://facebook.com/tedxycceofficial"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/tedxycce"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/tedxycce"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- //.footer-social -->
+          </div>
+          <!-- //.col-sm-8 -->
+        </div>
+        <!-- //.row -->
+      </div>
+      <!-- //.container -->
+    </footer>
+    <!-- //Footer End -->
+
+    <!-- Scroll to top -->
+    <a href="#page-top" class="page-scroll scroll-to-top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+
+    <!-- jQuery -->
+    <script src="res/js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="res/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="res/js/pace.min.js"></script>
+    <script src="res/js/debouncer.min.js"></script>
+    <script src="res/js/jquery.easing.min.js"></script>
+    <script src="res/js/jquery.inview.min.js"></script>
+    <script src="res/js/jquery.matchHeight.js"></script>
+    <script src="res/js/isotope.pkgd.min.js"></script>
+    <script src="res/js/imagesloaded.pkgd.min.js"></script>
+    <script src="res/js/flickity.pkgd.min.js"></script>
+    <script src="res/js/jquery.magnific-popup.min.js"></script>
+    <script src="res/js/jquery.validate.min.js"></script>
+
+    <!-- BG slideshow -->
+    <script src="res/js/jquery.flexslider.min.js"></script>
+
+    <!-- BG Parallax JS -->
+    <script src="res/js/TweenMax.min.js"></script>
+    <script src="res/js/ScrollMagic.min.js"></script>
+    <script src="res/js/animation.gsap.min.js"></script>
+
+    <!-- Theme -->
+    <script src="res/js/main.js"></script>
+
+    <!-- Countdown -->
+    <script src="res/js/jquery.countdown.min.js"></script>
+    <script src="res/js/countdown.js"></script>
   </body>
 </html>
