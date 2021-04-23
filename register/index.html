@@ -86,6 +86,220 @@
     <!--[if lt IE 8]>
       <script src="../res/js/modernizr.min.js"></script>
     <![endif]-->
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Lato:700);
+      /*body {*/
+      /*  font-family: 'lato', sans-serif;*/
+      /*  -webkit-font-smoothing: antialiased;*/
+      /*  background: linear-gradient(35deg, #84fab0, #8fd3f4);*/
+      /*  padding: 0;*/
+      /*  margin: 0;*/
+      /*  height: 100vh;*/
+      /*}*/
+
+      :root {
+        --tedred: #e62b1e;
+        --textdark: #272727;
+      }
+
+      .wrapper-card {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 40px auto;
+        width: 77%;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 0 1px 1px transparent;
+        flex: 1;
+        margin: 8px;
+        padding: 30px;
+        position: relative;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        font-weight: bold;
+      }
+
+      .card.popular {
+        margin-top: -10px;
+        margin-bottom: -10px;
+      }
+
+      .card.popular .card-title h3 {
+        color: var(--textdark);
+        font-size: 22px;
+        font-weight: bolder;
+      }
+
+      .card.popular .card-price {
+        margin: 50px;
+      }
+
+      .card.popular .card-price h2 {
+        color: var(--textdark);
+        /*font-size: 60px;*/
+      }
+
+      .card.popular .card-action button {
+        background-color: var(--tedred);
+        border-radius: 80px;
+        color: #fff;
+        font-size: 17px;
+        margin-top: -15px;
+        padding: 15px;
+        height: 80px;
+      }
+
+      .card.popular .card-action button:hover {
+        background-color: var(--tedred);
+        font-size: 23px;
+      }
+
+      .card {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card-ribbon {
+        position: absolute;
+        overflow: hidden;
+        top: -10px;
+        left: -10px;
+        width: 114px;
+        height: 112px;
+      }
+
+      .card-ribbon span {
+        position: absolute;
+        display: block;
+        width: 160px;
+        padding: 10px 0;
+        background-color: #dfdfdf;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        color: var(--tedred);
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        left: -35px;
+        top: 25px;
+        transform: rotate(-45deg);
+        font-weight: bolder;
+      }
+
+      .card-ribbon::before,
+      .card-ribbon::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: block;
+        border: 5px solid var(--tedred);
+        border-top-color: transparent;
+        border-left-color: transparent;
+      }
+
+      .card-ribbon::before {
+        top: 0;
+        right: 0;
+      }
+
+      .card-ribbon::after {
+        bottom: 0;
+        left: 0;
+      }
+
+      .card-title h3 {
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+
+      .card-title h4 {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .card-price {
+        margin: 60px 0;
+      }
+
+      .card-price h2 {
+        font-size: 46px;
+        font-weight: bolder;
+      }
+
+      .card-price h2 sup {
+        font-size: 15px;
+        display: inline-block;
+        margin-left: -20px;
+        width: 10px;
+        font-weight: bolder;
+      }
+
+      .card-price h2 small {
+        color: rgba(0, 0, 0, 0.3);
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+
+      .card-description ul {
+        display: block;
+        list-style: none;
+        margin: 60px 0;
+        padding: 0;
+      }
+
+      .card-description li {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 15px;
+        margin: 0 0 15px;
+      }
+
+      .card-description li::before {
+        font-family: FontAwesome;
+        content: "\f00c";
+        padding: 0 5px 0 0;
+        color: rgba(0, 0, 0, 0.15);
+      }
+
+      .card-action button {
+        background: transparent;
+        border: 2px solid var(--tedred);
+        border-radius: 30px;
+        color: var(--tedred);
+        cursor: pointer;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 20px;
+        width: 100%;
+        height: 60px;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card-action button:hover {
+        background-color: var(--tedred);
+        box-shadow: 0 2px 4px #196090;
+        color: #fff;
+        font-size: 17px;
+      }
+
+      .card-action a:hover {
+        /*background-color: var(--tedred);*/
+        box-shadow: 0 2px 4px #196090;
+        transform: scale(1.05);
+        /*color: #fff;*/
+        /*font-size: 17px;*/
+      }
+      .card-action a {
+        border-radius: 10px;
+      }
+    </style>
   </head>
 
   <body id="page-top">
@@ -142,7 +356,7 @@
               <li>
                 <a href="../contact/" class="line-height-unset">Contact Us</a>
               </li>
-              <li><a href="#page-top" class="page-scroll">Register</a></li>
+              <li class="bg-base-color"><a href="#page-top" class="page-scroll">Register</a></li>
             </ul>
           </div>
           <!-- //.navbar-collapse -->
@@ -380,28 +594,124 @@
 
         <span class="bg-gray-light-2 separator-line-full"></span>
 
-        <div class="row margin-5 no-margin-rl no-margin-bottom">
-          <div class="col-3 col-md-3 padding-4 no-padding-tb"></div>
-          <div class="col-3 col-md-6 padding-4 no-padding-tb">
-            <div class="row text-center">
-              <h3
-                class="font-family-alt font-weight-900 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color"
-              >
-                Registrations
-              </h3>
-            </div>
-            <br />
-            <p class="text-center">
-              Registrations will start from <strong>April 23rd, 2021</strong> </p>
-            <div class="margin-8 no-margin-bottom no-margin-rl text-center">
-              <a
-                href="#"
-                target="_blank"
-                class="btn bg-base-color sm-btn-medium btn-large no-margin-rl text-white"
-                
-              >
-                Book my seat!
-              </a>
+<!--        <div class="row margin-5 no-margin-rl no-margin-bottom">-->
+<!--          <div class="col-sm-12 col-md-12 col-lg-12 padding-4 no-padding-tb">-->
+<!--            <div class="row text-center">-->
+<!--              <div class="col-12 margin-3">-->
+<!--                <h3-->
+<!--                  class="font-family-alt font-weight-900 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color"-->
+<!--                >-->
+<!--                  Registrations-->
+<!--                </h3>-->
+<!--                <br /><br />-->
+<!--                <p class="text-center">-->
+<!--                  Registrations will start from <strong>April 23rd, 2021</strong> </p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row registration-points" style="font-size: 1.1em;">-->
+<!--              <div class="col-lg-offset-4 col-lg-4 margin-4">-->
+<!--                <p><b>VIP Ticket</b>, includes:</p>-->
+<!--                <ol style="list-style-position: inside">-->
+<!--                  <li>Access to Live event</li>-->
+<!--                  <li>Entry to all fun activities</li>-->
+<!--                  <li>Event swags delivered to mail box</li>-->
+<!--                </ol>-->
+<!--                <span style="display: block; font-size: 1.2em">Ticket price - <strike>Rs. 200/-</strike></span>-->
+<!--                <a-->
+<!--                  href="https://imjo.in/RC387a"-->
+<!--                  target="_blank"-->
+<!--                  class="btn bg-base-color sm-btn-medium btn-large no-margin-rl text-white"-->
+<!--                >-->
+<!--                  VIP Ticket - Rs. 150/- <b>(Early Bird)</b>-->
+<!--                </a>-->
+<!--              </div>-->
+<!--              <div class="col-lg-4 margin-4">-->
+<!--                <p>For the generous ones, <b>Emperor Ticket</b> includes:</p>-->
+<!--                <ol style="list-style-position: inside">-->
+<!--                  <li><b>Everything in VIP</b></li>-->
+<!--                  <li>Plus Rs. 300/- donation to event</li>-->
+<!--                </ol>-->
+<!--                <a-->
+<!--                  href="https://imjo.in/UsUjQr"-->
+<!--                  target="_blank"-->
+<!--                  class="btn bg-base-color sm-btn-medium btn-large no-margin-rl text-white"-->
+<!--                >-->
+<!--                  Emperor Ticket - Rs. 500/- -->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="margin-8 no-margin-bottom no-margin-rl text-center">-->
+
+<!--            </div>-->
+            <div class="wrapper-card width-100">
+              <div class="row margin-5 sm-margin-6 no-margin-rl width-100">
+                <div class="col-sm-12 col-md-6 col-lg-6 sm-margin-6 padding-4 no-padding-tb">
+                  <div class="card popular">
+                    <div class="card-ribbon">
+                      <span>EARLY BIRD</span>
+                    </div>
+                    <div class="card-title">
+                      <h3>VIP Ticket</h3>
+                    </div>
+                    <div class="card-price">
+                      <h2>
+                        &nbsp;<strike>200/-</strike><br>
+                        <sup>Rs.</sup>
+                        &nbsp;150/-
+                      </h2>
+                    </div>
+                    <div class="card-description">
+                      <ul>
+                        <li>Access to Live event</li>
+                        <li>Entry to all fun activities</li>
+                        <li>Event swags delivered to mail box</li>
+                      </ul>
+                    </div>
+                    <div class="card-action">
+<!--                      <button type="button">Book VIP Seat</button>-->
+                      <a
+                        href="https://imjo.in/RC387a"
+                        target="_blank"
+                        class="btn bg-base-color sm-btn-medium btn-large no-margin-rl text-white width-100"
+                      >
+                        Book VIP Seat
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 sm-margin-6 padding-4 no-padding-tb">
+                  <div class="card popular">
+                    <div class="card-title">
+                      <h3>Emperor Ticket</h3>
+                    </div>
+                    <div class="card-price" style="margin-bottom: 87px;">
+                      <h2>
+                        <sup>Rs.</sup>
+                         &nbsp;500/-
+                      </h2>
+                      <br>
+                    </div>
+                    <div class="card-description">
+                      <ul>
+                        <li>Everything in VIP</li>
+                        <li>Plus Rs. 300/- donation to event</li>
+                        <li>Emperor exclusive swags</li>
+                      </ul>
+                    </div>
+                    <div class="card-action">
+<!--                      <button type="button">Book Emperor Seat</button>-->
+                      <a
+                        href="https://imjo.in/UsUjQr"
+                        target="_blank"
+                        class="btn bg-base-color sm-btn-medium btn-large no-margin-rl text-white width-100"
+                      >
+                        Book Emperor Seat
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div> 
           <!-- <div class="col-3 col-md-3 padding-4 no-padding-tb"></div>
