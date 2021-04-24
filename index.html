@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Gymso Fitness HTML Template</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="res/css/style.css">
+     <link rel="stylesheet" href="res/css/bootstrap.min.css">
+     <link rel="stylesheet" href="res/css/font-awesome.min.css">
+     <link rel="stylesheet" href="res/css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="res/css/tooplate-gymso-style.css">
+
+    <style type="text/css">
+        @keyframes animate-element {
+            0% {
+                stroke-dashoffset: 1450.70166015625px;
+            }
+
+            55% {
+                stroke-dashoffset: 0;
+            }
+
+            100% {
+                stroke-dashoffset: -1450.70166015625px;
+            }
+        }
+
+        .svg-el-1 {
+            animation-name: animate-element;
+            animation-duration: 3000ms;
+            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.5);
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            stroke-dasharray: 1450.70166015625px;
+            animation-delay: 0s;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="res/images/logos/TXYlogo.png" alt="TEDxYCCE">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./speakers" class="nav-link smoothScroll">Speakers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./register" class="nav-link smoothScroll">Register</a>
+                    </li>
+                </ul>
+
+<!--                <ul class="social-icon mx-0">-->
+<!--                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>-->
+<!--                    <li><a href="#" class="fa fa-twitter"></a></li>-->
+<!--                    <li><a href="#" class="fa fa-instagram"></a></li>-->
+<!--                </ul>-->
+            </div>
+
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+            <div class="bg-overlay"></div>
+
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6">
+                            <img class="hero-X-logo" src="res/images/logos/TEDXYCCE%20(X)%20LOGO-1.png" alt="">
+                        </div>
+                        <div class="hero-logo col-12 col-sm-6">
+                            <img data-aos="fade-up" data-aos-delay="300" src="res/images/logos/TXYlogo.png" alt="TEDxYCCE">
+                            <div class="row">
+                                <div id="theme-text" class="col-6 text-wrap">
+                                    <p class="text-white mt-4 mb-4" data-aos="fade-up" data-aos-delay="500">Under the Stairs</p>
+                                </div>
+                                <div class="col-6">
+                                    <svg
+                                        class="hero-svg-logo mt-4 mb-4"
+                                        viewBox="0 0 394 195"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 86.5V108L45.5 130M2 86.5L45.5 108M2 86.5L45.5 64L56.5 69.5821M45.5 130V120.5M45.5 130L54 124.849M45.5 108V98.5M45.5 108V120.5M79 81L45.5 98.5M79 81L88 76L108.125 86.5M79 81L56.5 69.5821M45.5 98.5L88.5 120.5M122.5 94L88.5 111M122.5 94L108.125 86.5M122.5 94L132 89L149 97.6523M88.5 111V120.5M88.5 111L132 132.5M88.5 120.5V132.5M88.5 142.5L97.5 137.5M88.5 142.5V132.5M88.5 142.5L54 124.849M97.5 137.5L88.5 132.5M97.5 137.5L132 154.5M45.5 120.5L54 124.849M132 154.5V145M132 154.5L141 149.759M132 123.5L175.5 145M132 123.5V132.5M132 123.5L166 106.305M209 119L175.5 101.5L166 106.305M209 119L175.5 136M209 119L218.5 113.5L252.5 131.305M175.5 136L218.5 157.5M175.5 136V145M218.5 157.5V148.5M218.5 157.5V170M218.5 148.5L262 170.5M218.5 148.5L252.5 131.305M262 126.5L305 148.5M262 126.5L252.5 131.305M262 126.5V117M305 148.5V139.5M305 148.5V161M305 148.5L262 170.5M305 139.5L348.5 118M305 139.5L262 117M348.5 118V108.5M348.5 118V130.5M348.5 118L305 96M348.5 108.5L392 87M348.5 108.5L305 86.75M392 87V108.5L348.5 130.5M392 87L348.5 65.5M348.5 130.5V139.5L305 161M305 161V170.5L262 192.5M262 192.5V170.5M262 192.5L227.5 174.655M218.5 170V180M218.5 170L227.5 174.655M218.5 180L227.5 174.655M218.5 180L184.5 162.5M175.5 145V157.5M175.5 168L141 149.759M175.5 168L184.5 162.5M175.5 168V157.5M132 145L141 149.759M132 145V132.5M184.5 162.5L175.5 157.5M262 117L305 96M305 96V86.75M305 96L262 77.5V68.5M348.5 56.5L305 77.5V86.75M348.5 56.5V65.5M348.5 56.5L305 34.5M348.5 65.5L305 86.75M305 34.5V25M305 34.5L262 57.5M305 25L262 2.5L228.5 20.5M305 25L262 47.5M228.5 20.5L261.755 37.3755M228.5 20.5L218.5 15.5L185 33.25M304 77.5L262 57.5M262 57.5V47.5M262 57.5V59.5M262 47.5V37.5L261.755 37.3755M56.5 69.5821L88.5 54L97.5 58.3448M132 75L108.125 86.5M132 75V84.5L175.5 62M132 75L97.5 58.3448M175.5 62V72.5M175.5 62L141.321 45.5M175.5 72.5L218.5 50M175.5 72.5V84.5M218.5 50V60.5M218.5 50L185 33.25M218.5 60.5L261.755 37.3755M218.5 60.5V71.5M166 106.305L149 97.6523M149 97.6523L166.433 89M175.5 84.5V94M175.5 84.5L166.433 89M175.5 94L166.433 89M175.5 94L209.646 76.1328M218.5 71.5V82M218.5 71.5L209.646 76.1328M218.5 82L209.646 76.1328M218.5 82L254.5 63.3793M262 59.5L254.5 63.3793M262 59.5V68.5M254.5 63.3793L262 68.5M97.5 58.3448L132 41L141.321 45.5M141.321 45.5L175.5 28.5L185 33.25"
+                                            stroke="#F70000"
+                                            stroke-width="3px"
+                                            class="svg-el-1" >
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <p id="hero-date" class="text-white mb-4" data-aos="fade-up" data-aos-delay="600">May 8, 2021</p>
+                            <button class="hero-claim btn btn-outline-danger">CLAIM YOUR SPOT</button>
+                        </div>
+
+<!--                         <div class="col-lg-8 col-md-10 mx-auto col-12">-->
+<!--                              <div class="hero-text mt-5 text-center">-->
+
+<!--                                    <h6 data-aos="fade-up" data-aos-delay="300">new way to build a healthy lifestyle!</h6>-->
+
+<!--                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your body at Gymso Fitness</h1>-->
+
+<!--                                    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>-->
+
+<!--                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">learn more</a>-->
+<!--                                   -->
+<!--                              </div>-->
+<!--                         </div>-->
+
+                    </div>
+               </div>
+     </section>
+
+
+     <section class="feature" id="feature">
+        <div class="container">
+            <div class="row">
+
+                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-3 text-white" data-aos="fade-up">New to the gymso?</h2>
+
+                    <h6 class="mb-4 text-white" data-aos="fade-up">Your membership is up to 2 months FREE ($62.50 per month)</h6>
+
+                    <p data-aos="fade-up" data-aos-delay="200">Gymso is free HTML template by <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate</a> for your commercial website. Bootstrap v4.2.1 Layout. Feel free to use it.</p>
+
+                    <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm">Become a member today</a>
+                </div>
+
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+                     <div class="about-working-hours">
+                          <div>
+
+                                <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Working hours</h2>
+
+                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Sunday : Closed</strong>
+
+                               <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Monday - Friday</strong>
+
+                                <p data-aos="fade-up" data-aos-delay="800">7:00 AM - 10:00 PM</p>
+
+                                <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Saturday</strong>
+
+                                <p data-aos="fade-up" data-aos-delay="800">6:00 AM - 4:00 PM</p>
+                               </div>
+                          </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+     <!-- ABOUT -->
+     <section class="about section" id="about">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, we are Gymso</h2>
+
+                                <p data-aos="fade-up" data-aos-delay="400">You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.</p>
+
+                                <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow" href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contact Tooplate</a> immediately. Thank you.</p>
+
+                            </div>
+
+                            <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+                                <div class="team-thumb">
+                                    <img src="res/images/team/team-image.jpg" class="img-fluid" alt="Trainer">
+
+                                    <div class="team-info d-flex flex-column">
+
+                                        <h3>Mary Yan</h3>
+                                        <span>Yoga Instructor</span>
+
+                                        <ul class="social-icon mt-3">
+                                            <li><a href="#" class="fa fa-twitter"></a></li>
+                                            <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
+                                <div class="team-thumb">
+                                    <img src="res/images/team/team-image01.jpg" class="img-fluid" alt="Trainer">
+
+                                    <div class="team-info d-flex flex-column">
+
+                                        <h3>Catherina</h3>
+                                        <span>Body trainer</span>
+
+                                        <ul class="social-icon mt-3">
+                                            <li><a href="#" class="fa fa-instagram"></a></li>
+                                            <li><a href="#" class="fa fa-facebook"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- CLASS -->
+     <section class="class section" id="class">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="col-lg-12 col-12 text-center mb-5">
+                                <h6 data-aos="fade-up">Get A Perfect Body</h6>
+
+                                <h2 data-aos="fade-up" data-aos-delay="200">Our Training Classes</h2>
+                             </div>
+
+                            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                                <div class="class-thumb">
+                                    <img src="res/images/class/yoga-class.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Yoga</h3>
+
+                                        <span><strong>Trained by</strong> - Bella</span>
+
+                                        <span class="class-price">$50</span>
+
+                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                                <div class="class-thumb">
+                                    <img src="res/images/class/crossfit-class.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Areobic</h3>
+
+                                        <span><strong>Trained by</strong> - Mary</span>
+
+                                        <span class="class-price">$66</span>
+
+                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="class-thumb">
+                                    <img src="res/images/class/cardio-class.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Cardio</h3>
+
+                                        <span><strong>Trained by</strong> - Cathe</span>
+
+                                        <span class="class-price">$75</span>
+
+                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- SCHEDULE -->
+     <section class="schedule section" id="schedule">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="col-lg-12 col-12 text-center">
+                                <h6 data-aos="fade-up">our weekly GYM schedules</h6>
+
+                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Workout Timetable</h2>
+                             </div>
+
+                             <div class="col-lg-12 py-5 col-md-12 col-12">
+                                 <table class="table table-bordered table-responsive schedule-table" data-aos="fade-up" data-aos-delay="300">
+
+                                     <thead class="thead-light">
+                                         <th><i class="fa fa-calendar"></i></th>
+                                         <th>Mon</th>
+                                         <th>Tue</th>
+                                         <th>Wed</th>
+                                         <th>Thu</th>
+                                         <th>Fri</th>
+                                         <th>Sat</th>
+                                     </thead>
+
+                                     <tbody>
+                                         <tr>
+                                            <td><small>7:00 am</small></td>
+                                            <td>
+                                                <strong>Cardio</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                            <td>
+                                                <strong>Power Fitness</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Yoga Section</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>9:00 am</small></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Boxing</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                            <td>
+                                                <strong>Areobic</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Cardio</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>11:00 am</small></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Boxing</strong>
+                                                <span>11:00 am - 2:00 pm</span>
+                                            </td>
+                                            <td>
+                                                <strong>Areobic</strong>
+                                                <span>11:30 am - 3:30 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Body work</strong>
+                                                <span>11:50 am - 5:20 pm</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>2:00 pm</small></td>
+                                            <td>
+                                                <strong>Boxing</strong>
+                                                <span>2:00 pm - 4:00 pm</span>
+                                            </td>
+                                            <td>
+                                                <strong>Power lifting</strong>
+                                                <span>3:00 pm - 6:00 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Cardio</strong>
+                                                <span>6:00 pm - 9:00 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Crossfit</strong>
+                                                <span>5:00 pm - 7:00 pm</span>
+                                            </td>
+                                         </tr>
+                                     </tbody>
+                                 </table>
+                             </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- CONTACT -->
+     <section class="contact section" id="contact">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
+
+                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                            <input type="text" class="form-control" name="cf-name" placeholder="Name">
+
+                            <input type="email" class="form-control" name="cf-email" placeholder="Email">
+
+                            <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+
+                            <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
+
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> 120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil</p>
+<!-- How to change your own map point
+	1. Go to Google Maps
+	2. Click on your location point
+	3. Click "Share" and choose "Embed map" tab
+	4. Copy only URL and paste it within the src="" field below
+-->
+                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                           <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- FOOTER -->
+     <footer class="site-footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-4 col-md-5">
+                        <p class="copyright-text">Copyright &copy; 2020 Gymso Fitness Co.
+                        
+                        <br>Design: <a href="https://www.tooplate.com">Tooplate</a></p>
+                    </div>
+
+                    <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                        <p class="mr-4">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="#">hello@company.co</a>
+                        </p>
+
+                        <p><i class="fa fa-phone mr-1"></i> 010-020-0840</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form class="membership-form webform" role="form">
+                <input type="text" class="form-control" name="cf-name" placeholder="John Doe">
+
+                <input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
+
+                <input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                <textarea class="form-control" rows="3" name="cf-message" placeholder="Additional Message"></textarea>
+
+                <button type="submit" class="form-control" id="submit-button" name="submit">Submit Button</button>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="signup-agree">
+                    <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the <a href="#">Terms &amp;Conditions</a>
+                    </label>
+                </div>
+            </form>
+          </div>
+
+          <div class="modal-footer"></div>
+
+        </div>
+      </div>
+    </div>
+
+     <!-- SCRIPTS -->
+     <script src="res/js/jquery.min.js"></script>
+     <script src="res/js/bootstrap.min.js"></script>
+     <script src="res/js/aos.js"></script>
+     <script src="res/js/smoothscroll.js"></script>
+     <script src="res/js/custom.js"></script>
+
+</body>
+</html>

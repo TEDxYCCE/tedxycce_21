@@ -1,0 +1,105 @@
+html {
+    font-size: 1rem;
+    min-width: 400px !important;
+}
+
+@media (max-width: 575px) {
+    html {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    html {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 1.4rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 1.6rem !important;
+    }
+}
+
+
+.navbar-brand {
+    width: 30%;
+}
+.navbar-brand img {
+    width: 8rem;
+    margin: 5px 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.navbar-nav a {
+    font-size: 0.6rem !important;
+}
+
+
+.hero-X-logo {
+    width: 17rem;
+    margin: 2.4rem 0;
+}
+.hero-logo img {
+    width: 80%;
+}
+.hero-claim {
+    /*width: 30%;*/
+    /*height: 60px;*/
+    padding-bottom: 0.6rem !important;
+}
+
+.hero-svg-logo {
+    width: 97%;
+}
+#theme-text p {
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 1;
+}
+#hero-date {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+
+/* LG */
+@media (min-width: 993px) {
+    .hero-svg-logo {
+        margin-left: -106px;
+        height: 210px;
+    }
+}
+
+/* MD */
+@media (max-width: 992px) {
+    .hero-svg-logo {
+        margin-left: -63px;
+        height: 185px;
+    }
+}
+
+/* SM */
+@media (max-width: 768px) {
+    .hero-svg-logo {
+        margin-left: -45px;
+        height: 163px;
+    }
+}
+
+/* XS */
+@media (max-width: 576px) {
+    .hero-svg-logo {
+        margin-left: -45px;
+        height: 106px;
+    }
+}
