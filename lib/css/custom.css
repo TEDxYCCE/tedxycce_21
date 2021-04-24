@@ -1,0 +1,27 @@
+body {
+    overflow-y: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar-brand {
+}
+
+
+.hero {
+    color: white;
+    /* give cover image */
+    background-image: url("/lib/img/stage-audience.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    
+}
+
