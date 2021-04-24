@@ -498,7 +498,7 @@
 }
 
 /*
-  Countdown timer
+  Countdown timer generic
   ---------------
 */
 
@@ -548,6 +548,80 @@
     font-size: 64px;
   }
   .countdown-timer .label {
+    padding-top: 24px;
+  }
+}
+
+/*
+  Countdown timer early-bird registration
+  ---------------
+*/
+
+.wrapper-card .early-bird-countdown {
+  display: block;
+  justify-content: center;
+}
+.wrapper-card .early-bird-countdown div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.wrapper-card .early-bird-countdown .value {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px !important;
+  font-weight: 800;
+  color: var(--textdark);
+  background: none;
+  box-shadow: none;
+  align-self: center;
+  width: 20px;
+}
+.wrapper-card .early-bird-countdown .days .value {
+  margin-left: 51px;
+  margin-top: 44px;
+}
+.wrapper-card .early-bird-countdown .hours .value {
+  margin-left: 67px;
+  margin-top: 28px;
+}
+.wrapper-card .early-bird-countdown .minutes .value {
+  margin-left: 88px;
+  margin-top: 7px;
+}
+.wrapper-card .early-bird-countdown .seconds .value {
+  margin-left: 110px;
+  margin-top: -15px;
+}
+.wrapper-card .early-bird-countdown .label {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  padding-top: 8px;
+  align-self: center;
+}
+@media (min-width: 420px) {
+  .wrapper-card .early-bird-countdown .value {
+    font-size: 48px;
+  }
+  .wrapper-card .early-bird-countdown .label {
+    padding-top: 16px;
+  }
+}
+@media (min-width: 600px) {
+  .wrapper-card .early-bird-countdown .value {
+    font-size: 56px;
+  }
+  .wrapper-card .early-bird-countdown .label {
+    font-size: 18px;
+  }
+}
+@media (min-width: 900px) {
+  .wrapper-card .early-bird-countdown .value {
+    font-size: 64px;
+  }
+  .wrapper-card .early-bird-countdown .label {
     padding-top: 24px;
   }
 }

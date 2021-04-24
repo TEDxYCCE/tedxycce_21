@@ -197,7 +197,7 @@
         z-index: -1;
         content: '';
         display: block;
-        border: 5px solid var(--tedred);
+        /*border: 5px solid var(--tedred);*/
         border-top-color: transparent;
         border-left-color: transparent;
       }
@@ -649,7 +649,29 @@
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0 col-lg-6 padding-4 no-padding-tb">
                   <div class="card popular">
                     <div class="card-ribbon">
-                      <span>EARLY BIRD</span>
+<!--                      <span>EARLY BIRD-->
+                      <div class="row">
+                        <div class="early-bird-countdown">
+                          <span style="padding-bottom: 15px;">&nbsp;EARLY BIRD</span>
+                          <div class="days">
+                            <span class="value">00</span>
+<!--                            <span class="label">DAYS</span>-->
+                          </div>
+                          <div class="hours">
+                            <span class="value">00</span>
+<!--                            <span class="label">HOURS</span>-->
+                          </div>
+                          <div class="minutes">
+                            <span class="value">00</span>
+<!--                            <span class="label">MINS</span>-->
+                          </div>
+                          <div class="seconds">
+                            <span class="value">00</span>
+<!--                            <span class="label">SEC</span>-->
+                          </div>
+                        </div>
+                      </div>
+<!--                      </span>-->
                     </div>
                     <div class="card-title">
                       <h3>VIP Ticket</h3>
@@ -947,5 +969,17 @@
     <!-- Countdown -->
     <script src="../res/js/jquery.countdown.min.js"></script>
     <script src="../res/js/countdown.js"></script>
+    <script type="text/javascript">
+      $('.early-bird-countdown').countdown({
+        date: "May 1, 2021 23:59:59",
+
+        render: function (data) {
+          $(".early-bird-countdown .days .value").html(this.leadingZeros(data.days + "d", 2));
+          $(".early-bird-countdown .hours .value").html(this.leadingZeros(data.hours + "h", 2));
+          $(".early-bird-countdown .minutes .value").html(this.leadingZeros(data.min + "m", 2));
+          $(".early-bird-countdown .seconds .value").html(this.leadingZeros(data.sec + "s", 2));
+        }
+      });
+    </script>
   </body>
 </html>
