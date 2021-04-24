@@ -71,6 +71,11 @@ html {
     font-weight: bold;
 }
 
+#home {
+    margin-top: 13vh;
+    min-height: 87vh;
+}
+
 
 /* LG */
 @media (min-width: 993px) {
