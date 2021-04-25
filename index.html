@@ -5,9 +5,37 @@
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+
+    <!-- Title, icon, description and keywords -->
+    <title>TEDxYCCE</title>
+    <link rel="shortcut icon" href="./res/images/favicon.ico" />
+    <meta
+      name="description"
+      content="TEDxYCCE, x = independently organised TED event. Under The Stairs, This May, at YCCE, Nagpur."
+    />
+    <meta
+      name="keywords"
+      content="TEDx, YCCE, Yeshwantrao Chavan College of Engineering, Hingna, Nagpur, event, talks"
+    />
+
+    <!-- Social media tags -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="TEDxYCCE" />
+    <meta
+      property="og:description"
+      content="Under The Stairs. This May, at Yeshwantrao Chavan College of Engineering."
+    />
+    <meta property="og:image" content="res/images/logos/TXYlogo.png" />
+    <meta property="og:url" content="https://tedxycce.com" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tedxycce" />
+    <meta
+      itemprop="description"
+      content="Under The Stairs. This May, at Yeshwantrao Chavan College of Engineering."
+    />
+    <meta itemprop="image" content="./img/TXYlogo.png" />
+    <meta name="author" content="Arpan Adlakhiya and Anmoldeep Singh Arora" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
@@ -16,117 +44,146 @@
     <link rel="stylesheet" href="res/css/bootstrap.min.css" />
     <link rel="stylesheet" href="res/css/font-awesome.min.css" />
     <link rel="stylesheet" href="res/css/aos.css" />
-    
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="res/css/tooplate-gymso-style.css" />
-    
+
     <link rel="stylesheet" href="res/css/register_card.css" />
     <link rel="stylesheet" href="res/css/style.css" />
-</head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-
+  </head>
+  <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="res/images/logos/TXYlogo.png" alt="TEDxYCCE" />
+        </a>
 
-            <a class="navbar-brand" href="index.html">
-                <img src="res/images/logos/TXYlogo.png" alt="TEDxYCCE">
-            </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link smoothScroll">Home</a>
+            </li>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link smoothScroll">Home</a>
-                    </li>
+            <li class="nav-item">
+              <a href="#speakers" class="nav-link smoothScroll">Speakers</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a href="#speakers" class="nav-link smoothScroll">Speakers</a>
-                    </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link smoothScroll">Contact Us</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact Us</a>
-                    </li>
+            <li class="nav-item">
+              <a href="#register" class="nav-link smoothScroll">Register</a>
+            </li>
+          </ul>
 
-                    <li class="nav-item">
-                        <a href="#register" class="nav-link smoothScroll">Register</a>
-                    </li>
-                </ul>
-
-<!--                <ul class="social-icon mx-0">-->
-<!--                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>-->
-<!--                    <li><a href="#" class="fa fa-twitter"></a></li>-->
-<!--                    <li><a href="#" class="fa fa-instagram"></a></li>-->
-<!--                </ul>-->
-            </div>
-
+          <!--                <ul class="social-icon mx-0">-->
+          <!--                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>-->
+          <!--                    <li><a href="#" class="fa fa-twitter"></a></li>-->
+          <!--                    <li><a href="#" class="fa fa-instagram"></a></li>-->
+          <!--                </ul>-->
         </div>
+      </div>
     </nav>
 
+    <!-- HOME -->
+    <section
+      id="home"
+      class="hero d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="bg-overlay"></div>
 
-     <!-- HOME -->
-     <section id="home" class="hero d-flex flex-column justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6">
+            <!--                            <img class="hero-X-logo" src="res/images/logos/TEDXYCCE%20(X)%20LOGO-1.png" alt="">-->
+          </div>
+          <div class="hero-logo col-12 col-sm-12 col-md-6">
+            <img
+              class="mb-5 mb-sm-3 mb-md-2"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              src="res/images/logos/TXYlogo.png"
+              alt="TEDxYCCE"
+            />
+            <div id="theme-row" class="row my-sm-3 my-md-2">
+              <div id="theme-text" class="col-4 col-sm-4 col-md-6 text-wrap">
+                <p
+                  class="text-white mt-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  Under the Stairs
+                </p>
+              </div>
+              <div class="col-5 col-sm-5 offset-md-0 col-md-6">
+                <svg
+                  class="hero-svg-logo mt-4 mb-4"
+                  viewBox="0 0 394 195"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <path
+                    d="M2 86.5V108L45.5 130M2 86.5L45.5 108M2 86.5L45.5 64L56.5 69.5821M45.5 130V120.5M45.5 130L54 124.849M45.5 108V98.5M45.5 108V120.5M79 81L45.5 98.5M79 81L88 76L108.125 86.5M79 81L56.5 69.5821M45.5 98.5L88.5 120.5M122.5 94L88.5 111M122.5 94L108.125 86.5M122.5 94L132 89L149 97.6523M88.5 111V120.5M88.5 111L132 132.5M88.5 120.5V132.5M88.5 142.5L97.5 137.5M88.5 142.5V132.5M88.5 142.5L54 124.849M97.5 137.5L88.5 132.5M97.5 137.5L132 154.5M45.5 120.5L54 124.849M132 154.5V145M132 154.5L141 149.759M132 123.5L175.5 145M132 123.5V132.5M132 123.5L166 106.305M209 119L175.5 101.5L166 106.305M209 119L175.5 136M209 119L218.5 113.5L252.5 131.305M175.5 136L218.5 157.5M175.5 136V145M218.5 157.5V148.5M218.5 157.5V170M218.5 148.5L262 170.5M218.5 148.5L252.5 131.305M262 126.5L305 148.5M262 126.5L252.5 131.305M262 126.5V117M305 148.5V139.5M305 148.5V161M305 148.5L262 170.5M305 139.5L348.5 118M305 139.5L262 117M348.5 118V108.5M348.5 118V130.5M348.5 118L305 96M348.5 108.5L392 87M348.5 108.5L305 86.75M392 87V108.5L348.5 130.5M392 87L348.5 65.5M348.5 130.5V139.5L305 161M305 161V170.5L262 192.5M262 192.5V170.5M262 192.5L227.5 174.655M218.5 170V180M218.5 170L227.5 174.655M218.5 180L227.5 174.655M218.5 180L184.5 162.5M175.5 145V157.5M175.5 168L141 149.759M175.5 168L184.5 162.5M175.5 168V157.5M132 145L141 149.759M132 145V132.5M184.5 162.5L175.5 157.5M262 117L305 96M305 96V86.75M305 96L262 77.5V68.5M348.5 56.5L305 77.5V86.75M348.5 56.5V65.5M348.5 56.5L305 34.5M348.5 65.5L305 86.75M305 34.5V25M305 34.5L262 57.5M305 25L262 2.5L228.5 20.5M305 25L262 47.5M228.5 20.5L261.755 37.3755M228.5 20.5L218.5 15.5L185 33.25M304 77.5L262 57.5M262 57.5V47.5M262 57.5V59.5M262 47.5V37.5L261.755 37.3755M56.5 69.5821L88.5 54L97.5 58.3448M132 75L108.125 86.5M132 75V84.5L175.5 62M132 75L97.5 58.3448M175.5 62V72.5M175.5 62L141.321 45.5M175.5 72.5L218.5 50M175.5 72.5V84.5M218.5 50V60.5M218.5 50L185 33.25M218.5 60.5L261.755 37.3755M218.5 60.5V71.5M166 106.305L149 97.6523M149 97.6523L166.433 89M175.5 84.5V94M175.5 84.5L166.433 89M175.5 94L166.433 89M175.5 94L209.646 76.1328M218.5 71.5V82M218.5 71.5L209.646 76.1328M218.5 82L209.646 76.1328M218.5 82L254.5 63.3793M262 59.5L254.5 63.3793M262 59.5V68.5M254.5 63.3793L262 68.5M97.5 58.3448L132 41L141.321 45.5M141.321 45.5L175.5 28.5L185 33.25"
+                    stroke="#F70000"
+                    stroke-width="3px"
+                    class="svg-el-1"
+                  ></path>
+                </svg>
+              </div>
+            </div>
 
-        <div class="bg-overlay"></div>
+            <p
+              id="hero-date"
+              class="text-white mt-4 mt-sm-3 mt-md-2 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              May 8, 2021
+            </p>
+            <div data-aos="fade-up" data-aos-delay="700">
+              <button
+                class="hero-claim btn btn-outline-danger mt-5 mt-sm-3 mt-md-2"
+              >
+                CLAIM YOUR SPOT
+              </button>
+              <p id="event-virtual" class="text-white-50 mt-3 mt-sm-2">
+                This event will be conducted virtually
+              </p>
+            </div>
+          </div>
 
-           <div class="container">
-                <div class="row">
+          <!--                         <div class="col-lg-8 col-md-10 mx-auto col-12">-->
+          <!--                              <div class="hero-text mt-5 text-center">-->
 
-                    <div class="col-12 col-sm-12 col-md-6">
-<!--                            <img class="hero-X-logo" src="res/images/logos/TEDXYCCE%20(X)%20LOGO-1.png" alt="">-->
-                    </div>
-                    <div class="hero-logo col-12 col-sm-12 col-md-6">
-                        <img class="mb-5 mb-sm-3 mb-md-2" data-aos="fade-up" data-aos-delay="300" src="res/images/logos/TXYlogo.png" alt="TEDxYCCE">
-                        <div id="theme-row" class="row my-sm-3 my-md-2">
-                            <div id="theme-text" class="col-4 col-sm-4 col-md-6 text-wrap">
-                                <p class="text-white mt-4 mb-4" data-aos="fade-up" data-aos-delay="400">Under the Stairs</p>
-                            </div>
-                            <div class="col-5 col-sm-5 offset-md-0 col-md-6">
-                                <svg
-                                    class="hero-svg-logo mt-4 mb-4"
-                                    viewBox="0 0 394 195"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    data-aos="fade-up" data-aos-delay="500">
-                                    <path
-                                        d="M2 86.5V108L45.5 130M2 86.5L45.5 108M2 86.5L45.5 64L56.5 69.5821M45.5 130V120.5M45.5 130L54 124.849M45.5 108V98.5M45.5 108V120.5M79 81L45.5 98.5M79 81L88 76L108.125 86.5M79 81L56.5 69.5821M45.5 98.5L88.5 120.5M122.5 94L88.5 111M122.5 94L108.125 86.5M122.5 94L132 89L149 97.6523M88.5 111V120.5M88.5 111L132 132.5M88.5 120.5V132.5M88.5 142.5L97.5 137.5M88.5 142.5V132.5M88.5 142.5L54 124.849M97.5 137.5L88.5 132.5M97.5 137.5L132 154.5M45.5 120.5L54 124.849M132 154.5V145M132 154.5L141 149.759M132 123.5L175.5 145M132 123.5V132.5M132 123.5L166 106.305M209 119L175.5 101.5L166 106.305M209 119L175.5 136M209 119L218.5 113.5L252.5 131.305M175.5 136L218.5 157.5M175.5 136V145M218.5 157.5V148.5M218.5 157.5V170M218.5 148.5L262 170.5M218.5 148.5L252.5 131.305M262 126.5L305 148.5M262 126.5L252.5 131.305M262 126.5V117M305 148.5V139.5M305 148.5V161M305 148.5L262 170.5M305 139.5L348.5 118M305 139.5L262 117M348.5 118V108.5M348.5 118V130.5M348.5 118L305 96M348.5 108.5L392 87M348.5 108.5L305 86.75M392 87V108.5L348.5 130.5M392 87L348.5 65.5M348.5 130.5V139.5L305 161M305 161V170.5L262 192.5M262 192.5V170.5M262 192.5L227.5 174.655M218.5 170V180M218.5 170L227.5 174.655M218.5 180L227.5 174.655M218.5 180L184.5 162.5M175.5 145V157.5M175.5 168L141 149.759M175.5 168L184.5 162.5M175.5 168V157.5M132 145L141 149.759M132 145V132.5M184.5 162.5L175.5 157.5M262 117L305 96M305 96V86.75M305 96L262 77.5V68.5M348.5 56.5L305 77.5V86.75M348.5 56.5V65.5M348.5 56.5L305 34.5M348.5 65.5L305 86.75M305 34.5V25M305 34.5L262 57.5M305 25L262 2.5L228.5 20.5M305 25L262 47.5M228.5 20.5L261.755 37.3755M228.5 20.5L218.5 15.5L185 33.25M304 77.5L262 57.5M262 57.5V47.5M262 57.5V59.5M262 47.5V37.5L261.755 37.3755M56.5 69.5821L88.5 54L97.5 58.3448M132 75L108.125 86.5M132 75V84.5L175.5 62M132 75L97.5 58.3448M175.5 62V72.5M175.5 62L141.321 45.5M175.5 72.5L218.5 50M175.5 72.5V84.5M218.5 50V60.5M218.5 50L185 33.25M218.5 60.5L261.755 37.3755M218.5 60.5V71.5M166 106.305L149 97.6523M149 97.6523L166.433 89M175.5 84.5V94M175.5 84.5L166.433 89M175.5 94L166.433 89M175.5 94L209.646 76.1328M218.5 71.5V82M218.5 71.5L209.646 76.1328M218.5 82L209.646 76.1328M218.5 82L254.5 63.3793M262 59.5L254.5 63.3793M262 59.5V68.5M254.5 63.3793L262 68.5M97.5 58.3448L132 41L141.321 45.5M141.321 45.5L175.5 28.5L185 33.25"
-                                        stroke="#F70000"
-                                        stroke-width="3px"
-                                        class="svg-el-1" >
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
+          <!--                                    <h6 data-aos="fade-up" data-aos-delay="300">new way to build a healthy lifestyle!</h6>-->
 
-                        <p id="hero-date" class="text-white mt-4 mt-sm-3 mt-md-2 mb-4" data-aos="fade-up" data-aos-delay="600">May 8, 2021</p>
-                        <div data-aos="fade-up" data-aos-delay="700">
-                            <button class="hero-claim btn btn-outline-danger mt-5 mt-sm-3 mt-md-2">CLAIM YOUR SPOT</button>
-                            <p id="event-virtual" class="text-white-50 mt-3 mt-sm-2">This event will be conducted virtually</p>
-                        </div>
+          <!--                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your body at Gymso Fitness</h1>-->
 
-                    </div>
+          <!--                                    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>-->
 
-<!--                         <div class="col-lg-8 col-md-10 mx-auto col-12">-->
-<!--                              <div class="hero-text mt-5 text-center">-->
-
-<!--                                    <h6 data-aos="fade-up" data-aos-delay="300">new way to build a healthy lifestyle!</h6>-->
-
-<!--                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your body at Gymso Fitness</h1>-->
-
-<!--                                    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>-->
-
-<!--                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">learn more</a>-->
-<!--                                   -->
-<!--                              </div>-->
-<!--                         </div>-->
-
-                </div>
-           </div>
-     </section>
+          <!--                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">learn more</a>-->
+          <!--                                   -->
+          <!--                              </div>-->
+          <!--                         </div>-->
+        </div>
+      </div>
+    </section>
 
     <!-- This event will be conducted virtually -->
 
@@ -174,17 +231,33 @@
                   TEDxYCCE - Under The Stairs 2021
                 </h2>
 
-                <h4 class="font-weight-bold text-white pb-4 pt-3 m-0" data-aos="fade-up" data-aos-delay="400"
-                  >On 8th May 2021</h4>
-                <h4 class="font-weight-bold text-white" data-aos="fade-up" data-aos-delay="500">
-                  Saturday</h4>
+                <h4
+                  class="font-weight-bold text-white pb-4 pt-3 m-0"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  On 8th May 2021
+                </h4>
+                <h4
+                  class="font-weight-bold text-white"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  Saturday
+                </h4>
                 <p class="mb-4" data-aos="fade-up" data-aos-delay="600">
                   TEDxYCCE 2021 will be conducted virtually.
                 </p>
-                <h4 class="font-weight-bold text-white pt-2" data-aos="fade-up" data-aos-delay="700">
-                  Ticket Price</h4>
+                <h4
+                  class="font-weight-bold text-white pt-2"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
+                  Ticket Price
+                </h4>
                 <p data-aos="fade-up" data-aos-delay="800">
-                  Tickets are available in two variants. Click below to learn more
+                  Tickets are available in two variants. Click below to learn
+                  more
                 </p>
                 <button
                   id="book-my-seat"
@@ -202,90 +275,90 @@
     </section>
 
     <!-- TODO combine favicon T (TXY wala)and X (TXMileHigh wala)-->
-<!--    &lt;!&ndash; ABOUT &ndash;&gt;-->
-<!--    <section class="about section" id="about">-->
-<!--      <div class="container">-->
-<!--        <div class="row">-->
-<!--          <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">-->
-<!--            <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">-->
-<!--              Hello, we are Gymso-->
-<!--            </h2>-->
+    <!--    &lt;!&ndash; ABOUT &ndash;&gt;-->
+    <!--    <section class="about section" id="about">-->
+    <!--      <div class="container">-->
+    <!--        <div class="row">-->
+    <!--          <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">-->
+    <!--            <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">-->
+    <!--              Hello, we are Gymso-->
+    <!--            </h2>-->
 
-<!--            <p data-aos="fade-up" data-aos-delay="400">-->
-<!--              You are NOT allowed to redistribute this HTML template-->
-<!--              downloadable ZIP file on any template collection site. You are-->
-<!--              allowed to use this template for your personal or business-->
-<!--              websites.-->
-<!--            </p>-->
+    <!--            <p data-aos="fade-up" data-aos-delay="400">-->
+    <!--              You are NOT allowed to redistribute this HTML template-->
+    <!--              downloadable ZIP file on any template collection site. You are-->
+    <!--              allowed to use this template for your personal or business-->
+    <!--              websites.-->
+    <!--            </p>-->
 
-<!--            <p data-aos="fade-up" data-aos-delay="500">-->
-<!--              If you have any question regarding-->
-<!--              <a-->
-<!--                rel="nofollow"-->
-<!--                href="https://www.tooplate.com/view/2119-gymso-fitness"-->
-<!--                target="_parent"-->
-<!--                >Gymso Fitness HTML template</a-->
-<!--              >, you can-->
-<!--              <a-->
-<!--                rel="nofollow"-->
-<!--                href="https://www.tooplate.com/contact"-->
-<!--                target="_parent"-->
-<!--                >contact Tooplate</a-->
-<!--              >-->
-<!--              immediately. Thank you.-->
-<!--            </p>-->
-<!--          </div>-->
+    <!--            <p data-aos="fade-up" data-aos-delay="500">-->
+    <!--              If you have any question regarding-->
+    <!--              <a-->
+    <!--                rel="nofollow"-->
+    <!--                href="https://www.tooplate.com/view/2119-gymso-fitness"-->
+    <!--                target="_parent"-->
+    <!--                >Gymso Fitness HTML template</a-->
+    <!--              >, you can-->
+    <!--              <a-->
+    <!--                rel="nofollow"-->
+    <!--                href="https://www.tooplate.com/contact"-->
+    <!--                target="_parent"-->
+    <!--                >contact Tooplate</a-->
+    <!--              >-->
+    <!--              immediately. Thank you.-->
+    <!--            </p>-->
+    <!--          </div>-->
 
-<!--          <div-->
-<!--            class="ml-lg-auto col-lg-3 col-md-6 col-12"-->
-<!--            data-aos="fade-up"-->
-<!--            data-aos-delay="700"-->
-<!--          >-->
-<!--            <div class="team-thumb">-->
-<!--              <img-->
-<!--                src="res/images/team/team-image.jpg"-->
-<!--                class="img-fluid"-->
-<!--                alt="Trainer"-->
-<!--              />-->
+    <!--          <div-->
+    <!--            class="ml-lg-auto col-lg-3 col-md-6 col-12"-->
+    <!--            data-aos="fade-up"-->
+    <!--            data-aos-delay="700"-->
+    <!--          >-->
+    <!--            <div class="team-thumb">-->
+    <!--              <img-->
+    <!--                src="res/images/team/team-image.jpg"-->
+    <!--                class="img-fluid"-->
+    <!--                alt="Trainer"-->
+    <!--              />-->
 
-<!--              <div class="team-info d-flex flex-column">-->
-<!--                <h3>Mary Yan</h3>-->
-<!--                <span>Yoga Instructor</span>-->
+    <!--              <div class="team-info d-flex flex-column">-->
+    <!--                <h3>Mary Yan</h3>-->
+    <!--                <span>Yoga Instructor</span>-->
 
-<!--                <ul class="social-icon mt-3">-->
-<!--                  <li><a href="#" class="fa fa-twitter"></a></li>-->
-<!--                  <li><a href="#" class="fa fa-instagram"></a></li>-->
-<!--                </ul>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+    <!--                <ul class="social-icon mt-3">-->
+    <!--                  <li><a href="#" class="fa fa-twitter"></a></li>-->
+    <!--                  <li><a href="#" class="fa fa-instagram"></a></li>-->
+    <!--                </ul>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
 
-<!--          <div-->
-<!--            class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12"-->
-<!--            data-aos="fade-up"-->
-<!--            data-aos-delay="800"-->
-<!--          >-->
-<!--            <div class="team-thumb">-->
-<!--              <img-->
-<!--                src="res/images/team/team-image01.jpg"-->
-<!--                class="img-fluid"-->
-<!--                alt="Trainer"-->
-<!--              />-->
+    <!--          <div-->
+    <!--            class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12"-->
+    <!--            data-aos="fade-up"-->
+    <!--            data-aos-delay="800"-->
+    <!--          >-->
+    <!--            <div class="team-thumb">-->
+    <!--              <img-->
+    <!--                src="res/images/team/team-image01.jpg"-->
+    <!--                class="img-fluid"-->
+    <!--                alt="Trainer"-->
+    <!--              />-->
 
-<!--              <div class="team-info d-flex flex-column">-->
-<!--                <h3>Catherina</h3>-->
-<!--                <span>Body trainer</span>-->
+    <!--              <div class="team-info d-flex flex-column">-->
+    <!--                <h3>Catherina</h3>-->
+    <!--                <span>Body trainer</span>-->
 
-<!--                <ul class="social-icon mt-3">-->
-<!--                  <li><a href="#" class="fa fa-instagram"></a></li>-->
-<!--                  <li><a href="#" class="fa fa-facebook"></a></li>-->
-<!--                </ul>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
+    <!--                <ul class="social-icon mt-3">-->
+    <!--                  <li><a href="#" class="fa fa-instagram"></a></li>-->
+    <!--                  <li><a href="#" class="fa fa-facebook"></a></li>-->
+    <!--                </ul>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </section>-->
 
     <!-- SPEAKERS -->
     <section id="speakers" class="class section">
@@ -303,24 +376,27 @@
 
           <div class="col-12">
             <div class="card-deck mb-md-3">
-
               <div class="row">
                 <div class="col-12 col-md-6 col-xl-4 mb-3">
                   <div
-                          class="card h-100 mr-0 ml-0"
-                          data-aos="fade-up"
-                          data-aos-delay="400"
+                    class="card h-100 mr-0 ml-0"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
                   >
                     <img
-                            src="res/images/speakers-new/onkar_khullar.jpg"
-                            class="card-img-top"
-                            alt="Class"
+                      src="res/images/speakers-new/onkar_khullar.jpg"
+                      class="card-img-top"
+                      alt="Class"
                     />
                     <div class="card-body px-4 pt-4 pb-2 p-sm-3">
                       <h3 class="card-title mb-1">Onkar Khullar</h3>
-                      <p class="card-text font-weight-bold mb-2">Author | Philosoper | Blogger</p>
+                      <p class="card-text font-weight-bold mb-2">
+                        Author | Philosoper | Blogger
+                      </p>
                       <p class="card-text">
-                        Onkar Kishan Khullar, known to be India's most dangerous speaker is a 3-time college drop out turned motivational speaker, artist, author, and entrepreneur.
+                        Onkar Kishan Khullar, known to be India's most dangerous
+                        speaker is a 3-time college drop out turned motivational
+                        speaker, artist, author, and entrepreneur.
                       </p>
                     </div>
                     <div class="card-footer px-3 py-1 py-md-0">
@@ -330,20 +406,24 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 mb-3">
                   <div
-                          class="card h-100 mr-0 ml-0"
-                          data-aos="fade-up"
-                          data-aos-delay="400"
+                    class="card h-100 mr-0 ml-0"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
                   >
                     <img
-                            src="res/images/speakers-new/kunal_moon.jpg"
-                            class="card-img-top"
-                            alt="Class"
+                      src="res/images/speakers-new/kunal_moon.jpg"
+                      class="card-img-top"
+                      alt="Class"
                     />
                     <div class="card-body px-4 pt-4 pb-2 p-sm-3">
                       <h3 class="card-title mb-1">Kunal Moon</h3>
-                      <p class="card-text font-weight-bold mb-2">Artist | Consultant | Aggregator</p>
+                      <p class="card-text font-weight-bold mb-2">
+                        Artist | Consultant | Aggregator
+                      </p>
                       <p class="card-text">
-                        Comp. Sci. Engineer, a self taught artist, with 10+ Years of Exp. and style of abstraction and distortion in depicting the Indian classical dance forms.
+                        Comp. Sci. Engineer, a self taught artist, with 10+
+                        Years of Exp. and style of abstraction and distortion in
+                        depicting the Indian classical dance forms.
                       </p>
                     </div>
                     <div class="card-footer px-3 py-1 py-md-0">
@@ -353,20 +433,24 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 mb-3">
                   <div
-                          class="card h-100 mr-0 ml-0"
-                          data-aos="fade-up"
-                          data-aos-delay="400"
+                    class="card h-100 mr-0 ml-0"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
                   >
                     <img
-                            src="res/images/speakers-new/sidharth_arora.jpg"
-                            class="card-img-top"
-                            alt="Class"
+                      src="res/images/speakers-new/sidharth_arora.jpg"
+                      class="card-img-top"
+                      alt="Class"
                     />
                     <div class="card-body px-4 pt-4 pb-2 p-sm-3">
                       <h3 class="card-title mb-1">Adv. Sidharth Arora</h3>
-                      <p class="card-text font-weight-bold mb-2">Educationist | Advocate | Author</p>
+                      <p class="card-text font-weight-bold mb-2">
+                        Educationist | Advocate | Author
+                      </p>
                       <p class="card-text">
-                        Dr. Siddharth Arora is a multi talented personality with a degree of M.B.B.S, L.L.B and working as advocate at Supreme Court of India and an educator.
+                        Dr. Siddharth Arora is a multi talented personality with
+                        a degree of M.B.B.S, L.L.B and working as advocate at
+                        Supreme Court of India and an educator.
                       </p>
                     </div>
                     <div class="card-footer px-3 py-1 py-md-0">
@@ -374,27 +458,32 @@
                     </div>
                   </div>
                 </div>
-<!--            </div>-->
-<!--          </div>-->
+                <!--            </div>-->
+                <!--          </div>-->
 
-<!--          <div class="col-12">-->
-<!--            <div class="card-deck mb-md-3">-->
+                <!--          <div class="col-12">-->
+                <!--            <div class="card-deck mb-md-3">-->
                 <div class="col-12 col-md-6 col-xl-4 mb-3">
                   <div
-                          class="card h-100 mr-0 ml-0"
-                          data-aos="fade-up"
-                          data-aos-delay="400"
+                    class="card h-100 mr-0 ml-0"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
                   >
                     <img
-                            src="res/images/speakers-new/shivani.jpg"
-                            class="card-img-top"
-                            alt="Class"
+                      src="res/images/speakers-new/shivani.jpg"
+                      class="card-img-top"
+                      alt="Class"
                     />
                     <div class="card-body px-4 pt-4 pb-2 p-sm-3">
                       <h3 class="card-title mb-1">Mrs. Shivani Sharma Singh</h3>
-                      <p class="card-text font-weight-bold mb-2">Connoisseur | Content creator | Speaker</p>
+                      <p class="card-text font-weight-bold mb-2">
+                        Connoisseur | Content creator | Speaker
+                      </p>
                       <p class="card-text">
-                        Mrs Shivani Singh Sharma has represented India internationally and has been crowned as Mrs Asia Pacific Exquisite international 2017 in a glorious ceremony in Baltimore USA.
+                        Mrs Shivani Singh Sharma has represented India
+                        internationally and has been crowned as Mrs Asia Pacific
+                        Exquisite international 2017 in a glorious ceremony in
+                        Baltimore USA.
                       </p>
                     </div>
                     <div class="card-footer px-3 py-1 py-md-0">
@@ -404,20 +493,25 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 mb-3">
                   <div
-                          class="card h-100 mr-0 ml-0"
-                          data-aos="fade-up"
-                          data-aos-delay="400"
+                    class="card h-100 mr-0 ml-0"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
                   >
                     <img
-                            src="res/images/speakers-new/dr_sapna.jpg"
-                            class="card-img-top"
-                            alt="Class"
+                      src="res/images/speakers-new/dr_sapna.jpg"
+                      class="card-img-top"
+                      alt="Class"
                     />
                     <div class="card-body px-4 pt-4 pb-2 p-sm-3">
                       <h3 class="card-title mb-1">Dr. Sapna Sharma</h3>
-                      <p class="card-text font-weight-bold mb-2">Counselor | Motivational Speaker | Life coach</p>
+                      <p class="card-text font-weight-bold mb-2">
+                        Counselor | Motivational Speaker | Life coach
+                      </p>
                       <p class="card-text">
-                        Equipped with a plethora of Qualifications in Counseling, Psychotherapy, Life Coaching, Human Resources and Personnel Management,  resonating a strong belief in the potential of every living being.
+                        Equipped with a plethora of Qualifications in
+                        Counseling, Psychotherapy, Life Coaching, Human
+                        Resources and Personnel Management, resonating a strong
+                        belief in the potential of every living being.
                       </p>
                     </div>
                     <div class="card-footer px-3 py-1 py-md-0">
@@ -427,20 +521,25 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 mb-3">
                   <div
-                          class="card h-100 mr-0 ml-0"
-                          data-aos="fade-up"
-                          data-aos-delay="400"
+                    class="card h-100 mr-0 ml-0"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
                   >
                     <img
-                            src="res/images/speakers-new/paritosh.jpg"
-                            class="card-img-top"
-                            alt="Class"
+                      src="res/images/speakers-new/paritosh.jpg"
+                      class="card-img-top"
+                      alt="Class"
                     />
                     <div class="card-body px-4 pt-4 pb-2 p-sm-3">
                       <h3 class="card-title mb-1">Mr. Partiosh Anand</h3>
-                      <p class="card-text font-weight-bold mb-2">YouTube filmmaker | Author | Entrepreneur</p>
+                      <p class="card-text font-weight-bold mb-2">
+                        YouTube filmmaker | Author | Entrepreneur
+                      </p>
                       <p class="card-text">
-                        Mr Paritosh Anand is well known as The Same Old Kid With A Dream’, all over the world is a YouTuber filmmaker, entrepreneur and author in the making, his first book titled “The Importance of Dreams”.
+                        Mr Paritosh Anand is well known as The Same Old Kid With
+                        A Dream’, all over the world is a YouTuber filmmaker,
+                        entrepreneur and author in the making, his first book
+                        titled “The Importance of Dreams”.
                       </p>
                     </div>
                     <div class="card-footer px-3 py-1 py-md-0">
@@ -448,27 +547,32 @@
                     </div>
                   </div>
                 </div>
-<!--            </div>-->
-<!--          </div>-->
+                <!--            </div>-->
+                <!--          </div>-->
 
-<!--          <div class="col-4 offset-4">-->
-<!--            <div class="card-deck mb-md-3">-->
+                <!--          <div class="col-4 offset-4">-->
+                <!--            <div class="card-deck mb-md-3">-->
                 <div class="col-12 col-md-6 col-xl-4 mb-3">
                   <div
-                          class="card h-100 mr-0 ml-0"
-                          data-aos="fade-up"
-                          data-aos-delay="600"
+                    class="card h-100 mr-0 ml-0"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
                   >
                     <img
-                            src="res/images/speakers-new/major_khare.jpg"
-                            class="card-img-top"
-                            alt="Class"
+                      src="res/images/speakers-new/major_khare.jpg"
+                      class="card-img-top"
+                      alt="Class"
                     />
                     <div class="card-body px-4 pt-4 pb-2 p-sm-3">
                       <h3 class="card-title mb-1">Major Pradeep Khare</h3>
-                      <p class="card-text font-weight-bold mb-2">Army Vetaran | Author | Blogger | Columnist</p>
+                      <p class="card-text font-weight-bold mb-2">
+                        Army Vetaran | Author | Blogger | Columnist
+                      </p>
                       <p class="card-text">
-                        The compass of spreading positivity on the same scale, Major Pradeep Khare is an army veteran, who took to writing real inspiring stories and published them in blogs which evolved into one amongst the best books.
+                        The compass of spreading positivity on the same scale,
+                        Major Pradeep Khare is an army veteran, who took to
+                        writing real inspiring stories and published them in
+                        blogs which evolved into one amongst the best books.
                       </p>
                     </div>
                     <div class="card-footer px-3 py-1 py-md-0">
@@ -476,11 +580,10 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
-
+        </div>
       </div>
     </section>
 
@@ -498,40 +601,46 @@
 
           <div class="col-lg-12 py-5 col-md-12 col-12">
             <div class="wrapper-card width-100">
-              <div class="row margin-5 xs-no-margin sm-margin-6 no-margin-rl width-100">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0 col-lg-6 padding-4 no-padding-tb">
+              <div
+                class="row margin-5 xs-no-margin sm-margin-6 no-margin-rl width-100"
+              >
+                <div
+                  class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0 col-lg-6 padding-4 no-padding-tb"
+                >
                   <div class="card popular">
                     <div class="card-ribbon">
-<!--                      <span>EARLY BIRD-->
+                      <!--                      <span>EARLY BIRD-->
                       <div class="row">
                         <div class="early-bird-countdown">
-                          <span style="padding-bottom: 15px;">&nbsp;EARLY BIRD</span>
+                          <span style="padding-bottom: 15px"
+                            >&nbsp;EARLY BIRD</span
+                          >
                           <div class="days">
                             <span class="value">00</span>
-<!--                            <span class="label">DAYS</span>-->
+                            <!--                            <span class="label">DAYS</span>-->
                           </div>
                           <div class="hours">
                             <span class="value">00</span>
-<!--                            <span class="label">HOURS</span>-->
+                            <!--                            <span class="label">HOURS</span>-->
                           </div>
                           <div class="minutes">
                             <span class="value">00</span>
-<!--                            <span class="label">MINS</span>-->
+                            <!--                            <span class="label">MINS</span>-->
                           </div>
                           <div class="seconds">
                             <span class="value">00</span>
-<!--                            <span class="label">SEC</span>-->
+                            <!--                            <span class="label">SEC</span>-->
                           </div>
                         </div>
                       </div>
-<!--                      </span>-->
+                      <!--                      </span>-->
                     </div>
                     <div class="card-title">
                       <h3>VIP Ticket</h3>
                     </div>
                     <div class="card-price">
                       <h2>
-                        &nbsp;<strike>200/-</strike><br>
+                        &nbsp;<strike>200/-</strike><br />
                         <sup>Rs.</sup>
                         &nbsp;150/-
                       </h2>
@@ -544,7 +653,7 @@
                       </ul>
                     </div>
                     <div class="card-action">
-<!--                      <button type="button">Book VIP Seat</button>-->
+                      <!--                      <button type="button">Book VIP Seat</button>-->
                       <a
                         href="https://imjo.in/RC387a"
                         target="_blank"
@@ -555,17 +664,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 sm-margin-top-4 col-md-6 col-md-offset-0 col-lg-6 padding-4 no-padding-tb">
+                <div
+                  class="col-xs-12 col-sm-8 col-sm-offset-2 sm-margin-top-4 col-md-6 col-md-offset-0 col-lg-6 padding-4 no-padding-tb"
+                >
                   <div class="card popular">
                     <div class="card-title">
                       <h3>Emperor Ticket</h3>
                     </div>
-                    <div class="card-price" style="margin-bottom: 87px;">
+                    <div class="card-price" style="margin-bottom: 87px">
                       <h2>
                         <sup>Rs.</sup>
-                         &nbsp;500/-
+                        &nbsp;500/-
                       </h2>
-                      <br>
+                      <br />
                     </div>
                     <div class="card-description">
                       <ul>
@@ -575,7 +686,7 @@
                       </ul>
                     </div>
                     <div class="card-action">
-<!--                      <button type="button">Book Emperor Seat</button>-->
+                      <!--                      <button type="button">Book Emperor Seat</button>-->
                       <a
                         href="https://imjo.in/UsUjQr"
                         target="_blank"
@@ -588,27 +699,127 @@
                 </div>
               </div>
             </div>
-           </div>
+          </div>
 
-           <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12 text-white">
+          <!-- registration form -->
 
+          <div class="ml-auto col-lg-6 col-md-6 col-12">
+            <h2
+              class="mb-4 pb-2 text-white"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Register for TEDxYCCE 2021
+            </h2>
+            <form
+              action="payment.html"
+              method="get"
+              class="contact-form webform"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              role="form"
+            >
+              <input
+                type="text"
+                class="form-control px-auto"
+                required
+                name="cf-name"
+                placeholder="First Name"
+              />
 
-           </div>
+              <input
+                type="text"
+                class="form-control px-auto"
+                required
+                name="cl-name"
+                placeholder="Last Name"
+              />
 
+              <input
+                type="email"
+                class="form-control px-auto"
+                required
+                name="cf-email"
+                placeholder="Email"
+              />
 
-           <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12 text-white">
-            <h2 class="mb-4" data-aos="fade-up" data-aos-delay="200">Steps to register <span></span></h2>
+              <!-- <textarea class="form-control px-auto" rows="5" name="cf-message" placeholder="Message"></textarea> -->
 
-          <p data-aos="fade-up" data-aos-delay="200">
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">After filling this form, you will be able to complete the payment using Billdesk.</li>
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">After completing the payment, you will receive a receipt on your registered email-id. You will also receive a confirmation email on your registered email-id within 48 hours.</li>
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">TEDxVIT 2021 will be conducted virtually.</li>
-               <li class="mb-4" data-aos="fade-up" data-aos-delay="200">Kindly take a screenshot on Billdesk after successfully completing the payment.</li>
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">You will receive the official e-vite a few days before the event, on your registered email-id.</li>
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">If you have any trouble with the payment process, kindly
-              <a href="#contact" class="smoothScroll">contact</a> our team.
-            </li>
-          </p>
+              <input
+                type="tel"
+                class="form-control px-auto"
+                required
+                name="cf-mobile"
+                placeholder="Phone Number"
+              />
+
+              <span class="dropdown-select">
+                <select id="occupation" class="form-control px-auto">
+                  <option value="" disabled selected hidden>Occupation</option>
+                  <option value="student">Student</option>
+                  <option value="freelancer">Freelancer</option>
+                  <option value="service">Service</option>
+                  <option value="business">Businessman</option>
+                  <option value="other">Other</option>
+                </select>
+
+              </span>
+              <input
+                type="text"
+                class="form-control px-auto"
+                placeholder="Organization"
+              />
+
+              <input
+                type="text"
+                class="form-control px-auto"
+                name="cf-designation"
+                placeholder="Designation"
+              />
+              <!-- TODO submit button font larger -->
+              <input
+                type="submit"
+                class="btn custom-btn bordered mt-3 form-control"
+                name="submit"
+              />
+            </form>
+          </div>
+
+          <div
+            class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12 text-white"
+          >
+            <h2 class="mb-4" data-aos="fade-up" data-aos-delay="200">
+              Steps to register <span></span>
+            </h2>
+
+            <p data-aos="fade-up" data-aos-delay="200">
+              <li class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                After filling this form, you will be able to complete the
+                payment using Billdesk.
+              </li>
+              <li class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                After completing the payment, you will receive a receipt on your
+                registered email-id. You will also receive a confirmation email
+                on your registered email-id within 48 hours.
+              </li>
+              <li class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                TEDxVIT 2021 will be conducted virtually.
+              </li>
+              <li class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                Kindly take a screenshot on Billdesk after successfully
+                completing the payment.
+              </li>
+              <li class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                You will receive the official e-vite a few days before the
+                event, on your registered email-id.
+              </li>
+              <li class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                If you have any trouble with the payment process, kindly
+                <!-- TODO font red for link -->
+                <a href="#contact" class="smoothScroll">contact</a> our team.
+              </li>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -625,7 +836,7 @@
             <div
               class="margin-8 no-margin-bottom no-margin-rl font-family-alt text-extra-large"
               id="status"
-              style="display: inline; color: red;"
+              style="display: inline; color: red"
             ></div>
 
             <form
@@ -701,32 +912,32 @@
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class=" mx-auto col-lg-4 col-md-12">
+          <div class="mx-auto col-lg-4 col-md-12">
             <p class="copyright-text mt-2">Copyright &copy; 2021 TEDxYCCE</p>
-        </div>
+          </div>
 
-        <div class="d-flex  col-lg-4 col-md-12 col-12">
+          <div class="d-flex col-lg-4 col-md-12 col-12">
             <ul class="social-icon mx-auto">
-            <li>
+              <li>
                 <a
-                href="http://www.linkedin.com/in/tedxvit-talks"
-                class="fa fa-linkedin"
+                  href="http://www.linkedin.com/in/tedxvit-talks"
+                  class="fa fa-linkedin"
                 ></a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a
-                href="https://twitter.com/tedxvitmumbai?s=08"
-                class="fa fa-twitter"
+                  href="https://twitter.com/tedxvitmumbai?s=08"
+                  class="fa fa-twitter"
                 ></a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a
-                href="https://www.instagram.com/tedxvittalks/?hl=en"
-                class="fa fa-instagram"
+                  href="https://www.instagram.com/tedxvittalks/?hl=en"
+                  class="fa fa-instagram"
                 ></a>
-            </li>
+              </li>
             </ul>
-        </div>
+          </div>
           <!-- TODO tst mailto button -->
           <div
             class="d-flex justify-content-center mx-auto col-lg-4 col-md-12 col-12"
@@ -755,17 +966,24 @@
     <script src="../res/js/jquery.countdown.min.js"></script>
     <script src="../res/js/countdown.js"></script>
     <script type="text/javascript">
-      $('.early-bird-countdown').countdown({
+      $(".early-bird-countdown").countdown({
         date: "May 1, 2021 23:59:59",
 
         render: function (data) {
-          $(".early-bird-countdown .days .value").html(this.leadingZeros(data.days + "d", 2));
-          $(".early-bird-countdown .hours .value").html(this.leadingZeros(data.hours + "h", 2));
-          $(".early-bird-countdown .minutes .value").html(this.leadingZeros(data.min + "m", 2));
-          $(".early-bird-countdown .seconds .value").html(this.leadingZeros(data.sec + "s", 2));
-        }
+          $(".early-bird-countdown .days .value").html(
+            this.leadingZeros(data.days + "d", 2)
+          );
+          $(".early-bird-countdown .hours .value").html(
+            this.leadingZeros(data.hours + "h", 2)
+          );
+          $(".early-bird-countdown .minutes .value").html(
+            this.leadingZeros(data.min + "m", 2)
+          );
+          $(".early-bird-countdown .seconds .value").html(
+            this.leadingZeros(data.sec + "s", 2)
+          );
+        },
       });
     </script>
-
   </body>
 </html>
