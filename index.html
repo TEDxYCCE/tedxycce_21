@@ -484,7 +484,7 @@
       </div>
     </section>
 
-    <!-- SCHEDULE -->
+    <!-- register -->
     <section class="schedule section" id="register">
       <div class="container">
         <div class="row">
@@ -589,6 +589,12 @@
               </div>
             </div>
            </div>
+
+           <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12 text-white">
+
+
+           </div>
+
 
            <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12 text-white">
             <h2 class="mb-4" data-aos="fade-up" data-aos-delay="200">Steps to register <span></span></h2>
@@ -745,6 +751,21 @@
     <script src="res/js/smoothscroll.js"></script>
     <script src="res/js/custom.js"></script>
     <script src="res/js/form_contact.js"></script>
+    <!-- Countdown -->
+    <script src="../res/js/jquery.countdown.min.js"></script>
+    <script src="../res/js/countdown.js"></script>
+    <script type="text/javascript">
+      $('.early-bird-countdown').countdown({
+        date: "May 1, 2021 23:59:59",
+
+        render: function (data) {
+          $(".early-bird-countdown .days .value").html(this.leadingZeros(data.days + "d", 2));
+          $(".early-bird-countdown .hours .value").html(this.leadingZeros(data.hours + "h", 2));
+          $(".early-bird-countdown .minutes .value").html(this.leadingZeros(data.min + "m", 2));
+          $(".early-bird-countdown .seconds .value").html(this.leadingZeros(data.sec + "s", 2));
+        }
+      });
+    </script>
 
   </body>
 </html>
