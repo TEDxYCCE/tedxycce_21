@@ -83,12 +83,14 @@ html {
     color: #fff !important;
     background-color: var(--tedred) !important;
 }
+
 .bg-tedred {
     background-color: var(--tedred) !important;
 }
 .text-tedred {
     color: var(--tedred) !important;
 }
+
 .card {
     border-radius: 0.5rem !important;
 }
@@ -101,6 +103,9 @@ html {
     object-position: top;
 }
 
+s {
+    text-decoration-thickness: 5px;
+}
 
 /*------------------------------------*\
     Navbar
@@ -232,6 +237,7 @@ html {
 }
 
 
+
 /* LG */
 @media (max-width: 1200px) {
     /*------------------------------------*\
@@ -254,6 +260,13 @@ html {
     \*------------------------------------*/
     #speakers .card-footer a {
         font-size: 0.8rem;
+    }
+
+    /*------------------------------------*\
+        Register Section
+    \*------------------------------------*/
+    #register .card-body ul li {
+        font-size: 0.7rem;
     }
 }
 
@@ -286,6 +299,13 @@ html {
     \*------------------------------------*/
     #book-my-seat {
         margin-top: 55px;
+    }
+
+    /*------------------------------------*\
+        Register Section
+    \*------------------------------------*/
+    #register .card-body ul li {
+        font-size: 0.8rem;
     }
 }
 
@@ -332,6 +352,13 @@ html {
     \*------------------------------------*/
     #speakers .card-footer a {
         font-size: 1rem;
+    }
+
+    /*------------------------------------*\
+        Register Section
+    \*------------------------------------*/
+    #register .card-body ul li {
+        font-size: 0.9rem;
     }
 }
 
@@ -393,5 +420,12 @@ html {
     \*------------------------------------*/
     #speakers .card-footer a {
         font-size: 1.4rem;
+    }
+
+    /*------------------------------------*\
+        Register Section
+    \*------------------------------------*/
+    #register .card-body ul li {
+        font-size: 1.3rem;
     }
 }
