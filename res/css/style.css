@@ -219,6 +219,15 @@ s {
     font-size: 0.8rem !important;
     border-radius: 0.25rem !important;
 }
+#steps-to-register li {
+    font-size: 0.8rem !important;
+}
+#steps-to-register ul {
+    margin-left: -15px !important;
+}
+#steps-to-register ul li:first-child {
+    margin-top: 1rem !important;
+}
 
 
 /* XL */
@@ -314,6 +323,9 @@ s {
     /*------------------------------------*\
         Register Section
     \*------------------------------------*/
+    #steps-to-register li {
+        font-size: 0.8rem !important;
+    }
     #register .card-body ul li {
         font-size: 0.8rem;
     }
@@ -367,8 +379,14 @@ s {
     /*------------------------------------*\
         Register Section
     \*------------------------------------*/
+    #steps-to-register li {
+        font-size: 1rem !important;
+    }
     #register .card-body ul li {
         font-size: 0.9rem;
+    }
+    #register .form-control {
+        font-size: 0.9rem !important;
     }
 }
 
@@ -435,7 +453,13 @@ s {
     /*------------------------------------*\
         Register Section
     \*------------------------------------*/
+    #steps-to-register li {
+        font-size: 1.3rem !important;
+    }
     #register .card-body ul li {
         font-size: 1.3rem;
+    }
+    #register .form-control {
+        font-size: 1.3rem !important;
     }
 }
