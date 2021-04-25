@@ -20,33 +20,10 @@
      <link rel="stylesheet" href="res/css/tooplate-gymso-style.css">
 
     <style type="text/css">
-        @keyframes animate-element {
-            0% {
-                stroke-dashoffset: 1450.70166015625px;
-            }
 
-            55% {
-                stroke-dashoffset: 0;
-            }
-
-            100% {
-                stroke-dashoffset: -1450.70166015625px;
-            }
-        }
-
-        .svg-el-1 {
-            animation-name: animate-element;
-            animation-duration: 3000ms;
-            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.5);
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
-            stroke-dasharray: 1450.70166015625px;
-            animation-delay: 0s;
-        }
     </style>
 </head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="1000">
 
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -68,7 +45,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="./speakers" class="nav-link smoothScroll">Speakers</a>
+                        <a href="#speakers" class="nav-link smoothScroll">Speakers</a>
                     </li>
 
                     <li class="nav-item">
@@ -76,7 +53,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="./register" class="nav-link smoothScroll">Register</a>
+                        <a href="#register" class="nav-link smoothScroll">Register</a>
                     </li>
                 </ul>
 
@@ -92,28 +69,29 @@
 
 
      <!-- HERO -->
-     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+     <section id="home" class="hero d-flex flex-column justify-content-center align-items-center">
 
             <div class="bg-overlay"></div>
 
                <div class="container">
                     <div class="row">
 
-                        <div class="col-12 col-sm-6">
-                            <img class="hero-X-logo" src="res/images/logos/TEDXYCCE%20(X)%20LOGO-1.png" alt="">
+                        <div class="col-12 col-sm-12 col-md-6">
+<!--                            <img class="hero-X-logo" src="res/images/logos/TEDXYCCE%20(X)%20LOGO-1.png" alt="">-->
                         </div>
-                        <div class="hero-logo col-12 col-sm-6">
-                            <img data-aos="fade-up" data-aos-delay="300" src="res/images/logos/TXYlogo.png" alt="TEDxYCCE">
-                            <div class="row">
-                                <div id="theme-text" class="col-6 text-wrap">
-                                    <p class="text-white mt-4 mb-4" data-aos="fade-up" data-aos-delay="500">Under the Stairs</p>
+                        <div class="hero-logo col-12 col-sm-12 col-md-6">
+                            <img class="mb-5 mb-sm-3 mb-md-2" data-aos="fade-up" data-aos-delay="300" src="res/images/logos/TXYlogo.png" alt="TEDxYCCE">
+                            <div id="theme-row" class="row my-sm-3 my-md-2">
+                                <div id="theme-text" class="col-4 col-sm-4 col-md-6 text-wrap">
+                                    <p class="text-white mt-4 mb-4" data-aos="fade-up" data-aos-delay="400">Under the Stairs</p>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-4 offset-sm- offset-md-0 col-md-6">
                                     <svg
                                         class="hero-svg-logo mt-4 mb-4"
                                         viewBox="0 0 394 195"
                                         fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        data-aos="fade-up" data-aos-delay="500">
                                         <path
                                             d="M2 86.5V108L45.5 130M2 86.5L45.5 108M2 86.5L45.5 64L56.5 69.5821M45.5 130V120.5M45.5 130L54 124.849M45.5 108V98.5M45.5 108V120.5M79 81L45.5 98.5M79 81L88 76L108.125 86.5M79 81L56.5 69.5821M45.5 98.5L88.5 120.5M122.5 94L88.5 111M122.5 94L108.125 86.5M122.5 94L132 89L149 97.6523M88.5 111V120.5M88.5 111L132 132.5M88.5 120.5V132.5M88.5 142.5L97.5 137.5M88.5 142.5V132.5M88.5 142.5L54 124.849M97.5 137.5L88.5 132.5M97.5 137.5L132 154.5M45.5 120.5L54 124.849M132 154.5V145M132 154.5L141 149.759M132 123.5L175.5 145M132 123.5V132.5M132 123.5L166 106.305M209 119L175.5 101.5L166 106.305M209 119L175.5 136M209 119L218.5 113.5L252.5 131.305M175.5 136L218.5 157.5M175.5 136V145M218.5 157.5V148.5M218.5 157.5V170M218.5 148.5L262 170.5M218.5 148.5L252.5 131.305M262 126.5L305 148.5M262 126.5L252.5 131.305M262 126.5V117M305 148.5V139.5M305 148.5V161M305 148.5L262 170.5M305 139.5L348.5 118M305 139.5L262 117M348.5 118V108.5M348.5 118V130.5M348.5 118L305 96M348.5 108.5L392 87M348.5 108.5L305 86.75M392 87V108.5L348.5 130.5M392 87L348.5 65.5M348.5 130.5V139.5L305 161M305 161V170.5L262 192.5M262 192.5V170.5M262 192.5L227.5 174.655M218.5 170V180M218.5 170L227.5 174.655M218.5 180L227.5 174.655M218.5 180L184.5 162.5M175.5 145V157.5M175.5 168L141 149.759M175.5 168L184.5 162.5M175.5 168V157.5M132 145L141 149.759M132 145V132.5M184.5 162.5L175.5 157.5M262 117L305 96M305 96V86.75M305 96L262 77.5V68.5M348.5 56.5L305 77.5V86.75M348.5 56.5V65.5M348.5 56.5L305 34.5M348.5 65.5L305 86.75M305 34.5V25M305 34.5L262 57.5M305 25L262 2.5L228.5 20.5M305 25L262 47.5M228.5 20.5L261.755 37.3755M228.5 20.5L218.5 15.5L185 33.25M304 77.5L262 57.5M262 57.5V47.5M262 57.5V59.5M262 47.5V37.5L261.755 37.3755M56.5 69.5821L88.5 54L97.5 58.3448M132 75L108.125 86.5M132 75V84.5L175.5 62M132 75L97.5 58.3448M175.5 62V72.5M175.5 62L141.321 45.5M175.5 72.5L218.5 50M175.5 72.5V84.5M218.5 50V60.5M218.5 50L185 33.25M218.5 60.5L261.755 37.3755M218.5 60.5V71.5M166 106.305L149 97.6523M149 97.6523L166.433 89M175.5 84.5V94M175.5 84.5L166.433 89M175.5 94L166.433 89M175.5 94L209.646 76.1328M218.5 71.5V82M218.5 71.5L209.646 76.1328M218.5 82L209.646 76.1328M218.5 82L254.5 63.3793M262 59.5L254.5 63.3793M262 59.5V68.5M254.5 63.3793L262 68.5M97.5 58.3448L132 41L141.321 45.5M141.321 45.5L175.5 28.5L185 33.25"
                                             stroke="#F70000"
@@ -124,8 +102,12 @@
                                 </div>
                             </div>
 
-                            <p id="hero-date" class="text-white mb-4" data-aos="fade-up" data-aos-delay="600">May 8, 2021</p>
-                            <button class="hero-claim btn btn-outline-danger">CLAIM YOUR SPOT</button>
+                            <p id="hero-date" class="text-white mt-4 mt-sm-3 mt-md-2 mb-4" data-aos="fade-up" data-aos-delay="600">May 8, 2021</p>
+                            <div data-aos="fade-up" data-aos-delay="700">
+                                <button class="hero-claim btn btn-outline-danger mt-5 mt-sm-3 mt-md-2">CLAIM YOUR SPOT</button>
+                                <p id="event-virtual" class="text-white-50 mt-3 mt-sm-2">This event will be conducted virtually</p>
+                            </div>
+
                         </div>
 
 <!--                         <div class="col-lg-8 col-md-10 mx-auto col-12">-->
@@ -522,6 +504,16 @@
      <script src="res/js/aos.js"></script>
      <script src="res/js/smoothscroll.js"></script>
      <script src="res/js/custom.js"></script>
+    <script src="res/js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Hero background image size
+            // $("#home").css("min-height", $(window).height() - $(".navbar").outerHeight());
+
+
+        });
+    </script>
 
 </body>
 </html>

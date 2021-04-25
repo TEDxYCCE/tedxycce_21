@@ -1,26 +1,67 @@
+/*  Custom Stylesheet */
+
+/*------------------------------------*\
+    Font Face
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OleoScript';
+    src: url('../fonts/OleoScript-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+:root {
+    --base-font-family: 'Karla', sans-serif !important;
+    --tedred: #E62B1E;
+}
+
+
+* {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
 html {
     font-size: 1rem;
     min-width: 400px !important;
 }
-
 @media (max-width: 575px) {
     html {
         font-size: 0.8rem !important;
     }
 }
-
 @media (min-width: 576px) and (max-width: 767px) {
     html {
         font-size: 1.2rem !important;
     }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
     html {
         font-size: 1.4rem !important;
     }
 }
-
 @media (min-width: 992px) {
     html {
         font-size: 1.6rem !important;
@@ -28,22 +69,66 @@ html {
 }
 
 
+/*------------------------------------*\
+    Overrides
+\*------------------------------------*/
+.btn {
+    border-radius: 0.5rem !important;
+}
+.btn-outline-danger {
+    color: var(--tedred) !important;
+    border-color: var(--tedred) !important;
+}
+.btn-outline-danger:hover {
+    color: #fff !important;
+    background-color: var(--tedred) !important;
+}
+.bg-tedred {
+    background-color: var(--tedred) !important;
+}
+.text-tedred {
+    color: var(--tedred) !important;
+}
+
+
+/*------------------------------------*\
+    Navbar
+\*------------------------------------*/
+
+.navbar {
+
+}
+.navbar.shrink {
+    -webkit-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1)
+}
+.navbar.shrink {
+    padding: 0.2rem 1rem;
+}
+.navbar.shrink .navbar-brand img {
+    width: 7rem;
+    margin: 10px 0;
+}
 .navbar-brand {
     width: 30%;
+    padding: 0 !important;
 }
 .navbar-brand img {
     width: 8rem;
-    margin: 5px 0;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
 }
-
 .navbar-nav a {
-    font-size: 0.6rem !important;
+    font-size: 0.7rem !important;
 }
 
+
+/*------------------------------------*\
+    Hero Home Section
+\*------------------------------------*/
 
 .hero-X-logo {
     width: 17rem;
@@ -55,56 +140,138 @@ html {
 .hero-claim {
     /*width: 30%;*/
     /*height: 60px;*/
-    padding-bottom: 0.6rem !important;
+    /*padding-bottom: 0.6rem !important;*/
+}
+.hero .container {
+    margin-top: 4rem;
 }
 
+
+@keyframes animate-element {
+    0% {
+        stroke-dashoffset: 1450.70166015625px;
+    }
+
+    55% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -1450.70166015625px;
+    }
+}
+.svg-el-1 {
+    animation-name: animate-element;
+    animation-duration: 5000ms;
+    animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.5);
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    stroke-dasharray: 1450.70166015625px;
+    animation-delay: 0s;
+}
 .hero-svg-logo {
     width: 97%;
 }
+
 #theme-text p {
-    font-size: 2.3rem;
+    font-family: OleoScript, Karla, sans-serif;
+    font-size: 2.7rem;
     font-weight: bold;
     line-height: 1;
 }
 #hero-date {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
-}
-
-#home {
-    margin-top: 13vh;
-    min-height: 87vh;
 }
 
 
 /* LG */
 @media (min-width: 993px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
     .hero-svg-logo {
         margin-left: -106px;
-        height: 210px;
+        height: 220px;
     }
 }
 
 /* MD */
 @media (max-width: 992px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
     .hero-svg-logo {
         margin-left: -63px;
-        height: 185px;
+        height: 195px;
+    }
+    .hero-logo img {
+        width: 90%;
+    }
+    .hero-claim {
+        font-size: 1.1rem !important;
     }
 }
 
 /* SM */
 @media (max-width: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
     .hero-svg-logo {
         margin-left: -45px;
-        height: 163px;
+        height: 173px;
+    }
+    .hero-logo img {
+        width: 60%;
+    }
+    .hero-claim {
+        font-size: 1.5rem !important;
     }
 }
 
 /* XS */
 @media (max-width: 576px) {
+
+    /*------------------------------------*\
+        Navbar
+    \*------------------------------------*/
+    .navbar-brand img {
+        width: 10rem;
+    }
+
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
     .hero-svg-logo {
         margin-left: -45px;
-        height: 106px;
+        height: 163px;
     }
+    .hero-logo img {
+        width: 70%;
+    }
+    .container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    #home .container {
+        /*height: 80vh;*/
+    }
+    #theme-row {
+        margin-top: 5rem !important;
+    }
+    #theme-text p {
+        font-size: 4rem;
+    }
+    #hero-date {
+        font-size: 2.2rem;
+    }
+    .hero-claim {
+        font-size: 2rem !important;
+    }
+    #event-virtual {
+        font-size: 1.2rem;
+    }
+
 }
