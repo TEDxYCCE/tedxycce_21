@@ -557,12 +557,17 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .google-map {
     border-top: 1px solid #efebeb;
-    margin-top: 2.5rem;
-    padding-top: 2.5rem;
+    /*margin-top: 2.5rem;*/
+    padding: 38%;
   }
 
   .google-map iframe {
-    width: 100%;
+    position: absolute;
+    border: 0;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
   }
 
 
