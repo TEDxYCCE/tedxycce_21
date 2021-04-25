@@ -89,6 +89,17 @@ html {
 .text-tedred {
     color: var(--tedred) !important;
 }
+.card {
+    border-radius: 0.5rem !important;
+}
+.card-img-top {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+    height: 35vh;
+    min-height: 290px !important;
+    object-fit: cover;
+    object-position: top;
+}
 
 
 /*------------------------------------*\
@@ -195,14 +206,54 @@ html {
 }
 
 
-/* LG */
-@media (min-width: 993px) {
+/* XL */
+@media (min-width: 1201px) {
     /*------------------------------------*\
         Hero Home Section
     \*------------------------------------*/
     .hero-svg-logo {
         margin-left: -106px;
         height: 220px;
+    }
+
+    /*------------------------------------*\
+        About Tedx section
+    \*------------------------------------*/
+    #book-my-seat {
+        margin-top: 14px;
+    }
+
+    /*------------------------------------*\
+        Speakers section
+    \*------------------------------------*/
+    #speakers .card-footer a {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* LG */
+@media (max-width: 1200px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-svg-logo {
+        margin-left: -106px;
+        height: 220px;
+    }
+
+    /*------------------------------------*\
+        About Tedx section
+    \*------------------------------------*/
+    #book-my-seat {
+        margin-top: 68px;
+    }
+
+    /*------------------------------------*\
+        Speakers section
+    \*------------------------------------*/
+    #speakers .card-footer a {
+        font-size: 0.8rem;
     }
 }
 
@@ -229,10 +280,24 @@ html {
     .hero-claim {
         font-size: 1.1rem !important;
     }
+
+    /*------------------------------------*\
+        About Tedx section
+    \*------------------------------------*/
+    #book-my-seat {
+        margin-top: 55px;
+    }
 }
 
 /* SM */
 @media (max-width: 768px) {
+
+    /*------------------------------------*\
+        Generic
+    \*------------------------------------*/
+    .btn {
+        font-size: 1.2rem;
+    }
 
     /*------------------------------------*\
         Navbar
@@ -254,10 +319,31 @@ html {
     .hero-claim {
         font-size: 1.5rem !important;
     }
+
+    /*------------------------------------*\
+        About Tedx section
+    \*------------------------------------*/
+    #book-my-seat {
+        margin-top: 5px;
+    }
+
+    /*------------------------------------*\
+        Speakers section
+    \*------------------------------------*/
+    #speakers .card-footer a {
+        font-size: 1rem;
+    }
 }
 
 /* XS */
 @media (max-width: 576px) {
+
+    /*------------------------------------*\
+        Generic
+    \*------------------------------------*/
+    .btn {
+        font-size: 1.8rem;
+    }
 
     /*------------------------------------*\
         Navbar
@@ -302,4 +388,10 @@ html {
         font-size: 1.2rem;
     }
 
+    /*------------------------------------*\
+        Speakers Section
+    \*------------------------------------*/
+    #speakers .card-footer a {
+        font-size: 1.4rem;
+    }
 }
