@@ -76,6 +76,11 @@ html {
     min-height: 87vh;
 }
 
+.social-icon {
+    margin: 0px;
+    /* font-size: 1.5rem; */
+}
+
 
 /* LG */
 @media (min-width: 993px) {
@@ -83,6 +88,7 @@ html {
         margin-left: -106px;
         height: 210px;
     }
+    
 }
 
 /* MD */
@@ -99,6 +105,7 @@ html {
         margin-left: -45px;
         height: 163px;
     }
+
 }
 
 /* XS */
@@ -108,3 +115,6 @@ html {
         height: 106px;
     }
 }
+
+
+
