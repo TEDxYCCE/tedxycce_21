@@ -211,6 +211,16 @@ s {
 }
 
 
+/*------------------------------------*\
+    Register Section
+\*------------------------------------*/
+#register .form-control {
+    margin: 0.7rem 0 !important;
+    font-size: 0.8rem !important;
+    border-radius: 0.25rem !important;
+}
+
+
 /* XL */
 @media (min-width: 1201px) {
     /*------------------------------------*\

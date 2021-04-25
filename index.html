@@ -5,9 +5,37 @@
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+
+    <!-- Title, icon, description and keywords -->
+    <title>TEDxYCCE</title>
+    <link rel="shortcut icon" href="./res/images/favicon.ico" />
+    <meta
+      name="description"
+      content="TEDxYCCE, x = independently organised TED event. Under The Stairs, This May, at YCCE, Nagpur."
+    />
+    <meta
+      name="keywords"
+      content="TEDx, YCCE, Yeshwantrao Chavan College of Engineering, Hingna, Nagpur, event, talks"
+    />
+
+    <!-- Social media tags -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="TEDxYCCE" />
+    <meta
+      property="og:description"
+      content="Under The Stairs. This May, at Yeshwantrao Chavan College of Engineering."
+    />
+    <meta property="og:image" content="res/images/logos/TXYlogo.png" />
+    <meta property="og:url" content="https://tedxycce.com" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tedxycce" />
+    <meta
+      itemprop="description"
+      content="Under The Stairs. This May, at Yeshwantrao Chavan College of Engineering."
+    />
+    <meta itemprop="image" content="./img/TXYlogo.png" />
+    <meta name="author" content="Arpan Adlakhiya and Anmoldeep Singh Arora" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
@@ -16,10 +44,10 @@
     <link rel="stylesheet" href="res/css/bootstrap.min.css" />
     <link rel="stylesheet" href="res/css/font-awesome.min.css" />
     <link rel="stylesheet" href="res/css/aos.css" />
-    
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="res/css/tooplate-gymso-style.css" />
-    
+
     <link rel="stylesheet" href="res/css/register_card.css" />
     <link rel="stylesheet" href="res/css/style.css" />
 </head>
@@ -601,16 +629,88 @@
             </div>
            </div>
 
-           <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12 text-white">
-            <h2 class="mb-4" data-aos="fade-up" data-aos-delay="200">Steps to register <span></span></h2>
+            <!-- registration form -->
+            <div class="ml-auto col-lg-6 col-md-6 col-12 pt-2">
+                <h2
+                    class="mb-2 pb-2 text-white"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+                    Register for TEDxYCCE 2021
+                </h2>
+                <form
+                    action="payment.html"
+                    method="get"
+                    class="contact-form webform"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    role="form"
+                >
+                    <input
+                        type="text"
+                        class="form-control px-auto"
+                        required
+                        name="cf-name"
+                        placeholder="First Name"
+                    />
+
+                    <input
+                        type="text"
+                        class="form-control px-auto"
+                        required
+                        name="cl-name"
+                        placeholder="Last Name"
+                    />
+
+                    <input
+                        type="email"
+                        class="form-control px-auto"
+                        required
+                        name="cf-email"
+                        placeholder="Email"
+                    />
+
+                    <!-- <textarea class="form-control px-auto" rows="5" name="cf-message" placeholder="Message"></textarea> -->
+
+                    <input
+                        type="tel"
+                        class="form-control px-auto"
+                        required
+                        name="cf-mobile"
+                        placeholder="Phone Number"
+                    />
+
+                    <input
+                        type="text"
+                        class="form-control px-auto"
+                        placeholder="Organization"
+                    />
+
+                    <input
+                        type="text"
+                        class="form-control px-auto"
+                        name="cf-designation"
+                        placeholder="Designation"
+                    />
+                    <!-- TODO submit button font larger -->
+                    <input
+                        type="submit"
+                        class="btn custom-btn bordered mt-3 form-control"
+                        name="submit"
+                    />
+                </form>
+            </div>
+
+           <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12 text-white pt-2">
+            <h2 class="mb-2" data-aos="fade-up" data-aos-delay="200">Steps to register <span></span></h2>
 
           <p data-aos="fade-up" data-aos-delay="200">
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">After filling this form, you will be able to complete the payment using Billdesk.</li>
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">After completing the payment, you will receive a receipt on your registered email-id. You will also receive a confirmation email on your registered email-id within 48 hours.</li>
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">TEDxVIT 2021 will be conducted virtually.</li>
-               <li class="mb-4" data-aos="fade-up" data-aos-delay="200">Kindly take a screenshot on Billdesk after successfully completing the payment.</li>
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">You will receive the official e-vite a few days before the event, on your registered email-id.</li>
-            <li class="mb-4" data-aos="fade-up" data-aos-delay="200">If you have any trouble with the payment process, kindly
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="200">After filling this form, you will be able to complete the payment using Billdesk.</li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="200">After completing the payment, you will receive a receipt on your registered email-id. You will also receive a confirmation email on your registered email-id within 48 hours.</li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="200">TEDxVIT 2021 will be conducted virtually.</li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="200">Kindly take a screenshot on Billdesk after successfully completing the payment.</li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="200">You will receive the official e-vite a few days before the event, on your registered email-id.</li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="200">If you have any trouble with the payment process, kindly
               <a href="#contact" class="smoothScroll">contact</a> our team.
             </li>
           </p>
@@ -756,6 +856,28 @@
     <script src="res/js/smoothscroll.js"></script>
     <script src="res/js/custom.js"></script>
     <script src="res/js/form_contact.js"></script>
+    <!-- Countdown -->
+    <script src="../res/js/jquery.countdown.min.js"></script>
+    <script src="../res/js/countdown.js"></script>
+    <script type="text/javascript">
+      $(".early-bird-countdown").countdown({
+        date: "May 1, 2021 23:59:59",
 
+        render: function (data) {
+          $(".early-bird-countdown .days .value").html(
+            this.leadingZeros(data.days + "d", 2)
+          );
+          $(".early-bird-countdown .hours .value").html(
+            this.leadingZeros(data.hours + "h", 2)
+          );
+          $(".early-bird-countdown .minutes .value").html(
+            this.leadingZeros(data.min + "m", 2)
+          );
+          $(".early-bird-countdown .seconds .value").html(
+            this.leadingZeros(data.sec + "s", 2)
+          );
+        },
+      });
+    </script>
   </body>
 </html>

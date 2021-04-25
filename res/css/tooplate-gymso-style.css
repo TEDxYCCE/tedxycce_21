@@ -526,7 +526,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .webform input,
   button#submit-button {
-    height: calc(2.25rem + 20px);
+    height: calc(1.25rem + 20px);
   }
 
   .form-control {
