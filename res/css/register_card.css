@@ -78,10 +78,10 @@
 #register .card-ribbon {
   position: absolute;
   overflow: hidden;
-  top: -10px;
-  left: -10px;
-  width: 135px;
-  height: 135px;
+  top: -4px;
+  left: -4px;
+  width: 160px;
+  height: 160px;
 }
 
 #register .card-ribbon span {
@@ -90,7 +90,7 @@
   width: 190px;
   padding: 10px 0 20px;
   background-color: #dfdfdf;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 -5px 5px rgba(0, 0, 0, 0.3);
   color: var(--tedred);
   font-size: 15px;
   text-transform: uppercase;

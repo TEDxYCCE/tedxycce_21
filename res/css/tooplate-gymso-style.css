@@ -369,6 +369,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     background-repeat: no-repeat;
     vertical-align: middle;
     min-height: 100vh;
+    background-attachment: fixed;
     position: relative;
   }
 
@@ -577,7 +578,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .site-footer {
     border-top: 1px solid #efebeb;
-    padding: 1rem 0;
+    padding: 0.8rem 0 0.4rem;
   }
 
   .site-footer a {

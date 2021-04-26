@@ -45,7 +45,7 @@
 
 html {
     font-size: 1rem;
-    min-width: 400px !important;
+    min-width: 350px !important;
 }
 @media (max-width: 575px) {
     html {
@@ -111,9 +111,6 @@ s {
     Navbar
 \*------------------------------------*/
 
-.navbar {
-
-}
 .navbar.shrink {
     -webkit-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
@@ -211,6 +208,7 @@ s {
     background-position: bottom;
     background-repeat: no-repeat;
     vertical-align: middle;
+    background-attachment: fixed;
     position: relative;
 }
 .text-white-70 {
@@ -230,6 +228,18 @@ s {
 /*------------------------------------*\
     Register Section
 \*------------------------------------*/
+#register {
+    background-image: url('../images/campus_photos/hands_red_event.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-attachment: fixed;
+    position: relative;
+}
+#register .bg-overlay {
+    opacity: 0.5 !important;
+}
 #register .form-control {
     margin: 0.7rem 0 !important;
     font-size: 0.8rem !important;
@@ -263,7 +273,19 @@ s {
     background-position: top;
     background-repeat: no-repeat;
     vertical-align: middle;
+    background-attachment: fixed;
     position: relative;
+}
+
+
+/*------------------------------------*\
+    Footer Section
+\*------------------------------------*/
+.copyright-text, .mail-id {
+    font-size: 0.7rem !important;
+}
+.social-icon a {
+    font-size: 0.9rem !important;
 }
 
 
@@ -497,6 +519,16 @@ s {
     #contact button[type="submit"] {
         font-size: 0.9rem !important;
     }
+
+    /*------------------------------------*\
+        Footer Section
+    \*------------------------------------*/
+    .copyright-text, .mail-id {
+        font-size: 0.9rem !important;
+    }
+    .social-icon a {
+        font-size: 1.1rem !important;
+    }
 }
 
 /* XS */
@@ -583,6 +615,21 @@ s {
     }
     #contact button[type="submit"] {
         font-size: 1.4rem !important;
+    }
+
+
+    /*------------------------------------*\
+        Footer Section
+    \*------------------------------------*/
+    .copyright-text, .mail-id {
+        font-size: 1.3rem !important;
+    }
+    .social-icon a {
+        font-size: 1.7rem !important;
+    }
+    .site-footer {
+        border-top: 1px solid #efebeb;
+        padding: 0.8rem 0 1.1rem;
     }
 }
 
