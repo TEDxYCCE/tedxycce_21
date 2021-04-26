@@ -33,7 +33,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
   :root {
     --primary-color:        #f13a11;
     --white-color:          #ffffff;
-    --dark-color:           #171819;
+    /*--dark-color:           #171819;*/
+    --dark-color:           rgba(6, 12, 24, 0.98);
     --about-bg-color:       #f9f9f9;
 
     --gray-color:           #909090;
