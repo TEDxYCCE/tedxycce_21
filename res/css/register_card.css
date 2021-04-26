@@ -80,25 +80,31 @@
   overflow: hidden;
   top: -10px;
   left: -10px;
-  width: 114px;
-  height: 112px;
+  width: 135px;
+  height: 135px;
 }
 
 #register .card-ribbon span {
   position: absolute;
   display: block;
-  width: 160px;
-  padding: 10px 0;
+  width: 190px;
+  padding: 10px 0 20px;
   background-color: #dfdfdf;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   color: var(--tedred);
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
-  left: -35px;
-  top: 25px;
+  left: -46px;
+  top: 22px;
   transform: rotate(-45deg);
   font-weight: bolder;
+}
+#register .card-ribbon .days span,
+#register .card-ribbon .hours span,
+#register .card-ribbon .minutes span,
+#register .card-ribbon .seconds span {
+  padding: 20px 0;
 }
 
 #register .card-ribbon::before,

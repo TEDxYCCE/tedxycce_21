@@ -16,10 +16,11 @@
 
     // SMOOTHSCROLL NAVBAR
     $(function() {
-      $('.navbar a, .hero-text a').on('click', function(event) {
-        var $anchor = $(this);
+      $('.navbar a, .hero-text a, #book-my-seat, #claim-your-spot')
+          .on('click', function(event) {
+        let $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 49
+            scrollTop: $($anchor.attr('href')).offset().top - 100
         }, 1000);
         event.preventDefault();
       });
