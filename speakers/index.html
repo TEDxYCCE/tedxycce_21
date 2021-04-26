@@ -1,397 +1,926 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>TEDxYCCE</title>
+<!--
+ _____ ___________    __   _______  _____  _____ 
+|_   _|  ___|  _  \   \ \ / /  __ \/  __ \|  ___|
+  | | | |__ | | | |_  _\ V /| /  \/| /  \/| |__  
+  | | |  __|| | | \ \/ /\ / | |    | |    |  __| 
+  | | | |___| |/ / >  < | | | \__/\| \__/\| |___ 
+  \_/ \____/|___/ /_/\_\\_/  \____/ \____/\____/ 
+   -->
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Title, icon, description and keywords -->
-    <title>TEDxYCCE</title>
+    <title>Speakers | TEDxYCCE</title>
     <link rel="shortcut icon" href="../res/images/favicon.ico" />
     <meta
       name="description"
-      content="TEDxYCCE, x = independently organised TED event. Under The Stairs, This May, at YCCE, Nagpur."
+      content="Register for TEDxYCCE, x = independently organised TED event. Under The Stairs. This May, at YCCE."
     />
     <meta
       name="keywords"
-      content="TEDx, YCCE, Yeshwantrao Chavan College of Engineering, Hingna, Nagpur, event, talks"
+      content="TEDx, YCCE, Yeshwantrao Chavan College of Engineering, Nagpur, event, talks"
     />
 
     <!-- Social media tags -->
     <!-- Open Graph -->
-    <meta property="og:title" content="TEDxYCCE" />
+    <meta property="og:title" content="Speakers for TEDxYCCE" />
     <meta
       property="og:description"
-      content="Under The Stairs. This May, at Yeshwantrao Chavan College of Engineering."
+      content="TEDxYCCE - Under The Stairs. This October, at Yeshwantrao Chavan College of Engineering, Nagpur, event."
     />
-    <meta property="og:image" content="../res/images/logos/TXYlogo.png" />
-    <meta property="og:url" content="https://tedxycce.com" />
+    <meta
+      property="og:image"
+      content="https://tedxycce.com/res/images/logosTXYLogo_light.jpg"
+    />
+    <meta property="og:url" content="https://tedxycce.com/speakers" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@tedxycce" />
+    <meta name="twitter:site" content="@TEDxYCCE" />
+    <!-- Google+ -->
+    <meta itemprop="name" content="Speakers for TEDxYCCE" />
+
     <meta
       itemprop="description"
-      content="Under The Stairs. This May, at Yeshwantrao Chavan College of Engineering."
+      content="TEDxYCCE - Under The Stairs. This May, at Yeshwantrao Chavan College of Engineering, Nagpur."
     />
-    <meta itemprop="image" content="../res/images/logos/TXYlogo.png" />
-    <meta name="author" content="Arpan Adlakhiya and Anmoldeep Singh Arora" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      itemprop="image"
+      content="https://tedxycce.com/res/images/logos/TXYLogo_light.jpg"
     />
 
+    <!-- Browser themes -->
+    <meta name="theme-color" content="#000" />
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="../res/css/bootstrap.min.css" />
+
+    <!-- Font Icons -->
     <link rel="stylesheet" href="../res/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../res/css/aos.css" />
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="../res/css/tooplate-gymso-style.css" />
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../res/css/flickity.min.css" />
+    <link rel="stylesheet" href="../res/css/magnific-popup.css" />
 
-    <link rel="stylesheet" href="../res/css/register_card.css" />
+    <!-- Main styles -->
+    <link rel="stylesheet" href="../res/css/main.css" />
     <link rel="stylesheet" href="../res/css/style.css" />
+
+    <!-- Color skin -->
+    <link rel="stylesheet" href="../res/css/color_red.css" />
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 8]>
+      <script src="../res/js/modernizr.min.js"></script>
+    <![endif]-->
   </head>
-  <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-    <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="/index.html">
-          <img src="../res/images/logos/TXYlogo.png" alt="TEDxYCCE" />
-        </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-lg-auto">
-            <li class="nav-item">
-              <a href="/index.html#home" class="nav-link smoothScroll">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="/index.html#speakers" class="nav-link smoothScroll"
-                >Speakers</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a href="/index.html#contact" class="nav-link smoothScroll"
-                >Contact Us</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a href="/index.html#register" class="nav-link smoothScroll"
-                >Register</a
-              >
-            </li>
-          </ul>
-
-          <!--                <ul class="social-icon mx-0">-->
-          <!--                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>-->
-          <!--                    <li><a href="#" class="fa fa-twitter"></a></li>-->
-          <!--                    <li><a href="#" class="fa fa-instagram"></a></li>-->
-          <!--                </ul>-->
-        </div>
-      </div>
-    </nav>
-
-    <!--    SPEAKERS -->
-    <section id="speakers" class="class section">
-      <div class="container">
-        <div class="text-center mb-4 bt-4">
-          <h6 data-aos="fade-up">
-            Have a look at our Speakers for TEDxYCCE 2021
-          </h6>
-
-          <h2 data-aos="fade-up" data-aos-delay="200">
-            Speakers List for TEDxYCCE 2021
-          </h2>
-        </div>
-
-        <!-- Onkar Khullar -->
-        <div class="row">
-          <div class="col-12 col-lg-4 col-md-4 my-2 ">
-            <img
-              src="../res/images/speakers-new/onkar_khullar.jpg"
-              alt="Onkar Khullar"
-              class="rounded-circle speaker-img "
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-lg-8 col-md-8 col-sm-12 mt-md-2 mt-5">
-            <h3 class="mb-1">Onkar Khullar</h3>
-            <p class="font-weight-bold mb-2">Author | Philosoper | Blogger</p>
-            <p>
-              Onkar Kishan Khullar is a 3-time college dropout turned
-              motivational speaker, artist, author, entrepreneur of a social
-              impact laboratory called I Impact India Partners which provides
-              comprehensive social sector solutions to Non-Profits, Social
-              Enterprises, and Corporates. He has given 17 TEDx talks till date
-              and has done over 500 shows across India. He is often said as
-              India's most dangerous speaker.
-            </p>
-          </div>
-        </div>
-        <div class="row hr mx-auto"></div>
-
-        <!-- Kunal Moon -->
-        <div class="row">
-          <div class="col-12 col-lg-4 col-md-4 my-2">
-            <img
-              src="../res/images/speakers-new/kunal_moon.jpg"
-              alt="Kunal Moon"
-              class="rounded-circle speaker-img"
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-lg-8 col-md-4 mt-5">
-            <h3 class="mb-1">Kunal Moon</h3>
-            <p class="font-weight-bold mb-2">
-              Artist | Consultant | Aggregator
-            </p>
-            <p>
-              Kunal Moon, from Mumbai, Maharashtra, has been a creative mind
-              from early student days. He is a B. Tech. in Computer Science and
-              an alumnus of IIM Calcutta.The self taught artist brings a style
-              of abstraction and distortion in depicting the Indian classical
-              dance forms in this present series. His experience of over 10
-              years is visible in each of his painting in this series
-              aesthetically engaging in its own vibrant colours with harmony. He
-              also brings in a sense of intrigue due to fragmentation of the
-              subject being a novelty and uniqueness of his style.
-            </p>
-          </div>
-        </div>
-        <div class="row hr mx-auto"></div>
-
-        <!-- Adv. Sidharth Arora -->
-        <div class="row">
-          <div class="col-12 col-lg-4 col-md-4 my-2">
-            <img
-              src="../res/images/speakers-new/sidharth_arora.jpg"
-              alt="Adv. Sidharth Arora"
-              class="rounded-circle speaker-img"
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-lg-8 col-md-4 mt-5">
-            <h3 class="mb-1">Adv. Sidharth Arora</h3>
-            <p class="font-weight-bold mb-2">
-              Educationist | Advocate | Author
-            </p>
-            <p>
-              Dr. Siddharth Arora is a multi talented personality with a degree
-              of M.B.B.S, L.L.B and working as advocate at Supreme Court of
-              India. What is more striking is the difference he has made as an
-              educator. Dr. Arora truly believes that if he can change at least
-              one life with his teaching, he would have done his job. He has not
-              only shaped the journeys, but also the minds of many.
-            </p>
-          </div>
-        </div>
-        <div class="row hr mx-auto"></div>
-
-        <!-- Mrs. Shivani Sharma Singh -->
-        <div class="row">
-          <div class="col-12 col-lg-4 col-md-4 my-2">
-            <img
-              src="../res/images/speakers-new/shivani.jpg"
-              alt="Mrs. Shivani Sharma Singh"
-              class="rounded-circle speaker-img"
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-lg-8 col-md-4 mt-5">
-            <h3 class="mb-1">Mrs. Shivani Sharma Singh</h3>
-            <p class="font-weight-bold mb-2">
-              Connoisseur | Content creator | Speaker
-            </p>
-            <p>
-              Mrs Shivani Singh Sharma has represented India internationally and
-              has been crowned as Mrs Asia Pacific Exquisite international 2017
-              in a glorious ceremony in Baltimore USA. She is the perfect
-              example of women empowerment with her exceptional work she did to
-              bring change to society. She is a brand ambassador, a purpose
-              coach and a mother awarded the Prestigious Patron of the Planet
-              Award in Global Innovation Exchange in 2019, Dr Sarojini Naidu
-              Nightingale of the Nation Award 2017 and Dr Sarvepalli
-              Radhakrishnan Award 2020. At present, she is working on her
-              initiative of spreading Self Love along with Self Improvement. She
-              believes that If She Can Do it, Anyone Can Do! She is best suited
-              for the quote “A girl should be two things : who and what she
-              wants.”
-            </p>
-          </div>
-        </div>
-        <div class="row hr mx-auto"></div>
-
-        <!-- Dr. Sapna Sharma -->
-        <div class="row">
-          <div class="col-12 col-lg-4 col-md-4 my-2">
-            <img
-              src="../res/images/speakers-new/dr_sapna.jpg"
-              alt="Dr. Sapna Sharma"
-              class="rounded-circle speaker-img"
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-lg-8 col-md-4 mt-5">
-            <h3 class="mb-1">Dr. Sapna Sharma</h3>
-            <p class="font-weight-bold mb-2">
-              Counselor | Motivational Speaker | Life coach
-            </p>
-            <p>
-              A Spiritual Counselor, Motivational Speaker, Life Coach & Trainer,
-              Dr. Sapna Sharma qualified as an ophthalmic surgeon, and after
-              professionally practicing for 10 years she went on to explore her
-              calling in Training and Counselling.
-              <br />
-              Equipped with a plethora of Qualifications in Counseling,
-              Psychotherapy, Life Coaching, Human Resources and Personnel
-              Management, and resonating a strong belief in the potential of
-              every living being. She has been a motivator of thousands in
-              Central India.
-            </p>
-          </div>
-        </div>
-        <div class="row hr mx-auto"></div>
-
-        <!-- Mr. Paritosh Anand -->
-        <div class="row">
-          <div class="col-12 col-lg-4 col-md-4 my-2">
-            <img
-              src="../res/images/speakers-new/paritosh.jpg"
-              alt="Mr. Paritosh Anand"
-              class="rounded-circle speaker-img"
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-lg-8 col-md-4 mt-5">
-            <h3 class="mb-1">Mr. Paritosh Anand</h3>
-            <p class="font-weight-bold mb-2">YouTube filmmaker | Author | Entrepreneur
-            </p>
-            <p>
-                Mr Paritosh Anand is well known as The Same Old Kid With A Dream’, all over the world is a YouTuber filmmaker, entrepreneur and author in the making, his first book titled “The Importance of Dreams” which is soon to be out, Paritosh holds two businesses of We Smile Media and Dream of the Defence, to his name just at the age of 21, while catering to his 200k+ audience across various platforms and have excellent achievements in the educational field too. He also co-hosts Top Ranking Podcasts. Paritosh Anand rightly perches -" A dream does not become reality through magic; it takes sweat, determination, and hard work."
-            </p>
-          </div>
-        </div>
-        <div class="row hr mx-auto"></div>
-
-        <!-- Major Pradeep Khare -->
-        <div class="row">
-          <div class="col-12 col-lg-4 col-md-4 my-2">
-            <img
-              src="../res/images/speakers-new/major_khare.jpg"
-              alt="Major Pradeep Khare"
-              class="rounded-circle speaker-img"
-              width="100%"
-            />
-          </div>
-          <div class="col-12 col-lg-8 col-md-4 mt-5">
-            <h3 class="mb-1">Major Pradeep Khare</h3>
-            <p class="font-weight-bold mb-2">Author | Philosoper | Blogger</p>
-            <p>
-              Onkar Kishan Khullar is a 3-time college dropout turned
-              motivational speaker, artist, author, entrepreneur of a social
-              impact laboratory called I Impact India Partners which provides
-              comprehensive social sector solutions to Non-Profits, Social
-              Enterprises, and Corporates. He has given 17 TEDx talks till date
-              and has done over 500 shows across India. He is often said as
-              India's most dangerous speaker.
-            </p>
-          </div>
-        </div>
-        <div class="row hr mx-auto"></div>
-
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
+  <body id="page-top">
+    <!-- Navigation Start -->
+    <nav id="navigation" class="navbar navbar-fixed-top navbar-dark">
       <div class="container">
         <div class="row">
-          <div class="mx-auto col-lg-4 col-md-12">
-            <p class="copyright-text mt-2">Copyright &copy; 2021 TEDxYCCE</p>
-          </div>
+          <div class="navbar-header col-lg-3">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-          <div class="d-flex col-lg-4 col-md-12 col-12">
-            <ul class="social-icon mx-auto">
+            <a
+              class="navbar-brand font-family-alt letter-spacing-1 text-extra-large text-uppercase"
+              href="../"
+            >
+              <img
+                class="logo-navbar-dark"
+                content="https://tedxycce.com/res/images/logos/TXYLogo_light.jpg"
+                src="../res/images/logos/TXYlogo.png"
+                alt=""
+              />
+              <img
+                class="logo-navbar-white"
+                src="../res/images/logos/TXYLogo_light.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- //.navbar-header -->
+
+          <div id="navbar" class="navbar-collapse collapse col-lg-9 pull-right">
+            <ul
+              class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700"
+            >
+              <li><a href="../" class="line-height-unset">About</a></li>
+              <li><a href="#page-top" class="page-scroll">Speakers</a></li>
+              <!-- @anmol -->
+              <!-- <li>
+                <a href="/our-team/" class="line-height-unset">Our Team</a>
+              </li> -->
               <li>
                 <a
-                  href="http://www.linkedin.com/in/tedxvit-talks"
-                  class="fa fa-linkedin"
-                ></a>
+                  href="../Sponsorship_Proposal_TEDxYCCE.pdf"
+                  class="line-height-unset"
+                  >Sponsors</a
+                >
               </li>
               <li>
-                <a
-                  href="https://twitter.com/tedxvitmumbai?s=08"
-                  class="fa fa-twitter"
-                ></a>
+                <a href="../contact/" class="line-height-unset">Contact Us</a>
               </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/tedxvittalks/?hl=en"
-                  class="fa fa-instagram"
-                ></a>
+               <li class="bg-base-color">
+                <a href="../register/" class="line-height-unset width-100">
+                  Register
+                </a>
               </li>
             </ul>
           </div>
-          <!-- TODO tst mailto button -->
-          <div
-            class="d-flex justify-content-center mx-auto col-lg-4 col-md-12 col-12"
-          >
-            <p class="mr-2 mt-2">
-              <i class="fa fa-envelope-o mr-1"></i>
-              <a href="mailto: organizer@tedxycce.com"
-                >organizer@tedxycce.com</a
-              >
-            </p>
-            <!-- <p><i class="fa fa-phone mr-1"></i> 010-020-0840</p> -->
-            <!-- TODO social icons here -->
-          </div>
+          <!-- //.navbar-collapse -->
         </div>
+        <!-- //.row -->
       </div>
-    </footer>
+      <!-- //.container -->
+    </nav>
+    <!-- //Navigation End -->
 
-    <!-- SCRIPTS -->
+    <!-- Section - Speakers start -->
+    <section id="speakers" class="bg-white-2">
+      <div class="container xs-margin-5 xs-no-margin-tb">
+        <div class="row no-padding-rl">
+          <div class="col-md-12">
+            <h2
+              class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2"
+            >
+              Speakers
+            </h2>
+            <span
+              class="bg-base-color xs-margin-6 xs-no-margin-rl margin-3 no-margin-rl separator-line-extra-thick-long"
+            ></span>
+            <br />
+          </div>
+          <!-- //.col-md-10 -->
+        </div>
+        <!-- //.row -->
+
+        <!-- @anmol changes needed here -->
+        <div class="row">
+          <!-- Speaker Box Start -->
+          <div class="features-box speaker-box col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+            <div class="overflow-hidden position-relative width-100 height-100">
+              <div class="img-wrapper">
+                <img src="../res/images/speakers/onkar.jpg" alt="" />
+              </div>
+              <!-- //.img-wrapper -->
+
+              <div
+                class="bg-black no-padding-rl padding-6 position-relative text-center"
+              >
+                <span
+                  class="display-block font-family-alt font-weight-700 letter-spacing-2 text-white text-medium text-uppercase"
+                >
+                  Onkar Khullar
+                </span>
+              </div>
+              <!-- //.bg-black -->
+
+              <div
+                class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100"
+              >
+                <div class="bg-base-color height-100 width-100">
+                  <div class="display-table height-100 width-100">
+                    <div
+                      class="display-table-cell no-padding-tb padding-11 vertical-align-middle text-uppercase text-white"
+                    >
+                      <span
+                        class="display-block font-family-alt letter-spacing-1 title-small"
+                      >
+                        Onkar Khullar
+                      </span>
+                      <br />
+                      <span
+                        class="display-block font-weight-700 letter-spacing-1 text-medium"
+                      >
+                        Domain: Love &amp; Relationship
+                      </span>
+                      <br />
+                      <span class="display-block font-weight-700 letter-spacing-1 text-medium">
+                        <ul
+                          class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium"
+                        >
+                          <li>
+                            <a href="https://in.linkedin.com/in/digitalgandhi" target="_blank"
+                            ><i class="text-white fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/digitalgandhi/?hl=en" target="_blank"
+                            ><i class="text-white fa fa-instagram"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.quora.com/profile/Onkar-K-Khullar" target="_blank"
+                            ><i class="text-white fa fa-quora"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.udemy.com/user/onkar-k-khullar/" target="_blank"
+                            ><i class="text-white fa fa-book"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </span>
+                    </div>
+                    <!-- //.display-table-cell -->
+                  </div>
+                  <!-- //.display-table -->
+                </div>
+                <!-- //.bg-base-color -->
+              </div>
+              <!-- //.ease -->
+            </div>
+            <!-- //.overflow-hidden -->
+          </div>
+          <!-- //Speaker Box End -->
+
+          <!-- Speaker Box Start -->
+          <div class="features-box speaker-box col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+            <div class="overflow-hidden position-relative width-100">
+              <div class="img-wrapper">
+                <img src="../res/images/speakers/dr-sapna.jpg" alt="" />
+              </div>
+              <!-- //.img-wrapper -->
+
+              <div
+                class="bg-black no-padding-rl padding-6 position-relative text-center"
+              >
+                <span
+                  class="display-block font-family-alt font-weight-700 letter-spacing-2 text-white text-medium text-uppercase"
+                >
+                  Dr. Sapna Sharma
+                </span>
+              </div>
+              <!-- //.bg-black -->
+
+              <div
+                class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100"
+              >
+                <div class="bg-base-color height-100 width-100">
+                  <div class="display-table height-100 width-100">
+                    <div
+                      class="display-table-cell no-padding-tb padding-11 vertical-align-middle text-uppercase text-white"
+                    >
+                      <span
+                        class="display-block font-family-alt letter-spacing-1 title-small"
+                      >
+                        Dr. Sapna Sharma
+                      </span>
+                      <br />
+                      <span
+                        class="display-block font-weight-700 letter-spacing-1 text-medium"
+                      >
+                        Domain: Psychology
+                      </span>
+                      <br />
+                      <span class="display-block font-weight-700 letter-spacing-1 text-medium">
+                        <ul
+                                class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium"
+                        >
+                          <li>
+                            <a href="https://drsapnasharma.com/" target="_blank"
+                            ><i class="text-white fa fa-globe"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.facebook.com/drsapnasharma.Motivator/" target="_blank"
+                            ><i class="text-white fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/Sapnaonly" target="_blank"
+                            ><i class="text-white fa fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/in/dr-sapna-sharma-3900541a6/" target="_blank"
+                            ><i class="text-white fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.youtube.com/channel/UCuG-ASu4YMhgaibmT-Ienag" target="_blank"
+                            ><i class="text-white fa fa-youtube"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </span>
+                    </div>
+                    <!-- //.display-table-cell -->
+                  </div>
+                  <!-- //.display-table -->
+                </div>
+                <!-- //.bg-base-color -->
+              </div>
+              <!-- //.ease -->
+            </div>
+            <!-- //.overflow-hidden -->
+          </div>
+          <!-- //Speaker Box End -->
+
+          <!-- Speaker Box Start -->
+          <div class="features-box speaker-box col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+            <div class="overflow-hidden position-relative width-100">
+              <div class="img-wrapper">
+                <img src="../res/images/speakers/siddharth.jpg" alt="" />
+              </div>
+              <!-- //.img-wrapper -->
+
+              <div
+                class="bg-black no-padding-rl padding-6 position-relative text-center"
+              >
+                <span
+                  class="display-block font-family-alt font-weight-700 letter-spacing-2 text-white text-medium text-uppercase"
+                >
+                  Siddharth Arora
+                </span>
+              </div>
+              <!-- //.bg-black -->
+
+              <div
+                class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100"
+              >
+                <div class="bg-base-color height-100 width-100">
+                  <div class="display-table height-100 width-100">
+                    <div
+                      class="display-table-cell no-padding-tb padding-11 vertical-align-middle text-uppercase text-white"
+                    >
+                      <span
+                        class="display-block font-family-alt letter-spacing-1 title-small"
+                      >
+                        Siddharth Arora
+                      </span>
+                      <br />
+                      <span
+                        class="display-block font-weight-700 letter-spacing-1 text-medium"
+                      >
+                        Domain: Law &amp; Judiciary
+                      </span>
+                      <br />
+                      <span class="display-block font-weight-700 letter-spacing-1 text-medium">
+                        <ul
+                                class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium"
+                        >
+                          <li>
+                            <a href="https://sidhartharora.in/" target="_blank"
+                            ><i class="text-white fa fa-globe"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.facebook.com/sidharthjaisingharora/" target="_blank"
+                            ><i class="text-white fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://in.linkedin.com/in/dr-sidharth-arora-" target="_blank"
+                            ><i class="text-white fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.quora.com/profile/Sidharth-Arora-5" target="_blank"
+                            ><i class="text-white fa fa-quora"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </span>
+                    </div>
+                    <!-- //.display-table-cell -->
+                  </div>
+                  <!-- //.display-table -->
+                </div>
+                <!-- //.bg-base-color -->
+              </div>
+              <!-- //.ease -->
+            </div>
+            <!-- //.overflow-hidden -->
+          </div>
+          <!-- //Speaker Box End -->
+
+          <!-- Speaker Box Start -->
+          <div class="features-box speaker-box col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+            <div class="overflow-hidden position-relative width-100">
+              <div class="img-wrapper">
+                <img src="../res/images/speakers/kunal.jpg" alt="" />
+              </div>
+              <!-- //.img-wrapper -->
+
+              <div
+                class="bg-black no-padding-rl padding-6 position-relative text-center"
+              >
+                <span
+                  class="display-block font-family-alt font-weight-700 letter-spacing-2 text-white text-medium text-uppercase"
+                >
+                  Kunal Moon
+                </span>
+              </div>
+              <!-- //.bg-black -->
+
+              <div
+                class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100"
+              >
+                <div class="bg-base-color height-100 width-100">
+                  <div class="display-table height-100 width-100">
+                    <div
+                      class="display-table-cell no-padding-tb padding-11 vertical-align-middle text-uppercase text-white"
+                    >
+                      <span
+                        class="display-block font-family-alt letter-spacing-1 title-small"
+                      >
+                        Kunal Moon
+                      </span>
+                      <br />
+                      <span
+                        class="display-block font-weight-700 letter-spacing-1 text-medium"
+                      >
+                        Domain: Motivation
+                      </span>
+                      <br />
+                      <span class="display-block font-weight-700 letter-spacing-1 text-medium">
+                        <ul
+                                class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium"
+                        >
+                          <li>
+                            <a href="https://www.kunalmoon.com/" target="_blank"
+                            ><i class="text-white fa fa-globe"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.facebook.com/kunal.moon" target="_blank"
+                            ><i class="text-white fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://in.linkedin.com/in/kunal-moon" target="_blank"
+                            ><i class="text-white fa fa-linkedin"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/moonkunal/?hl=en" target="_blank"
+                            ><i class="text-white fa fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </span>
+                    </div>
+                    <!-- //.display-table-cell -->
+                  </div>
+                  <!-- //.display-table -->
+                </div>
+                <!-- //.bg-base-color -->
+              </div>
+              <!-- //.ease -->
+            </div>
+            <!-- //.overflow-hidden -->
+          </div>
+          <!-- //Speaker Box End -->
+
+          <!-- Speaker Box Start -->
+          <div class="features-box speaker-box col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+            <div class="overflow-hidden position-relative width-100">
+              <div class="img-wrapper">
+                <img
+                  src="../res/images/speakers/major_pradeep_khare.jpg"
+                  alt=""
+                />
+              </div>
+              <!-- //.img-wrapper -->
+
+              <div
+                class="bg-black no-padding-rl padding-6 position-relative text-center"
+              >
+                <span
+                  class="display-block font-family-alt font-weight-700 letter-spacing-2 text-white text-medium text-uppercase"
+                >
+                  Major Pradeep Khare
+                </span>
+              </div>
+              <!-- //.bg-black -->
+
+              <div
+                class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100"
+              >
+                <div class="bg-base-color height-100 width-100">
+                  <div class="display-table height-100 width-100">
+                    <div
+                      class="display-table-cell no-padding-tb padding-11 vertical-align-middle text-uppercase text-white"
+                    >
+                      <span
+                        class="display-block font-family-alt letter-spacing-1 title-small"
+                      >
+                        Major Pradeep Khare
+                      </span>
+                      <br />
+                      <span
+                        class="display-block font-weight-700 letter-spacing-1 text-medium"
+                      >
+                        Domain: Indian Armed Forces
+                      </span>
+                      <br />
+                      <span class="display-block font-weight-700 letter-spacing-1 text-medium">
+                        <ul
+                                class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium"
+                        >
+                          <li>
+                            <a href="https://www.facebook.com/pradeep.khare.528" target="_blank"
+                            ><i class="text-white fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="http://theteenagertoday.com/author/pradeepkhare/" target="_blank"
+                            ><i class="text-white fa fa-globe"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="https://www.youtube.com/channel/UCim06yvacuWXV2qr8oFTzNg" target="_blank"
+                            ><i class="text-white fa fa-youtube"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </span>
+                    </div>
+                    <!-- //.display-table-cell -->
+                  </div>
+                  <!-- //.display-table -->
+                </div>
+                <!-- //.bg-base-color -->
+              </div>
+              <!-- //.ease -->
+            </div>
+            <!-- //.overflow-hidden -->
+          </div>
+          <!-- //Speaker Box End -->
+
+          <!-- Speaker Box Start -->
+          <!-- <div class="features-box speaker-box col-sm-6 col-md-4">
+            <div class="overflow-hidden position-relative width-100">
+              <div class="img-wrapper">
+                <img src="/res/images/speakers/saeed_naqvi.jpg" alt="" />
+              </div> -->
+          <!-- //.img-wrapper -->
+
+          <!-- <div
+                class="bg-black no-padding-rl padding-6 position-relative text-center"
+              >
+                <span
+                  class="display-block font-family-alt font-weight-700 letter-spacing-2 text-white text-medium text-uppercase"
+                >
+                  Saeed Naqvi
+                </span>
+              </div> -->
+          <!-- //.bg-black -->
+
+          <!-- <div
+                class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100"
+              >
+                <div class="bg-base-color height-100 width-100">
+                  <div class="display-table height-100 width-100">
+                    <div
+                      class="display-table-cell no-padding-tb padding-11 vertical-align-middle text-uppercase text-white"
+                    >
+                      <span
+                        class="display-block font-family-alt letter-spacing-1 title-small"
+                      >
+                        Saeed Naqvi
+                      </span>
+                      <br />
+                      <span
+                        class="display-block font-weight-700 letter-spacing-1 text-medium"
+                      >
+                        Senior Journalist
+                      </span>
+                    </div> -->
+          <!-- //.display-table-cell -->
+          <!-- </div> -->
+          <!-- //.display-table -->
+          <!-- </div> -->
+          <!-- //.bg-base-color -->
+          <!-- </div> -->
+          <!-- //.ease -->
+          <!-- </div> -->
+          <!-- //.overflow-hidden -->
+          <!-- </div> -->
+          <!-- //Speaker Box End -->
+
+          <!-- Speaker Box Start -->
+          <!-- <div class="features-box speaker-box col-sm-6 col-md-4">
+            <div class="overflow-hidden position-relative width-100">
+              <div class="img-wrapper">
+                <img src="/res/images/speakers/tanmaya_jain.jpg" alt="" />
+              </div> -->
+          <!-- //.img-wrapper -->
+
+          <!-- <div
+                class="bg-black no-padding-rl padding-6 position-relative text-center"
+              >
+                <span
+                  class="display-block font-family-alt font-weight-700 letter-spacing-2 text-white text-medium text-uppercase"
+                >
+                  Tanmaya Jain
+                </span>
+              </div> -->
+          <!-- //.bg-black -->
+
+          <!-- <div
+                class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100"
+              >
+                <div class="bg-base-color height-100 width-100">
+                  <div class="display-table height-100 width-100">
+                    <div
+                      class="display-table-cell no-padding-tb padding-11 vertical-align-middle text-uppercase text-white"
+                    >
+                      <span
+                        class="display-block font-family-alt letter-spacing-1 title-small"
+                      >
+                        Tanmaya Jain
+                      </span>
+                      <br />
+                      <span
+                        class="display-block font-weight-700 letter-spacing-1 text-medium"
+                      >
+                        Entrepreneur, Founder &amp; Chief Smile Officer at
+                        inFeedo
+                      </span>
+                    </div> -->
+          <!-- //.display-table-cell -->
+          <!-- </div> -->
+          <!-- //.display-table -->
+          <!-- </div> -->
+          <!-- //.bg-base-color -->
+          <!-- </div> -->
+          <!-- //.ease -->
+          <!-- </div> -->
+          <!-- //.overflow-hidden -->
+          <!-- </div> -->
+          <!-- //Speaker Box End -->
+
+          <!-- Speaker Box Start -->
+          <!-- <div class="features-box speaker-box col-sm-6 col-md-4">
+            <div class="overflow-hidden position-relative width-100">
+              <div class="img-wrapper">
+                <img src="/res/images/speakers/vivek_sharma.jpg" alt="" />
+              </div> -->
+          <!-- //.img-wrapper -->
+
+          <!-- <div
+                class="bg-black no-padding-rl padding-6 position-relative text-center"
+              >
+                <span
+                  class="display-block font-family-alt font-weight-700 letter-spacing-2 text-white text-medium text-uppercase"
+                >
+                  Vivek Sharma
+                </span>
+              </div> -->
+          <!-- //.bg-black -->
+
+          <!-- <div
+                class="ease height-100 padding-2 position-absolute position-top position-left show-on-hover width-100"
+              >
+                <div class="bg-base-color height-100 width-100">
+                  <div class="display-table height-100 width-100">
+                    <div
+                      class="display-table-cell no-padding-tb padding-11 vertical-align-middle text-uppercase text-white"
+                    >
+                      <span
+                        class="display-block font-family-alt letter-spacing-1 title-small"
+                      >
+                        Vivek Sharma
+                      </span>
+                      <br />
+                      <span
+                        class="display-block font-weight-700 letter-spacing-1 text-medium"
+                      >
+                        Program Director of the Gandhi Fellowship program
+                      </span>
+                    </div> -->
+          <!-- //.display-table-cell -->
+          <!-- </div> -->
+          <!-- //.display-table -->
+          <!-- </div> -->
+          <!-- //.bg-base-color -->
+          <!-- </div> -->
+          <!-- //.ease -->
+          <!-- </div> -->
+          <!-- //.overflow-hidden -->
+          <!-- </div> -->
+          <!-- //Speaker Box End -->
+        </div>
+        <!-- //.row -->
+      </div>
+      <!-- //.container -->
+    </section>
+    <!-- //Section - Speakers End -->
+
+    <!-- Section - Event banner start -->
+    <section id="event-banner" class="bg-white pull-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <i
+              class="fa fa-clock-o display-block text-base-color title-extra-large-2"
+            ></i>
+            <span
+              class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+            >
+              Date &amp; Time
+            </span>
+            <p
+              class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2"
+            >
+              May 8th, 2021<br />
+              <!-- @anmol -->
+              10 AM onwards
+            </p>
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div
+            class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center"
+          >
+            <i
+              class="fa fa-map-marker display-block text-base-color title-extra-large-2"
+            ></i>
+            <span
+              class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+            >
+              Venue
+            </span>
+            <p
+              class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2"
+            >
+            On Your Favourite Screens :) <br/>
+            (Virtual)
+            </p>
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div
+            id="banner-registration"
+            class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center"
+          >
+            <a
+              href="../Sponsorship_Proposal_TEDxYCCE.pdf"
+              class="btn btn-outline-base-color sm-btn-medium btn-large no-margin-rl"
+            >
+              <!-- @anmol -->
+              <!-- TODO make it register button -->
+              <span>Download<br />Sponsorship Document</span>
+            </a>
+          </div>
+          <!-- //.col-sm-4 -->
+        </div>
+        <!-- //.row -->
+      </div>
+    </section>
+    <!-- //Section - Event banner end -->
+
+    <!-- Section - Parallax banner start -->
+    <section
+      id="home-bg-parallax"
+      class="height-50 no-padding overflow-hidden width-100"
+    >
+      <!-- BG Parallax -->
+      <div class="bg-parallax bg-overlay-black-5 width-100"></div>
+
+      <div
+        class="display-table height-100 position-absolute position-top position-left width-100"
+      >
+        <div class="display-table-cell vertical-align-middle">
+          <div class="container">
+            <div class="row">
+              <div class="countdown-timer">
+                <div class="days">
+                  <span class="value">00</span>
+                  <span class="label">DAYS</span>
+                </div>
+                <div class="hours">
+                  <span class="value">00</span>
+                  <span class="label">HOURS</span>
+                </div>
+                <div class="minutes">
+                  <span class="value">00</span>
+                  <span class="label">MINS</span>
+                </div>
+                <div class="seconds">
+                  <span class="value">00</span>
+                  <span class="label">SEC</span>
+                </div>
+              </div>
+            </div>
+            <!-- //.row -->
+          </div>
+          <!-- //.container -->
+        </div>
+        <!-- //.display-table-cell -->
+      </div>
+      <!-- //.display-table -->
+    </section>
+    <!-- //Section - Parallax banner end -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="footer-logo xs-text-center">
+              <img src="../res/images/logos/TXYLogo_light.png" alt="" />
+            </div>
+            <!-- //.footer-logo -->
+            <p class="disclaimer xs-text-center">
+              This independent TEDx event is operated under license from TED.
+            </p>
+            <!-- //.disclaimer -->
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div class="col-sm-8">
+            <div class="footer-social text-right">
+              <ul
+                class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium"
+              >
+                <li>
+                  <a href="https://www.facebook.com/tedxycceofficial/"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/tedxycce"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/tedxycce/"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- //.footer-social -->
+          </div>
+          <!-- //.col-sm-8 -->
+        </div>
+        <!-- //.row -->
+      </div>
+      <!-- //.container -->
+    </footer>
+    <!-- //Footer End -->
+
+    <!-- Scroll to top -->
+    <a href="#page-top" class="page-scroll scroll-to-top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+
+    <!-- jQuery -->
     <script src="../res/js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
     <script src="../res/js/bootstrap.min.js"></script>
-    <script src="../res/js/aos.js"></script>
-    <script src="../res/js/smoothscroll.js"></script>
-    <script src="../res/js/custom.js"></script>
-    <script src="../res/js/form_contact.js"></script>
+
+    <!-- Plugins -->
+    <script src="../res/js/pace.min.js"></script>
+    <script src="../res/js/debouncer.min.js"></script>
+    <script src="../res/js/jquery.easing.min.js"></script>
+    <script src="../res/js/jquery.inview.min.js"></script>
+    <script src="../res/js/jquery.matchHeight.js"></script>
+    <script src="../res/js/isotope.pkgd.min.js"></script>
+    <script src="../res/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../res/js/flickity.pkgd.min.js"></script>
+    <script src="../res/js/jquery.magnific-popup.min.js"></script>
+    <script src="../res/js/jquery.validate.min.js"></script>
+
+    <!-- BG Parallax JS -->
+    <script src="../res/js/TweenMax.min.js"></script>
+    <script src="../res/js/ScrollMagic.min.js"></script>
+    <script src="../res/js/animation.gsap.min.js"></script>
+
+    <!-- Theme -->
+    <script src="../res/js/main.js"></script>
+
     <!-- Countdown -->
     <script src="../res/js/jquery.countdown.min.js"></script>
     <script src="../res/js/countdown.js"></script>
-    <script type="text/javascript">
-      $(".early-bird-countdown").countdown({
-        date: "May 1, 2021 23:59:59",
-
-        render: function (data) {
-          $(".early-bird-countdown .days .value").html(
-            this.leadingZeros(data.days + "d", 2)
-          );
-          $(".early-bird-countdown .hours .value").html(
-            this.leadingZeros(data.hours + "h", 2)
-          );
-          $(".early-bird-countdown .minutes .value").html(
-            this.leadingZeros(data.min + "m", 2)
-          );
-          $(".early-bird-countdown .seconds .value").html(
-            this.leadingZeros(data.sec + "s", 2)
-          );
-        },
-      });
-    </script>
   </body>
 </html>
