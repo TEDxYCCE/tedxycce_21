@@ -1,0 +1,11 @@
+.mail-section {
+  background: #e62b1e;
+}
+
+.mail-sec-waves {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E62B1E), color-stop(132.56%, #FAFAFA));
+  background: linear-gradient(180deg, #E62B1E 0%, #FAFAFA 132.56%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=mail-sec.css.map */
