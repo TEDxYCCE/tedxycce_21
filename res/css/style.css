@@ -1,707 +1,658 @@
-.navbar-dark {
-  background-color: black;
+/*  Custom Stylesheet */
+
+/*------------------------------------*\
+    Font Face
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OleoScript';
+    src: url('../fonts/OleoScript-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
-.navbar-fixed-top .navbar-collapse,
-.navbar-fixed-bottom .navbar-collapse {
-  max-height: inherit;
+
+:root {
+    --base-font-family: 'Karla', sans-serif !important;
+    --tedred: #E62B1E;
 }
 
-/*
-  Section - Home
-  --------------
-*/
 
-/* Home BG Static (default) */
-
-#home {
-  background: url("@anmol");
+* {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
 }
 
-/* Home BG Parallax */
-
-#home-bg-parallax > .bg-parallax {
-  background: url("../images/campus_photos/entrance_garden/IMG20201005102623.jpg");
+html {
+    font-size: 1rem;
+    min-width: 350px !important;
 }
-
-/* Home BG Slideshow */
-#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
-  background: url("../images/campus_photos/admin_premises/IMG20201005103843.jpg");
+@media (max-width: 575px) {
+    html {
+        font-size: 0.8rem !important;
+    }
 }
-#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
-  background: url("../images/campus_photos/civil_mech/IMG20201005103924.jpg");
+@media (min-width: 576px) and (max-width: 767px) {
+    html {
+        font-size: 1.2rem !important;
+    }
 }
-#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
-  background: url("../images/campus_photos/IT_garden/IMG20201005111807.jpg");
-}
-
-/* Home BG Slider */
-
-#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
-  background: url("../images/campus_photos/admin_premises/IMG20201005103843.jpg");
-}
-#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(2) {
-  background: url("../images/campus_photos/civil_mech/IMG20201005103924.jpg");
-}
-#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(3) {
-  background: url("../images/campus_photos/IT_garden/IMG20201005111807.jpg");
-}
-#home-bg-slideshow .display-table-cell,
-#home-bg-slider .display-table-cell {
-  position: relative;
-  z-index: 20;
-}
-
-/*
-  Countdown
-  ---------
-*/
-
-.countdown {
-  -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
-  -moz-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
-  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
-  top: -35px;
-  z-index: 20;
-}
-.countdown .clock {
-  height: 70px;
-  text-align: center;
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 1.4rem !important;
+    }
 }
 @media (min-width: 992px) {
-  .countdown .clock {
-    height: 88px;
-    text-align: right;
-  }
-}
-.countdown .clock-item {
-  color: #ffffff;
-  font-family: "Helvetica", sans-serif;
-  border-radius: 2px;
-  display: inline-block;
-  height: 100%;
-  letter-spacing: 1px;
-  margin-right: 5px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  width: 60px;
-}
-.countdown .clock-item:last-child {
-  margin-right: 0;
-}
-@media (min-width: 992px) {
-  .countdown .clock-item {
-    margin-right: 7px;
-    width: 75px;
-  }
+    html {
+        font-size: 1.6rem !important;
+    }
 }
 
-/*
-  Intro
-  -----
-*/
 
-#intro .features-box .bg-cover {
-  -ms-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  height: 192px;
+/*------------------------------------*\
+    Overrides
+\*------------------------------------*/
+.btn {
+    border-radius: 0.5rem !important;
 }
-#intro .features-box:nth-child(1) .bg-cover {
-  background-image: url("../images/campus_photos/admin_premises/IMG20201005103843.jpg");
+.btn-outline-danger {
+    color: var(--tedred) !important;
+    border-color: var(--tedred) !important;
 }
-#intro .features-box:nth-child(2) .bg-cover {
-  background-image: url("../images/campus_photos/civil_mech/IMG20201005103924.jpg");
-}
-#intro .features-box:nth-child(3) .bg-cover {
-  background-image: url("../images/campus_photos/IT_garden/IMG20201005111807.jpg");
+.btn-outline-danger:hover {
+    color: #fff !important;
+    background-color: var(--tedred) !important;
 }
 
-/*
-  Section - Team
-  --------------
-*/
-
-.member-box {
-  margin-bottom: 24px;
+.bg-tedred {
+    background-color: var(--tedred) !important;
+}
+.text-tedred {
+    color: var(--tedred) !important;
 }
 
-/*
-  Section - Speakers
-  ------------------
-*/
-
-.speaker-box {
-  margin-bottom: 24px;
+.card {
+    border-radius: 0.5rem !important;
+}
+.card-img-top {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+    height: 35vh;
+    min-height: 290px !important;
+    object-fit: cover;
+    object-position: top;
 }
 
-/*
-  Section - Venue
-  ---------------
-*/
-
-#venue {
-  background-image: url("../images/campus_photos/auditorium/8828599054_ceea55c0d9_o.jpg");
-  background-position: center !important;
+s {
+    text-decoration-thickness: 5px;
 }
 
-/*
-  Section - Schedule
-  ------------------
-*/
+/*------------------------------------*\
+    Navbar
+\*------------------------------------*/
 
-#schedule .nav-tabs > li.active > a,
-#schedule .nav-tabs > li.active > a:hover,
-#schedule .nav-tabs > li.active > a:focus {
-  background-color: #626262;
-  color: #ffffff;
+.navbar.shrink {
+    -webkit-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1)
 }
-#schedule .nav-tabs > li > a {
-  color: #272727;
+.navbar.shrink {
+    padding: 0.2rem 1rem;
 }
-#schedule .td-session-number {
-  width: 110px;
+.navbar.shrink .navbar-brand img {
+    width: 7rem;
+    margin: 10px 0;
 }
-
-/* Carousel Schedule */
-
-.carousel-schedule .carousel-cell {
-  width: 100%;
+.navbar-brand {
+    width: 30%;
+    padding: 0 !important;
 }
-@media (min-width: 768px) {
-  .carousel-schedule .carousel-cell {
-    width: 50%;
-  }
+.navbar-brand img {
+    width: 8rem;
 }
-
-/* Timeline */
-
-.flickity-enabled.is-draggable .flickity-viewport,
-.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
-  cursor: url("../images/icons/left-right-dark.png"), move;
-  cursor: url("../images/icons/left-right-dark.png"), -webkit-grab;
-  cursor: url("../images/icons/left-right-dark.png"), grab;
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
-.timeline ul {
-  margin-left: 20px;
-  padding: 15px 0 20px;
-}
-.timeline ul:before {
-  background-color: #dfdfdf;
-  border-radius: 50%;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 8px;
-  left: 0;
-  margin-left: -4px;
-  position: absolute;
-  width: 8px;
-}
-.timeline-item {
-  padding: 13px 0 13px 33px;
-}
-.timeline-item:before {
-  background-color: #ffffff;
-  border: 1px solid #989898;
-  border-radius: 50%;
-  content: "";
-  display: block;
-  height: 12px;
-  left: 0;
-  margin-left: -6px;
-  margin-top: -6px;
-  position: absolute;
-  top: 50%;
-  width: 12px;
-}
-.timeline-item.highlight:before {
-  background-color: #989898;
-  border: 1px solid #989898;
-}
-.timeline-content {
-  -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
-  -moz-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
-  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
-  padding: 16px;
+.navbar-nav a {
+    font-size: 0.7rem !important;
 }
 
-/*
-  Milestones
-  ----------
-*/
 
-#milestones {
-  background-image: url("../images/bg-milestones.jpg");
-}
+/*------------------------------------*\
+    Hero Home Section
+\*------------------------------------*/
 
-/*
-  Section - FAQ
-  -------------
-*/
-
-/* Accordions */
-
-.panel-group .panel {
-  border: 1px solid #dfdfdf;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  margin-bottom: 17px;
+.hero-X-logo {
+    width: 17rem;
+    margin: 2.4rem 0;
 }
-.panel-group .panel:last-child {
-  margin-bottom: 0;
+.hero-logo img {
+    width: 80%;
 }
-.panel-group .panel.active .panel-heading {
-  background-color: #989898;
+.hero-claim {
+    /*width: 30%;*/
+    /*height: 60px;*/
+    /*padding-bottom: 0.6rem !important;*/
 }
-.panel-group .panel.active .panel-heading .panel-title a {
-  color: #ffffff;
-}
-.panel-group .panel.active .panel-heading .panel-title a:before {
-  color: #ffffff;
-}
-.panel-group .panel + .panel {
-  margin-top: 0;
-}
-.panel-group .panel-heading + .panel-collapse > .panel-body {
-  border-top: 1px solid #dfdfdf;
-}
-.panel-heading {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 0;
-}
-.panel-title a {
-  color: #272727;
-  display: block;
-  padding: 14px 18px 14px 38px;
-  position: relative;
-}
-.panel-title a:before {
-  color: #989898;
-  content: "\f107";
-  display: block;
-  font-family: "FontAwesome", sans-serif;
-  font-size: 14px;
-  left: 0;
-  padding: 14px 18px;
-  position: absolute;
-  top: 0;
-}
-.panel-title a.collapsed:before {
-  content: "\f105";
-}
-.panel-title a span {
-  margin-right: 4px;
-}
-.panel-body {
-  padding: 18px 20px 8px;
-}
-.panel-body p {
-  max-width: 600px;
+.hero .container {
+    margin-top: 3rem;
 }
 
-/* Nav Stacked */
 
-.nav.nav-pills.nav-stacked > li:first-child > a {
-  border-top-right-radius: 4px !important;
-  border-top-left-radius: 4px !important;
-}
-.nav.nav-pills.nav-stacked > li:last-child > a {
-  border-bottom-right-radius: 4px !important;
-  border-bottom-left-radius: 4px !important;
-}
-.nav.nav-pills.nav-stacked > li > a {
-  color: #272727;
-  padding: 14px 18px;
-}
+@keyframes animate-element {
+    0% {
+        stroke-dashoffset: 1450.70166015625px;
+    }
 
-/*
-  Section - Ticket
-*/
+    55% {
+        stroke-dashoffset: 0;
+    }
 
-/* Testimonial */
-
-.testimonial {
-  max-width: 400px;
+    100% {
+        stroke-dashoffset: -1450.70166015625px;
+    }
 }
-.testimonial-avatar {
-  margin-top: 25px;
+.svg-el-1 {
+    animation-name: animate-element;
+    animation-duration: 5000ms;
+    animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.5);
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    stroke-dasharray: 1450.70166015625px;
+    animation-delay: 0s;
 }
-.testimonial-avatar img {
-  left: 0;
-  max-height: 75px;
-  position: absolute;
-  top: 0;
-}
-.testimonial-avatar-label {
-  height: 75px;
-  padding-left: 95px;
+.hero-svg-logo {
+    width: 97%;
 }
 
-/* Pricing */
-
-.pricing.box-shadow-yes {
-  -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
+#theme-text p {
+    font-family: OleoScript, Karla, sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1;
 }
-.pricing.box-shadow-yes:hover {
-  -webkit-box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
-}
-.pricing-dollar {
-  bottom: 28px;
-}
-.pricing ul > li {
-  position: relative;
-  margin-top: 10px;
-}
-.pricing ul > li.check-mark {
-  padding-left: 32px;
-}
-.pricing ul > li.check-mark:before {
-  background-color: #989898;
-  border-radius: 50%;
-  color: #ffffff;
-  content: "\2713";
-  display: block;
-  font-size: 11px;
-  left: 0;
-  line-height: 20px;
-  height: 18px;
-  position: absolute;
-  text-align: center;
-  top: 1px;
-  width: 18px;
-}
-.pricing ul > li:first-child {
-  margin-top: 0;
+#hero-date {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-/*
-  Section - Register
-  ------------------
-*/
 
+/*------------------------------------*\
+    About Section
+\*------------------------------------*/
+#feature {
+    background-image: url('../images/campus_photos/stage-audience-1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-attachment: fixed;
+    position: relative;
+}
+.text-white-70 {
+    color: rgba(255,255,255,.7) !important;
+}
+
+
+/*------------------------------------*\
+    Speaker Section
+\*------------------------------------*/
+
+.speaker-bio {
+    line-height: 1.3em !important;
+}
+
+
+/*------------------------------------*\
+    Register Section
+\*------------------------------------*/
 #register {
-  background-image: url("../images/bg-register.jpg");
+    background-image: url('../images/campus_photos/hands_red_event.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-attachment: fixed;
+    position: relative;
 }
-#register .form-wrapper {
-  background: rgba(0, 0, 0, 0.8);
+#register .bg-overlay {
+    opacity: 0.5 !important;
 }
-#register textarea {
-  height: 120px;
+#register .form-control {
+    margin: 0.7rem 0 !important;
+    font-size: 0.8rem !important;
+    border-radius: 0.25rem !important;
 }
-
-/*
-  Section - Contact
-  -----------------
-*/
-
-#form-contact textarea {
-  height: 120px;
-  margin-bottom: 0;
+#steps-to-register li {
+    font-size: 0.8rem !important;
 }
-@media (max-width: 991px) {
-  #form-contact button {
-    margin-top: 20px;
-  }
+#steps-to-register ul {
+    margin-left: -15px !important;
 }
-
-@media (max-width: 991px) {
-  .contact-address {
-    margin-top: 48px;
-    padding-top: 32px;
-    border-top: 1px solid #dfdfdf;
-  }
+#steps-to-register ul li:first-child {
+    margin-top: 1rem !important;
 }
 
-/* Google map */
 
-.map {
-  position: relative;
-  padding-bottom: 100%; /* aspect ratio 1:1 */
-  height: 0;
-  overflow: hidden;
+/*------------------------------------*\
+    Contact Section
+\*------------------------------------*/
+#contact .form-control {
+    margin: 0.7rem 0 !important;
+    font-size: 0.8rem !important;
+    border-radius: 0.25rem !important;
 }
-@media (min-width: 420px) {
-  .map {
-    padding-bottom: 75%; /* aspect ratio 3:4 */
-  }
+#contact button[type="submit"] {
+    font-size: 0.8rem !important;
 }
-@media (min-width: 540px) {
-  .map {
-    padding-bottom: 60%; /* aspect ratio 3:5 */
-  }
-}
-@media (min-width: 800px) {
-  .map {
-    padding-bottom: 75%; /* aspect ratio 3:4 */
-  }
-}
-.map iframe {
-  position: absolute;
-  border: 0;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
+#contact {
+    background-image: url('../images/campus_photos/qna.webp');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-attachment: fixed;
+    position: relative;
 }
 
-/* Forms */
 
-.form {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  border: 0;
+/*------------------------------------*\
+    Footer Section
+\*------------------------------------*/
+.copyright-text, .mail-id {
+    font-size: 0.7rem !important;
 }
-.form iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-#volunteer-form {
-  padding-bottom: 3000px; /* height */
-}
-#nominate-speaker-form {
-  padding-bottom: 1950px; /* height */
+.social-icon a {
+    font-size: 0.9rem !important;
 }
 
-/*
-  Event bottom banner
-  -------------------
-*/
-#event-banner {
-  background-image: url("https://toptal.com/designers/subtlepatterns/patterns/whitediamond.png");
-}
-#event-banner .row {
-  display: flex;
-  flex-direction: column;
-}
-#event-banner .row #banner-registration {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 768px) {
-  #event-banner .row {
-    flex-direction: row;
-  }
-  #event-banner .row #banner-registration {
-    margin: auto;
-  }
-}
-
-/*
-  Countdown timer generic
-  ---------------
-*/
-
-.countdown-timer {
-  display: flex;
-  justify-content: center;
-}
-.countdown-timer div {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-.countdown-timer .value {
-  font-family: Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: 800;
-  color: white;
-  align-self: center;
-}
-.countdown-timer .label {
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
-  padding-top: 8px;
-  align-self: center;
-}
-@media (min-width: 420px) {
-  .countdown-timer .value {
-    font-size: 48px;
-  }
-  .countdown-timer .label {
-    padding-top: 16px;
-  }
-}
-@media (min-width: 600px) {
-  .countdown-timer .value {
-    font-size: 56px;
-  }
-  .countdown-timer .label {
-    font-size: 18px;
-  }
-}
-@media (min-width: 900px) {
-  .countdown-timer .value {
-    font-size: 64px;
-  }
-  .countdown-timer .label {
-    padding-top: 24px;
-  }
-}
 
 /*
   Countdown timer early-bird registration
   ---------------
 */
 
-.wrapper-card .early-bird-countdown {
-  display: block;
-  justify-content: center;
+.early-bird-countdown {
+    display: block;
+    justify-content: center;
 }
-.wrapper-card .early-bird-countdown div {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2%;
-  padding-right: 2%;
+.early-bird-countdown div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
 }
-.wrapper-card .early-bird-countdown .value {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px !important;
-  font-weight: 800;
-  color: var(--textdark);
-  background: none;
-  box-shadow: none;
-  align-self: center;
-  width: 20px;
+.early-bird-countdown #earlybird-text {
+    padding-bottom: 15px;
+    font-size: 0.6rem !important;
 }
-.wrapper-card .early-bird-countdown .days .value {
-  margin-left: 51px;
-  margin-top: 44px;
+.early-bird-countdown .value {
+    font-family: Karla, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    color: var(--textdark) !important;
+    background: none !important;
+    box-shadow: none !important;
+    align-self: center !important;
+    width: 40px !important;
 }
-.wrapper-card .early-bird-countdown .hours .value {
-  margin-left: 67px;
-  margin-top: 28px;
+.early-bird-countdown .days .value {
+    margin-left: 55px !important;
+    margin-top: 40px !important;
 }
-.wrapper-card .early-bird-countdown .minutes .value {
-  margin-left: 88px;
-  margin-top: 7px;
+.early-bird-countdown .hours .value {
+    margin-left: 74px !important;
+    margin-top: 21px !important;
 }
-.wrapper-card .early-bird-countdown .seconds .value {
-  margin-left: 110px;
-  margin-top: -15px;
+.early-bird-countdown .minutes .value {
+    margin-left: 96px !important;
+    margin-top: -1px !important;
 }
-.wrapper-card .early-bird-countdown .label {
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
-  padding-top: 8px;
-  align-self: center;
+.early-bird-countdown .seconds .value {
+    margin-left: 119px !important;
+    margin-top: -24px !important;
 }
-@media (min-width: 420px) {
-  .wrapper-card .early-bird-countdown .value {
-    font-size: 48px;
-  }
-  .wrapper-card .early-bird-countdown .label {
-    padding-top: 16px;
-  }
-}
-@media (min-width: 600px) {
-  .wrapper-card .early-bird-countdown .value {
-    font-size: 56px;
-  }
-  .wrapper-card .early-bird-countdown .label {
-    font-size: 18px;
-  }
-}
-@media (min-width: 900px) {
-  .wrapper-card .early-bird-countdown .value {
-    font-size: 64px;
-  }
-  .wrapper-card .early-bird-countdown .label {
-    padding-top: 24px;
-  }
+.early-bird-countdown .label {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    padding-top: 8px;
+    align-self: center;
 }
 
-/*
-  Footer
-  ------
-*/
 
-.footer {
-  padding: 50px 0 32px;
-}
-.footer-logo {
-  padding-bottom: 25px;
-}
-.footer-logo img {
-  width: 120px;
-}
-.footer .disclaimer {
-  padding-bottom: 25px;
-  font-size: 14px;
-}
-.footer-social {
-  padding-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .footer-social {
-    padding-bottom: 50px;
-  }
-}
-.footer-social ul > li {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 768px) {
-  .footer-social ul > li {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-.footer-copyright {
-  padding-top: 32px;
+
+/* XL */
+@media (min-width: 1201px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-svg-logo {
+        margin-left: -106px;
+        height: 220px;
+    }
+
+    /*------------------------------------*\
+        About Tedx section
+    \*------------------------------------*/
+    #book-my-seat {
+        margin-top: 14px;
+    }
+
+    /*------------------------------------*\
+        Speakers section
+    \*------------------------------------*/
+    #speakers .card-footer a {
+        font-size: 0.8rem;
+    }
 }
 
-/*
-  Responsive images
-  -----------------
-*/
 
-.img-wrapper {
-  position: relative;
-  padding-bottom: 133.33%; /* 4:3 aspect ratio */
-  overflow: hidden;
-  width: 100%;
+
+/* LG */
+@media (max-width: 1200px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-svg-logo {
+        margin-left: -106px;
+        height: 220px;
+    }
+
+    /*------------------------------------*\
+        About Tedx section
+    \*------------------------------------*/
+    #book-my-seat {
+        margin-top: 68px;
+    }
+
+    /*------------------------------------*\
+        Speakers section
+    \*------------------------------------*/
+    #speakers .card-footer a {
+        font-size: 0.8rem;
+    }
+
+    /*------------------------------------*\
+        Register Section
+    \*------------------------------------*/
+    #register .card-body ul li {
+        font-size: 0.7rem;
+    }
 }
-.img-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  margin: auto;
-  object-fit: cover;
+
+/* MD */
+@media (max-width: 992px) {
+
+    /*------------------------------------*\
+        Navbar
+    \*------------------------------------*/
+    .navbar-nav a {
+        font-size: 0.9rem !important;
+    }
+
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-svg-logo {
+        margin-left: -63px;
+        height: 195px;
+    }
+    .hero-logo img {
+        width: 90%;
+    }
+    .hero-claim {
+        font-size: 1.1rem !important;
+    }
+
+    /*------------------------------------*\
+        About Tedx section
+    \*------------------------------------*/
+    #book-my-seat {
+        margin-top: 55px;
+    }
+
+    /*------------------------------------*\
+        Register Section
+    \*------------------------------------*/
+    #steps-to-register li {
+        font-size: 0.8rem !important;
+    }
+    #register .card-body ul li {
+        font-size: 0.8rem;
+    }
+    .early-bird-countdown #earlybird-text {
+        font-size: 0.7rem !important;
+    }
 }
 
-/*
-  Features box
-  ------------
-*/
+/* SM */
+@media (max-width: 768px) {
 
-@media (min-width: 768px) {
-  .row .features-box {
-    margin-bottom: 15px;
-  }
-  .row .features-box:last-child {
-    margin-bottom: 0;
-  }
+    /*------------------------------------*\
+        Generic
+    \*------------------------------------*/
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    /*------------------------------------*\
+        Navbar
+    \*------------------------------------*/
+    .navbar-nav a {
+        font-size: 1rem !important;
+    }
+
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-svg-logo {
+        margin-left: -45px;
+        height: 173px;
+    }
+    .hero-logo img {
+        width: 60%;
+    }
+    .hero-claim {
+        font-size: 1.5rem !important;
+    }
+
+    /*------------------------------------*\
+        About Tedx section
+    \*------------------------------------*/
+    #book-my-seat {
+        margin-top: 5px;
+    }
+
+    /*------------------------------------*\
+        Speakers section
+    \*------------------------------------*/
+    #speakers .card-footer a {
+        font-size: 1rem;
+    }
+
+    /*------------------------------------*\
+        Register Section
+    \*------------------------------------*/
+    #steps-to-register li {
+        font-size: 1rem !important;
+    }
+    #register .card-body ul li {
+        font-size: 0.9rem;
+    }
+    #register .form-control {
+        font-size: 1rem !important;
+    }
+    .early-bird-countdown #earlybird-text {
+        font-size: 0.8rem !important;
+    }
+
+    /*------------------------------------*\
+        Contact Section
+    \*------------------------------------*/
+    #contact .form-control {
+        font-size: 0.9rem !important;
+    }
+    #contact button[type="submit"] {
+        font-size: 0.9rem !important;
+    }
+
+    /*------------------------------------*\
+        Footer Section
+    \*------------------------------------*/
+    .copyright-text, .mail-id {
+        font-size: 0.9rem !important;
+    }
+    .social-icon a {
+        font-size: 1.1rem !important;
+    }
 }
 
-@media (max-width: 991px) {
-  .fix-mobile {
-    margin-top: 20vw;
-  }
+/* XS */
+@media (max-width: 576px) {
+
+    /*------------------------------------*\
+        Generic
+    \*------------------------------------*/
+    .btn {
+        font-size: 1.8rem;
+    }
+
+    /*------------------------------------*\
+        Navbar
+    \*------------------------------------*/
+    .navbar-brand img {
+        width: 10rem;
+    }
+    .navbar-nav a {
+        font-size: 1.4rem !important;
+    }
+
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-svg-logo {
+        margin-left: -45px;
+        height: 163px;
+    }
+    .hero-logo img {
+        width: 70%;
+    }
+    .container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    #home .container {
+        /*height: 80vh;*/
+    }
+    #theme-row {
+        margin-top: 5rem !important;
+    }
+    #theme-text p {
+        font-size: 4rem;
+    }
+    #hero-date {
+        font-size: 2.2rem;
+    }
+    .hero-claim {
+        font-size: 2rem !important;
+    }
+    #event-virtual {
+        font-size: 1.2rem;
+    }
+
+    /*------------------------------------*\
+        Speakers Section
+    \*------------------------------------*/
+    #speakers .card-footer a {
+        font-size: 1.4rem;
+    }
+
+    /*------------------------------------*\
+        Register Section
+    \*------------------------------------*/
+    #steps-to-register li {
+        font-size: 1.3rem !important;
+    }
+    #register .card-body ul li {
+        font-size: 1.3rem;
+    }
+    #register .form-control {
+        font-size: 1.3rem !important;
+    }
+    .early-bird-countdown #earlybird-text {
+        font-size: 1.2rem !important;
+    }
+
+    /*------------------------------------*\
+        Contact Section
+    \*------------------------------------*/
+    #contact .form-control {
+        font-size: 1.3rem !important;
+    }
+    #contact button[type="submit"] {
+        font-size: 1.4rem !important;
+    }
+
+
+    /*------------------------------------*\
+        Footer Section
+    \*------------------------------------*/
+    .copyright-text, .mail-id {
+        font-size: 1.3rem !important;
+    }
+    .social-icon a {
+        font-size: 1.7rem !important;
+    }
+    .site-footer {
+        border-top: 1px solid #efebeb;
+        padding: 0.8rem 0 1.1rem;
+    }
+}
+
+
+
+/* Speakers PAGE */
+
+
+
+.speaker-img {
+    --width: 10rem;
+    /* height: var(--width);
+    width: var(--width); */
+}
+
+.hr {
+    border-top: 1px solid rgb(150, 150, 150);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: 10px;
+    width: 100%;
+
+    margin: 1rem 0;
 }
