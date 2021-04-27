@@ -344,6 +344,7 @@ s {
 }
 
 
+/* For Normal Screens */
 
 /* XL */
 @media (min-width: 1201px) {
@@ -405,7 +406,7 @@ s {
 }
 
 /* MD */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
     /*------------------------------------*\
         Navbar
@@ -450,7 +451,7 @@ s {
 }
 
 /* SM */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /*------------------------------------*\
         Generic
@@ -532,7 +533,7 @@ s {
 }
 
 /* XS */
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 
     /*------------------------------------*\
         Generic
@@ -569,7 +570,7 @@ s {
         /*height: 80vh;*/
     }
     #theme-row {
-        margin-top: 5rem !important;
+        margin-top: 2rem !important;
     }
     #theme-text p {
         font-size: 4rem;
@@ -630,6 +631,95 @@ s {
     .site-footer {
         border-top: 1px solid #efebeb;
         padding: 0.8rem 0 1.1rem;
+    }
+}
+
+
+/* Special breakpoint for small screens */
+
+/* XL */
+@media (min-width: 992px) and (max-height: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-logo > img {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 60% !important;
+    }
+    #theme-text p,
+    #theme-row svg {
+        margin-bottom: 0 !important;
+    }
+    #hero-date {
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+/* MD */
+@media (max-width: 991px) and (max-height: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-logo > img {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 80% !important;
+    }
+    #theme-text p,
+    #theme-row svg {
+        margin-bottom: 0 !important;
+    }
+    #hero-date {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* SM */
+@media (max-width: 767px) and (max-height: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-logo > img {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 60% !important;
+    }
+    #theme-text p,
+    #theme-row svg {
+        margin-bottom: 0 !important;
+    }
+    #hero-date {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* XS */
+@media (max-width: 575px) and (max-height: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-logo > img {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 60% !important;
+    }
+    #theme-row {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    #theme-text p,
+    #theme-row svg {
+        margin-bottom: 0 !important;
+    }
+    #hero-date {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    #claim-your-spot {
+        margin-top: 2rem !important;
     }
 }
 
