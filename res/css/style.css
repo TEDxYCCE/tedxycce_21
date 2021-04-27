@@ -305,6 +305,7 @@ s {
     padding-right: 2%;
 }
 .early-bird-countdown #earlybird-text {
+    padding-top: 3px !important;
     padding-bottom: 15px;
     font-size: 0.6rem !important;
 }
@@ -317,22 +318,23 @@ s {
     box-shadow: none !important;
     align-self: center !important;
     width: 40px !important;
+    padding-top: 8px !important;
 }
 .early-bird-countdown .days .value {
-    margin-left: 55px !important;
-    margin-top: 40px !important;
+    margin-left: 53px !important;
+    margin-top: 42px !important;
 }
 .early-bird-countdown .hours .value {
-    margin-left: 74px !important;
-    margin-top: 21px !important;
+    margin-left: 72px !important;
+    margin-top: 23px !important;
 }
 .early-bird-countdown .minutes .value {
-    margin-left: 96px !important;
-    margin-top: -1px !important;
+    margin-left: 95px !important;
+    margin-top: 0 !important;
 }
 .early-bird-countdown .seconds .value {
-    margin-left: 119px !important;
-    margin-top: -24px !important;
+    margin-left: 117px !important;
+    margin-top: -23px !important;
 }
 .early-bird-countdown .label {
     font-family: Helvetica, sans-serif;
@@ -755,6 +757,11 @@ s {
     #register .card {
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+}
+@media (max-width: 400px) {
+    #vip-wrapper .card-title {
+        padding-left: 40px;
     }
 }
 
