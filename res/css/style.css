@@ -724,6 +724,40 @@ s {
 }
 
 
+/* Fix early bird countdown on small screens */
+@media (max-width: 480px) {
+    #earlybird-text {
+        padding-top: 3px !important;
+    }
+    .early-bird-countdown .value {
+        padding-top: 8px !important;
+    }
+    .early-bird-countdown .days .value {
+        margin-left: 53px !important;
+        margin-top: 42px !important;
+    }
+    .early-bird-countdown .hours .value {
+        margin-left: 72px !important;
+        margin-top: 23px !important;
+    }
+    .early-bird-countdown .minutes .value {
+        margin-left: 94px !important;
+        margin-top: 1px !important;
+    }
+    .early-bird-countdown .seconds .value {
+        margin-left: 117px !important;
+        margin-top: -22px !important;
+    }
+    #vip-wrapper, #emperor-wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #register .card {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
 
 /* Speakers PAGE */
 
