@@ -305,6 +305,7 @@ s {
     padding-right: 2%;
 }
 .early-bird-countdown #earlybird-text {
+    padding-top: 3px !important;
     padding-bottom: 15px;
     font-size: 0.6rem !important;
 }
@@ -317,22 +318,23 @@ s {
     box-shadow: none !important;
     align-self: center !important;
     width: 40px !important;
+    padding-top: 8px !important;
 }
 .early-bird-countdown .days .value {
-    margin-left: 55px !important;
-    margin-top: 40px !important;
+    margin-left: 53px !important;
+    margin-top: 42px !important;
 }
 .early-bird-countdown .hours .value {
-    margin-left: 74px !important;
-    margin-top: 21px !important;
+    margin-left: 72px !important;
+    margin-top: 23px !important;
 }
 .early-bird-countdown .minutes .value {
-    margin-left: 96px !important;
-    margin-top: -1px !important;
+    margin-left: 95px !important;
+    margin-top: 0 !important;
 }
 .early-bird-countdown .seconds .value {
-    margin-left: 119px !important;
-    margin-top: -24px !important;
+    margin-left: 117px !important;
+    margin-top: -23px !important;
 }
 .early-bird-countdown .label {
     font-family: Helvetica, sans-serif;
@@ -344,6 +346,7 @@ s {
 }
 
 
+/* For Normal Screens */
 
 /* XL */
 @media (min-width: 1201px) {
@@ -405,7 +408,7 @@ s {
 }
 
 /* MD */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
     /*------------------------------------*\
         Navbar
@@ -450,7 +453,7 @@ s {
 }
 
 /* SM */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /*------------------------------------*\
         Generic
@@ -532,7 +535,7 @@ s {
 }
 
 /* XS */
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 
     /*------------------------------------*\
         Generic
@@ -569,7 +572,7 @@ s {
         /*height: 80vh;*/
     }
     #theme-row {
-        margin-top: 5rem !important;
+        margin-top: 2rem !important;
     }
     #theme-text p {
         font-size: 4rem;
@@ -633,6 +636,134 @@ s {
     }
 }
 
+
+/* Special breakpoint for small screens */
+
+/* XL */
+@media (min-width: 992px) and (max-height: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-logo > img {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 60% !important;
+    }
+    #theme-text p,
+    #theme-row svg {
+        margin-bottom: 0 !important;
+    }
+    #hero-date {
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+/* MD */
+@media (max-width: 991px) and (max-height: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-logo > img {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 80% !important;
+    }
+    #theme-text p,
+    #theme-row svg {
+        margin-bottom: 0 !important;
+    }
+    #hero-date {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* SM */
+@media (max-width: 767px) and (max-height: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-logo > img {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 60% !important;
+    }
+    #theme-text p,
+    #theme-row svg {
+        margin-bottom: 0 !important;
+    }
+    #hero-date {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* XS */
+@media (max-width: 575px) and (max-height: 768px) {
+    /*------------------------------------*\
+        Hero Home Section
+    \*------------------------------------*/
+    .hero-logo > img {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        width: 60% !important;
+    }
+    #theme-row {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    #theme-text p,
+    #theme-row svg {
+        margin-bottom: 0 !important;
+    }
+    #hero-date {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    #claim-your-spot {
+        margin-top: 2rem !important;
+    }
+}
+
+
+/* Fix early bird countdown on small screens */
+@media (max-width: 480px) {
+    #earlybird-text {
+        padding-top: 3px !important;
+    }
+    .early-bird-countdown .value {
+        padding-top: 8px !important;
+    }
+    .early-bird-countdown .days .value {
+        margin-left: 53px !important;
+        margin-top: 42px !important;
+    }
+    .early-bird-countdown .hours .value {
+        margin-left: 72px !important;
+        margin-top: 23px !important;
+    }
+    .early-bird-countdown .minutes .value {
+        margin-left: 94px !important;
+        margin-top: 1px !important;
+    }
+    .early-bird-countdown .seconds .value {
+        margin-left: 117px !important;
+        margin-top: -22px !important;
+    }
+    #vip-wrapper, #emperor-wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #register .card {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+@media (max-width: 400px) {
+    #vip-wrapper .card-title {
+        padding-left: 40px;
+    }
+}
 
 
 /* Speakers PAGE */
