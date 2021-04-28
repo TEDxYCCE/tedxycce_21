@@ -224,6 +224,29 @@ s {
     line-height: 1.3em !important;
 }
 
+/*------------------------------------*\
+    Performance Section
+\*------------------------------------*/
+#performance {
+    background-image: url('../images/campus_photos/pexels-monica-silvestre-713149.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+#performance .bg-overlay {
+    opacity: 0.8 !important;
+    position: static !important;
+}
+
+
+
+
+
 
 /*------------------------------------*\
     Register Section
