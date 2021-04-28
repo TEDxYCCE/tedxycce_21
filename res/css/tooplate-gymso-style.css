@@ -578,8 +578,9 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .site-footer {
-    border-top: 1px solid #efebeb;
-    padding: 0.8rem 0 0.4rem;
+    background: var(--dark-color);
+    border-top: 1px solid #234;
+    padding: 0.8rem 0;
   }
 
   .site-footer a {
@@ -587,7 +588,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
     font-weight: var(--font-weight-light);
   }
 
-  .site-footer p {
+  .site-footer p,
+  #footer-license {
     font-size: var(--base-font-size);
   }
 
