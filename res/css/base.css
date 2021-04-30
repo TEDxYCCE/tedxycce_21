@@ -40,12 +40,13 @@
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 html {
     font-size: 1rem;
     min-width: 350px !important;
+    scroll-behavior: smooth !important;
 }
 @media (max-width: 575px) {
     html {
@@ -87,6 +88,9 @@ html {
 .bg-tedred {
     background-color: var(--tedred) !important;
 }
+.bg-dark-color {
+    background-color: var(--dark-color) !important;
+}
 .text-tedred {
     color: var(--tedred) !important;
 }
@@ -111,21 +115,7 @@ s {
     Navbar
 \*------------------------------------*/
 .navbar {
-    background: none;
-}
-
-.navbar.shrink {
-    -webkit-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
-    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1)
-}
-.navbar.shrink {
-    padding: 0.2rem 1rem;
-    background: var(--dark-color);
-}
-.navbar.shrink .navbar-brand img {
-    width: 7rem;
-    margin: 10px 0;
+    background-color: transparent;
 }
 .navbar-brand {
     width: 30%;
@@ -141,58 +131,19 @@ s {
 .navbar-nav a {
     font-size: 0.7rem !important;
 }
-
-/*------------------------------------*\
-    About Section
-\*------------------------------------*/
-#feature {
-    background-image: url('../images/campus_photos/stage-audience-1.jpg');
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    background-attachment: fixed;
-    position: relative;
-    height: 100vh;
+.navbar.shrink {
+    -webkit-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1)
 }
-.text-white-70 {
-    color: rgba(255,255,255,.7) !important;
+.navbar.shrink {
+    padding: 0.2rem 1rem;
+    background-color: var(--dark-color);
 }
-.tedx-kya-hai {
-    
+.navbar.shrink .navbar-brand img {
+    margin: 10px 0;
 }
 
-/*------------------------------------*\
-    Speaker Section
-\*------------------------------------*/
-
-.speaker-bio {
-    line-height: 1.3em !important;
-}
-
-
-
-
-/*------------------------------------*\
-    Contact Section
-\*------------------------------------*/
-#contact .form-control {
-    margin: 0.7rem 0 !important;
-    font-size: 0.8rem !important;
-    border-radius: 0.25rem !important;
-}
-#contact button[type="submit"] {
-    font-size: 0.8rem !important;
-}
-#contact {
-    background-image: url('../images/campus_photos/qna.webp');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    background-attachment: fixed;
-    position: relative;
-}
 
 
 /*------------------------------------*\
@@ -204,26 +155,43 @@ s {
 .social-icon a {
     font-size: 0.9rem !important;
 }
-
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #e62b1e;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.2s ease-in-out;
+}
+.back-to-top .fa {
+    color: #fff !important;
+}
+.back-to-top i {
+    font-size: 24px;
+}
+.back-to-top:focus {
+    outline: none;
+}
+.back-to-top:hover {
+    background: #B41F17;
+    color: #fff;
+}
 
 
 /* For Normal Screens */
 
 /* XL */
 @media (min-width: 1201px) {
-  
-    /*------------------------------------*\
-        About Tedx section
-    \*------------------------------------*/
-    #book-my-seat {
-        margin-top: 14px;
-    }
 
     /*------------------------------------*\
-        Speakers section
+        Navbar Section
     \*------------------------------------*/
-    #speakers .card-footer a {
-        font-size: 0.8rem;
+    .navbar.shrink .navbar-brand img {
+        width: 7rem;
     }
 }
 
@@ -231,26 +199,12 @@ s {
 
 /* LG */
 @media (max-width: 1200px) {
- 
-    /*------------------------------------*\
-        About Tedx section
-    \*------------------------------------*/
-    #book-my-seat {
-        margin-top: 68px;
-    }
 
     /*------------------------------------*\
-        Speakers section
+        Navbar Section
     \*------------------------------------*/
-    #speakers .card-footer a {
-        font-size: 0.8rem;
-    }
-
-    /*------------------------------------*\
-        Register Section
-    \*------------------------------------*/
-    #register .card-body ul li {
-        font-size: 0.7rem;
+    .navbar.shrink .navbar-brand img {
+        width: 7rem;
     }
 }
 
@@ -263,16 +217,7 @@ s {
     .navbar-nav a {
         font-size: 0.9rem !important;
     }
-
-  
-    /*------------------------------------*\
-        About Tedx section
-    \*------------------------------------*/
-    #book-my-seat {
-        margin-top: 55px;
-    }
-
-  }
+}
 
 /* SM */
 @media (max-width: 767px) {
@@ -290,30 +235,11 @@ s {
     .navbar-nav a {
         font-size: 1rem !important;
     }
-
-  
-    /*------------------------------------*\
-        About Tedx section
-    \*------------------------------------*/
-    #book-my-seat {
-        margin-top: 5px;
+    .navbar-brand img {
+        width: 9rem;
     }
-
-    /*------------------------------------*\
-        Speakers section
-    \*------------------------------------*/
-    #speakers .card-footer a {
-        font-size: 1rem;
-    }
-
-   /*------------------------------------*\
-        Contact Section
-    \*------------------------------------*/
-    #contact .form-control {
-        font-size: 0.9rem !important;
-    }
-    #contact button[type="submit"] {
-        font-size: 0.9rem !important;
+    .navbar.shrink .navbar-brand img {
+        width: 8rem;
     }
 
     /*------------------------------------*\
@@ -324,6 +250,9 @@ s {
     }
     .social-icon a {
         font-size: 1.1rem !important;
+    }
+    .back-to-top {
+        padding-top: 6px;
     }
 }
 
@@ -341,32 +270,18 @@ s {
         Navbar
     \*------------------------------------*/
     .navbar-brand img {
-        width: 10rem;
+        width: 12rem;
+    }
+    .navbar.shrink .navbar-brand img {
+        width: 11rem;
     }
     .navbar-nav a {
         font-size: 1.4rem !important;
     }
-
-   
-    /*------------------------------------*\
-        Speakers Section
-    \*------------------------------------*/
-    #speakers .card-footer a {
-        font-size: 1.4rem;
+    .container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
     }
-
- 
-
-    /*------------------------------------*\
-        Contact Section
-    \*------------------------------------*/
-    #contact .form-control {
-        font-size: 1.3rem !important;
-    }
-    #contact button[type="submit"] {
-        font-size: 1.4rem !important;
-    }
-
 
     /*------------------------------------*\
         Footer Section
@@ -378,32 +293,6 @@ s {
         font-size: 1.7rem !important;
     }
     .site-footer {
-        border-top: 1px solid #efebeb;
         padding: 0.8rem 0 1.1rem;
     }
-}
-
-
-
-
-/* Speakers PAGE */
-
-
-
-.speaker-img {
-    --width: 10rem;
-    /* height: var(--width);
-    width: var(--width); */
-}
-
-.hr {
-    border-top: 1px solid rgb(150, 150, 150);
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    height: 10px;
-    width: 100%;
-
-    margin: 1rem 0;
 }
