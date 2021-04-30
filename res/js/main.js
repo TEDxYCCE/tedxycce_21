@@ -22,3 +22,15 @@ $(window).scroll(function(){
         $('.back-to-top').fadeOut('slow');
     }
 });
+
+
+$(document).ready( function () {
+
+    // Add dark background on collapse
+    $(".navbar").on("show.bs.collapse", function () {
+        $(this).addClass("bg-dark-color");
+    }).on("hide.bs.collapse", function () {
+        $(this).removeClass("bg-dark-color");
+    });
+
+});

@@ -1,149 +1,3 @@
-/*  Custom Stylesheet */
-
-/*------------------------------------*\
-    Font Face
-\*------------------------------------*/
-
-@font-face {
-    font-family: 'Karla';
-    src: url('../fonts/Karla-Regular.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Karla';
-    src: url('../fonts/Karla-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Karla';
-    src: url('../fonts/Karla-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'OleoScript';
-    src: url('../fonts/OleoScript-Regular.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-:root {
-    --base-font-family: 'Karla', sans-serif !important;
-    --tedred: #E62B1E;
-}
-
-
-* {
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-html {
-    font-size: 1rem;
-    min-width: 350px !important;
-    scroll-behavior: smooth !important;
-}
-@media (max-width: 575px) {
-    html {
-        font-size: 0.8rem !important;
-    }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-    html {
-        font-size: 1.2rem !important;
-    }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    html {
-        font-size: 1.4rem !important;
-    }
-}
-@media (min-width: 992px) {
-    html {
-        font-size: 1.6rem !important;
-    }
-}
-
-
-/*------------------------------------*\
-    Overrides
-\*------------------------------------*/
-.btn {
-    border-radius: 0.5rem !important;
-}
-.btn-outline-danger {
-    color: var(--tedred) !important;
-    border-color: var(--tedred) !important;
-}
-.btn-outline-danger:hover {
-    color: #fff !important;
-    background-color: var(--tedred) !important;
-}
-
-.bg-tedred {
-    background-color: var(--tedred) !important;
-}
-.bg-dark-color {
-    background-color: var(--dark-color) !important;
-}
-.text-tedred {
-    color: var(--tedred) !important;
-}
-
-.card {
-    border-radius: 0.5rem !important;
-}
-.card-img-top {
-    border-top-left-radius: 0.5rem !important;
-    border-top-right-radius: 0.5rem !important;
-    height: 35vh;
-    min-height: 290px !important;
-    object-fit: cover;
-    object-position: top;
-}
-
-s {
-    text-decoration-thickness: 5px;
-}
-
-/*------------------------------------*\
-    Navbar
-\*------------------------------------*/
-.navbar {
-    background-color: transparent;
-}
-.navbar-brand {
-    width: 30%;
-    padding: 0 !important;
-}
-.navbar-brand img {
-    width: 8rem;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-}
-.navbar-nav a {
-    font-size: 0.7rem !important;
-}
-.navbar.shrink {
-    -webkit-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
-    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1)
-}
-.navbar.shrink {
-    padding: 0.2rem 1rem;
-    background-color: var(--dark-color);
-}
-.navbar.shrink .navbar-brand img {
-    margin: 10px 0;
-}
-
 
 /*------------------------------------*\
     Hero Home Section
@@ -164,7 +18,6 @@ s {
 .hero .container {
     margin-top: 3rem;
 }
-
 
 @keyframes animate-element {
     0% {
@@ -219,6 +72,13 @@ s {
 }
 .text-white-70 {
     color: rgba(255,255,255,.7) !important;
+}
+#learn-more-text {
+    border-bottom: 1px solid var(--tedred);
+    font-size: 0.9rem;
+}
+#learn-more-text i {
+    font-size: 0.7rem;
 }
 
 
@@ -301,42 +161,6 @@ s {
 }
 
 
-/*------------------------------------*\
-    Footer Section
-\*------------------------------------*/
-.copyright-text, .mail-id {
-    font-size: 0.7rem !important;
-}
-.social-icon a {
-    font-size: 0.9rem !important;
-}
-.back-to-top {
-    position: fixed;
-    display: none;
-    background: #e62b1e;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    right: 15px;
-    bottom: 15px;
-    transition: background 0.2s ease-in-out;
-}
-.back-to-top .fa {
-    color: #fff !important;
-}
-.back-to-top i {
-    font-size: 24px;
-}
-.back-to-top:focus {
-    outline: none;
-}
-.back-to-top:hover {
-    background: #B41F17;
-    color: #fff;
-}
-
-
 /*
   Countdown timer early-bird registration
   ---------------
@@ -400,13 +224,6 @@ s {
 @media (min-width: 1201px) {
 
     /*------------------------------------*\
-        Navbar Section
-    \*------------------------------------*/
-    .navbar.shrink .navbar-brand img {
-        width: 7rem;
-    }
-
-    /*------------------------------------*\
         Hero Home Section
     \*------------------------------------*/
     .hero-svg-logo {
@@ -433,13 +250,6 @@ s {
 
 /* LG */
 @media (max-width: 1200px) {
-
-    /*------------------------------------*\
-        Navbar Section
-    \*------------------------------------*/
-    .navbar.shrink .navbar-brand img {
-        width: 7rem;
-    }
 
     /*------------------------------------*\
         Hero Home Section
@@ -469,17 +279,17 @@ s {
     #register .card-body ul li {
         font-size: 0.7rem;
     }
+
+    /*------------------------------------*\
+       Contact Section
+    \*------------------------------------*/
+    .contact-form textarea[placeholder="Message"] {
+        height: 8rem;
+    }
 }
 
 /* MD */
 @media (max-width: 991px) {
-
-    /*------------------------------------*\
-        Navbar
-    \*------------------------------------*/
-    .navbar-nav a {
-        font-size: 0.9rem !important;
-    }
 
     /*------------------------------------*\
         Hero Home Section
@@ -514,30 +324,17 @@ s {
     .early-bird-countdown #earlybird-text {
         font-size: 0.7rem !important;
     }
+
+    /*------------------------------------*\
+       Contact Section
+    \*------------------------------------*/
+    .contact-form textarea[placeholder="Message"] {
+        height: 11rem;
+    }
 }
 
 /* SM */
 @media (max-width: 767px) {
-
-    /*------------------------------------*\
-        Generic
-    \*------------------------------------*/
-    .btn {
-        font-size: 1.2rem;
-    }
-
-    /*------------------------------------*\
-        Navbar
-    \*------------------------------------*/
-    .navbar-nav a {
-        font-size: 1rem !important;
-    }
-    .navbar-brand img {
-        width: 9rem;
-    }
-    .navbar.shrink .navbar-brand img {
-        width: 8rem;
-    }
 
     /*------------------------------------*\
         Hero Home Section
@@ -558,6 +355,13 @@ s {
     \*------------------------------------*/
     #book-my-seat {
         margin-top: 5px;
+    }
+    #learn-more-text {
+        border-bottom: 1px solid var(--tedred);
+        font-size: 1.1rem;
+    }
+    #learn-more-text i {
+        font-size: 0.8rem;
     }
 
     /*------------------------------------*\
@@ -592,43 +396,10 @@ s {
     #contact button[type="submit"] {
         font-size: 0.9rem !important;
     }
-
-    /*------------------------------------*\
-        Footer Section
-    \*------------------------------------*/
-    .copyright-text, .mail-id {
-        font-size: 0.9rem !important;
-    }
-    .social-icon a {
-        font-size: 1.1rem !important;
-    }
-    .back-to-top {
-        padding-top: 6px;
-    }
 }
 
 /* XS */
 @media (max-width: 575px) {
-
-    /*------------------------------------*\
-        Generic
-    \*------------------------------------*/
-    .btn {
-        font-size: 1.8rem;
-    }
-
-    /*------------------------------------*\
-        Navbar
-    \*------------------------------------*/
-    .navbar-brand img {
-        width: 12rem;
-    }
-    .navbar.shrink .navbar-brand img {
-        width: 11rem;
-    }
-    .navbar-nav a {
-        font-size: 1.4rem !important;
-    }
 
     /*------------------------------------*\
         Hero Home Section
@@ -640,10 +411,7 @@ s {
     .hero-logo img {
         width: 70%;
     }
-    .container {
-        padding-left: 40px !important;
-        padding-right: 40px !important;
-    }
+
     #home .container {
         /*height: 80vh;*/
     }
@@ -661,6 +429,17 @@ s {
     }
     #event-virtual {
         font-size: 1.2rem;
+    }
+
+    /*------------------------------------*\
+       About Section
+    \*------------------------------------*/
+    #learn-more-text {
+        border-bottom: 1px solid var(--tedred);
+        font-size: 1.6rem;
+    }
+    #learn-more-text i {
+        font-size: 1.1rem;
     }
 
     /*------------------------------------*\
@@ -694,20 +473,6 @@ s {
     }
     #contact button[type="submit"] {
         font-size: 1.4rem !important;
-    }
-
-
-    /*------------------------------------*\
-        Footer Section
-    \*------------------------------------*/
-    .copyright-text, .mail-id {
-        font-size: 1.3rem !important;
-    }
-    .social-icon a {
-        font-size: 1.7rem !important;
-    }
-    .site-footer {
-        padding: 0.8rem 0 1.1rem;
     }
 }
 
