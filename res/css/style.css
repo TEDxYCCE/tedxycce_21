@@ -40,12 +40,13 @@
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 html {
     font-size: 1rem;
     min-width: 350px !important;
+    scroll-behavior: smooth !important;
 }
 @media (max-width: 575px) {
     html {
@@ -87,6 +88,9 @@ html {
 .bg-tedred {
     background-color: var(--tedred) !important;
 }
+.bg-dark-color {
+    background-color: var(--dark-color) !important;
+}
 .text-tedred {
     color: var(--tedred) !important;
 }
@@ -111,20 +115,7 @@ s {
     Navbar
 \*------------------------------------*/
 .navbar {
-    background: none;
-}
-.navbar.shrink {
-    -webkit-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
-    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1)
-}
-.navbar.shrink {
-    padding: 0.2rem 1rem;
-    background: var(--dark-color);
-}
-.navbar.shrink .navbar-brand img {
-    width: 7rem;
-    margin: 10px 0;
+    background-color: transparent;
 }
 .navbar-brand {
     width: 30%;
@@ -139,6 +130,18 @@ s {
 }
 .navbar-nav a {
     font-size: 0.7rem !important;
+}
+.navbar.shrink {
+    -webkit-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .1)
+}
+.navbar.shrink {
+    padding: 0.2rem 1rem;
+    background-color: var(--dark-color);
+}
+.navbar.shrink .navbar-brand img {
+    margin: 10px 0;
 }
 
 
@@ -314,25 +317,22 @@ s {
     width: 40px;
     height: 40px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 50%;
     right: 15px;
     bottom: 15px;
-    transition: background 0.5s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 .back-to-top .fa {
     color: #fff !important;
 }
 .back-to-top i {
     font-size: 24px;
-    padding-top: 6px;
 }
 .back-to-top:focus {
-    background: #e0072f;
-    color: #fff;
     outline: none;
 }
 .back-to-top:hover {
-    background: #e0072f;
+    background: #B41F17;
     color: #fff;
 }
 
@@ -398,6 +398,14 @@ s {
 
 /* XL */
 @media (min-width: 1201px) {
+
+    /*------------------------------------*\
+        Navbar Section
+    \*------------------------------------*/
+    .navbar.shrink .navbar-brand img {
+        width: 7rem;
+    }
+
     /*------------------------------------*\
         Hero Home Section
     \*------------------------------------*/
@@ -425,6 +433,14 @@ s {
 
 /* LG */
 @media (max-width: 1200px) {
+
+    /*------------------------------------*\
+        Navbar Section
+    \*------------------------------------*/
+    .navbar.shrink .navbar-brand img {
+        width: 7rem;
+    }
+
     /*------------------------------------*\
         Hero Home Section
     \*------------------------------------*/
@@ -516,6 +532,12 @@ s {
     .navbar-nav a {
         font-size: 1rem !important;
     }
+    .navbar-brand img {
+        width: 9rem;
+    }
+    .navbar.shrink .navbar-brand img {
+        width: 8rem;
+    }
 
     /*------------------------------------*\
         Hero Home Section
@@ -581,7 +603,7 @@ s {
         font-size: 1.1rem !important;
     }
     .back-to-top {
-        bottom: 15px;
+        padding-top: 6px;
     }
 }
 
@@ -599,7 +621,10 @@ s {
         Navbar
     \*------------------------------------*/
     .navbar-brand img {
-        width: 10rem;
+        width: 12rem;
+    }
+    .navbar.shrink .navbar-brand img {
+        width: 11rem;
     }
     .navbar-nav a {
         font-size: 1.4rem !important;

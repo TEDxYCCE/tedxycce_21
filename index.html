@@ -58,7 +58,7 @@
     <link rel="stylesheet" href="res/css/register_card.css?version=1.1" />
     <link rel="stylesheet" href="res/css/style.css?version=1.1" />
 </head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="200">
 
 
 <!--    MENU BAR -->
@@ -860,7 +860,12 @@
 
     <!-- FOOTER -->
     <footer class="site-footer">
-<!--        <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>-->
+      <a
+          href="#home"
+          class="back-to-top smoothScroll"
+      >
+          <i class="fa fa-angle-up"></i>
+      </a>
       <div class="container">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 offset-md-2">
@@ -955,6 +960,12 @@
                 },
             });
 
+            // Add dark background on collapse
+            $(".navbar").on("show.bs.collapse", function () {
+                $(this).addClass("bg-dark-color");
+            }).on("hide.bs.collapse", function () {
+                $(this).removeClass("bg-dark-color");
+            })
         });
     </script>
   </body>

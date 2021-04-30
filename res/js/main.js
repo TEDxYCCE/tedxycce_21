@@ -15,16 +15,10 @@ $(window).scroll(function(){
   Scroll to top.
 \*------------------------------------*/
 $(window).scroll(function(){
-    if($(this).scrollTop() > 100){
-        $('.scroll-to-top').fadeIn();
+    if ($(document).scrollTop() > 100) {
         $('.back-to-top').fadeIn('slow');
     }
-    else{
-        $('.scroll-to-top').fadeOut();
+    else {
         $('.back-to-top').fadeOut('slow');
     }
-});
-$('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0}, 1500, 'easeInOutExpo');
-    return false;
 });
