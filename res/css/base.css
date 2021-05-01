@@ -143,6 +143,9 @@ s {
 .navbar.shrink .navbar-brand img {
     margin: 10px 0;
 }
+.go-back:hover {
+    color: var(--tedred) !important;
+}
 
 
 
@@ -241,6 +244,9 @@ s {
     .navbar.shrink .navbar-brand img {
         width: 8rem;
     }
+    .go-back {
+        font-size: 1.2rem;
+    }
 
     /*------------------------------------*\
         Footer Section
@@ -281,6 +287,9 @@ s {
     .container {
         padding-left: 40px !important;
         padding-right: 40px !important;
+    }
+    .go-back {
+        font-size: 1.7rem;
     }
 
     /*------------------------------------*\
