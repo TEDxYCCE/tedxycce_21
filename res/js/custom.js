@@ -16,7 +16,7 @@ $(function () {
 
   // SMOOTHSCROLL NAVBAR
   $(function() {
-    $('.navbar a, .hero-text a, #book-my-seat, #claim-your-spot, .back-to-top')
+    $('.navbar a, .hero-text a, #book-my-seat, #claim-your-spot, .back-to-top, .read-more')
         .on('click', function(event) {
       let $anchor = $(this);
       $('html, body').stop().animate({
