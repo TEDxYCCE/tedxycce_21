@@ -11,9 +11,25 @@
     border-radius: 2px;
     height: 10px;
     width: 100%;
-    margin: 2rem 0;
+    margin: 5rem 0;
 }
 
+
+@media (min-width: 1201px) {
+
+}
+
+@media (max-width: 1200px) {
+    .hr {
+        margin: 4rem 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .hr {
+        margin: 2rem 0;
+    }
+}
 
 @media (max-width: 767px) {
     .social-link {
@@ -24,5 +40,8 @@
 @media (max-width: 575px) {
     .social-link {
         font-size: 2rem;
+    }
+    .hr {
+        margin: 4rem 0;
     }
 }

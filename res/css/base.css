@@ -106,9 +106,11 @@ html {
     object-fit: cover;
     object-position: top;
 }
-
 s {
     text-decoration-thickness: 5px;
+}
+.c-pointer {
+    cursor: pointer;
 }
 
 /*------------------------------------*\

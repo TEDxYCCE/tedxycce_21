@@ -16,13 +16,24 @@ $(function () {
 
   // SMOOTHSCROLL NAVBAR
   $(function() {
-    $('.navbar a, .hero-text a, #book-my-seat, #claim-your-spot, .back-to-top, .read-more')
+    let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+    $('.navbar a, .hero-text a, #book-my-seat, #claim-your-spot, .back-to-top')
         .on('click', function(event) {
-      let $anchor = $(this);
-      $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top - 100
-      }, 1500);
-      event.preventDefault();
+      if (!window.location.hash) {
+        let $anchor = $(this);
+        if ( !isChrome ) {
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 100
+          }, 1000);
+        } else {
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 100
+          }, 0);
+          return false;
+        }
+        event.preventDefault();
+      }
     });
   });
 
