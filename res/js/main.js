@@ -3,7 +3,7 @@
     Shrink navigation.
 \*------------------------------------*/
 $(window).scroll(function(){
-    if ($(document).scrollTop() > 80){
+    if ($(document).scrollTop() > 80 || window.scrollY > 80){
         $('.navbar').addClass('shrink');
     }
     else{
