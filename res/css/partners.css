@@ -17,8 +17,3 @@ body {
         height: 87.5vh;
     }
 }
-@media (max-width: 575px) {
-    #partners {
-        height: 87.5vh;
-    }
-}
