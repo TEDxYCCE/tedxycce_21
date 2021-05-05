@@ -45,7 +45,7 @@
 
 html {
     font-size: 1rem;
-    min-width: 350px !important;
+    min-width: 380px !important;
     scroll-behavior: smooth !important;
 }
 @media (max-width: 575px) {
@@ -210,6 +210,10 @@ s {
     \*------------------------------------*/
     .navbar.shrink .navbar-brand img {
         width: 7rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
     }
 }
 
