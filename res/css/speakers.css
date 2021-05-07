@@ -6,12 +6,26 @@
     width: var(--width); */
 }
 
+.speaker-scroll {
+    border-bottom: 1px solid rgb(150, 150, 150);
+    border-top: 1px solid rgb(150, 150, 150);
+    border-radius: 2px;
+    padding: 5rem 0;
+    display: none;
+}
+
 .hr {
     border-top: 1px solid rgb(150, 150, 150);
     border-radius: 2px;
     height: 10px;
     width: 100%;
     margin: 5rem 0;
+}
+
+@media (max-width: 768px) {
+    .speaker-scroll {
+        padding: 3rem 0;
+    }
 }
 
 
