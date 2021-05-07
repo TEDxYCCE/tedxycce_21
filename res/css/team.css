@@ -1,0 +1,11 @@
+
+@media (min-width: 470px) and (max-width: 575px) {
+    .team-member img {
+        padding: 0 4rem;
+        background: black;
+    }
+}
+
+#teams {
+    padding: 6rem 0 3rem;
+}
