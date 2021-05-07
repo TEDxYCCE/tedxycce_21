@@ -604,26 +604,3 @@
         padding-left: 40px;
     }
 }
-
-
-/* Speakers PAGE */
-
-
-
-.speaker-img {
-    --width: 10rem;
-    /* height: var(--width);
-    width: var(--width); */
-}
-
-.hr {
-    border-top: 1px solid rgb(150, 150, 150);
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    height: 10px;
-    width: 100%;
-
-    margin: 1rem 0;
-}

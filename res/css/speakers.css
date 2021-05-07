@@ -1,0 +1,47 @@
+/* Speakers PAGE */
+
+.speaker-img {
+    --width: 10rem;
+    /* height: var(--width);
+    width: var(--width); */
+}
+
+.hr {
+    border-top: 1px solid rgb(150, 150, 150);
+    border-radius: 2px;
+    height: 10px;
+    width: 100%;
+    margin: 5rem 0;
+}
+
+
+@media (min-width: 1201px) {
+
+}
+
+@media (max-width: 1200px) {
+    .hr {
+        margin: 4rem 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .hr {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-link {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .social-link {
+        font-size: 2rem;
+    }
+    .hr {
+        margin: 4rem 0;
+    }
+}
